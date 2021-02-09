@@ -1,0 +1,9 @@
+Nano test.txt
+
+opens immediately a file called test.txt ready to take notes
+
+If you just type
+
+nano
+
+then it will open a temporary file (to take quick notes is even faster than the previous command)
