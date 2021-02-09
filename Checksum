@@ -1,3 +1,26 @@
-Just use:
+First: download your file
+
+Then can use for example:
+
+shasum -a 512  hadoop-3.2.2.tar.gz
+
+it will provide a string.
+
+You will have to compare this string to the checksum file available near the downloaded file provided by the owner:
+In the case of hadoop, Apache provides a .512 file. Therefore we will just downloadn and then open this file with cat:
+
+cat hadoop-3.2.2.tar.gz.sha512
+
+You can also open it with nano but it will provide a string without wrapping the text.
+
+
+
+Or:
 
 sha256sum (name of file. drag your file here. it will appear the address)
+
+if the checksum file is an .mds file then you should use:
+
+shasum -a 256 hadopp-3.2.2.tar.gz
+
+and then compare the 2 codes
