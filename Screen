@@ -1,0 +1,4 @@
+It allows to manage multiple screens in terminal
+
+sudo apt-get install screen
+
