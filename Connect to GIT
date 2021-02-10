@@ -1,0 +1,19 @@
+ssh-keygen -t rsa -b 4096 -C "email@email.com"
+
+then just press enter
+
+eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+then open the file 
+
+id_rsa.pub
+
+copy the code inside
+
+Open Github
+go to settings->SSH and GPG keys->click on new SSH key 
+Paste the code!
+
+Done!
