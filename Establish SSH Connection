@@ -1,1 +1,42 @@
-Putty in Windows
+Firs install
+
+sudo apt-get install openssh-server
+
+then edit with nano or other the config file
+
+sudo nano /etc/ssh/ssh_config
+Insert these lines:
+____________________
+Port 22
+MaxAuthTries
+
+SendEnv LANG LC_*
+HashKnownHost yes
+GSSAPAuthentication yes
+_________________________
+
+(without the line at the beginning and at the end)
+
+If the lines are already there but start with # you should just delete the # symbol.
+
+Save and close nano.
+
+To check the status
+
+sudo service ssh status
+
+If the service is not running:
+
+ sudo service ssh start
+
+and you can stop with:
+
+ sudo service ssh stop
+ 
+Then you are done.
+
+In Windows you have to download Putty and connect to the server with hostname or IP address
+hostname, hostname -I
+
+(To copy lines in putty just highlight them. To paste lines in Putty just click right in the terminal windows).
+
