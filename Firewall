@@ -1,0 +1,24 @@
+  If the firewall is active some apps will not work properly as for example OpenSSH:
+  
+  therefore
+  
+  sudo ufw allow OpenSSH
+   
+  (if not installed: sudo apt-get install ufw)
+  
+  
+  then 
+  
+  sudo ufw enable
+  
+  type yes and proceed
+  
+  Then you can check the status
+  
+  sudo ufw status
+  
+  
+  You can rule eveything even ports
+  
+  sudo ufw allow 3306
+  sudo uf allow mysql 
