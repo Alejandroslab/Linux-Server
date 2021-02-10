@@ -6,3 +6,16 @@ Ctrl+e go at the end of the row
 
 Ctrl+a va go at the beginning of the row
 
+ctrl+c to quit the process
+
+ctrl+d or 'exit' to logut (or quit Putty in Windows)
+
+
+to change user to user2:
+
+su -user2
+
+to reboot
+
+sudo reboot
+
