@@ -1,0 +1,8 @@
+Command
+
+cp file folder
+
+example
+
+cp test.txt \home\user1\destionationfolder
+
