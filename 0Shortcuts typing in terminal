@@ -19,3 +19,8 @@ to reboot
 
 sudo reboot
 
+
+to list all the active process
+
+top
+
