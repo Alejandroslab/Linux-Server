@@ -1,0 +1,9 @@
+A screensaver
+
+sudo apt-get install cmatrix
+Cmatrix
+
+print cows:
+
+sudo apt install cowsay
+cowsay ciao
