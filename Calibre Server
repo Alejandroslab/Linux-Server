@@ -1,1 +1,90 @@
+Install
+
+ sudo apt install -y libfontconfig libgl1-mesa-glx
+ 
+ wget https://download.calibre-ebook.com/linux-installer.sh
+ 
+sudo sh linux-installer.sh
+
+download a book (it will be necessary to create the right config. files (.db) in calibre)
+
+wget http://www.gutenberg.org/ebooks/46.kindle.noimages -O christmascarol.mobi
+
+create a directory for calibre
+
+mkdir calibre-library
+
+add all mobi books (included the one donwloded):
+
+calibredb add *.mobi --with-library calibre-library/
+
+(If you have firewall enabled than you have to add a rule for the program and the port 
+sudo ufw allow 8080
+sudo ufw status)
+
+Now run the server:
+
+calibre-server calibre-library
+
+You can access the library from a client. Open a browser and type:
+
+IP:8080
+or 
+hostname:8080
+
+CALIBRE SERVER IN BACKGROUND
+
+sudo nano /etc/systemd/system/calibre-server.service:
+
+ADD THESE LINES:
+
+## startup service
+[Unit]
+Description=calibre content server
+After=network.target
+
+[Service]
+Type=simple
+User=UTENTE
+Group=UTENTE (oppure inserire sudo se l'utente ha privilegi)
+ExecStart=/opt/calibre/calibre-server /home/UTENTE/calibre-library --enable-local-write
+
+[Install]
+WantedBy=multi-user.target
+
+
+Save and close the file.
+Now enable the service and start it:
+
+sudo systemctl enable calibre-server
+sudo systemctl start calibre-server
+
+Eventually reboot all the system
+sudo reboot
+
+you can also add users:
+
+sudo systemctl stop calibre-server
+calibre-server --manage-users
+
+add a new user and choose an username and password
+You will then see:
+
+Output
+User mycalibreuser added successfully!
+
+now reopen the config file
+
+sudo nano /etc/systemd/system/calibre-server.service
+and add --enable-auth to this line:
+
+ExecStart=/opt/calibre/calibre-server /home/UTENTE/calibre-library --enable-local-write --enable-auth
+
+Now restart:
+
+sudo systemctl daemon-reload
+sudo systemctl start calibre-server
+
+
+
 
