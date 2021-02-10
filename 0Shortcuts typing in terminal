@@ -24,3 +24,8 @@ to list all the active process
 
 top
 
+If you need to load us keyboard
+
+sudo loadkeys us
+
+(it will work for just 1 session)
