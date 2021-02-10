@@ -1,0 +1,46 @@
+Java should have already been installed
+sudo apt install default-jdk
+java -version
+
+
+
+Copy Link of the Binary file from Official Website
+then
+
+wget binarylink
+
+(you can then run the checksum downloading the corresponding checksum file)
+
+now extract the files:
+tar -xzvf hadoop-3.1.1.tar.gz
+
+move to user local
+
+sudo mv hadoop-3.1.1 /usr/local/hadoop
+
+retrieve your java path
+
+readlink -f /usr/bin/java | sed "s:bin/java::"
+
+
+open 
+sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+
+and insert this second line (will retrieve the folder dinamically)
+. . .
+#export JAVA_HOME=${JAVA_HOME}
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+
+save and close
+
+now you can run hadoop
+
+    /usr/local/hadoop/bin/hadoop
+    
+You can test MapReduce with this code:
+mkdir ~/input
+cp /usr/local/hadoop/etc/hadoop/*.xml ~/input
+
+
+
+
