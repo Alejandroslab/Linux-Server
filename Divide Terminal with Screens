@@ -1,0 +1,28 @@
+sudo apt-get install screen
+
+screen
+
+create a new 'screen'
+
+ctrl+a c
+
+first ctrl+a then release and quickly press 'c' key
+
+go back to the previous one
+
+ctrl+a n
+
+to split vertically the screen:
+
+ctrl+a |
+
+the | is the pipe symbol
+
+to change the screen (also called region) in that case:
+
+ctrl+a tab
+
+to close a region
+
+ctrl+a k
+
