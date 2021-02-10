@@ -1,0 +1,123 @@
+To show the current path
+
+pwd
+pwd means print working directory
+
+The main folder is 
+\home 
+
+Inside home there are the users like:
+
+user1, user2
+
+When user1 access then:
+
+his working folder will be:
+
+\home\user1
+
+Inside the working folder you will be able to create folders, files etc.
+
+
+
+to create a directory
+
+mkdir newfolder
+
+or
+
+mkdir 'new folder'
+if the folder has a space in the name
+
+
+To remove a directory
+
+rmdir
+
+
+to list all the files in a directory
+
+ls
+
+ls means list
+
+to a more clean view:
+
+ls -ls
+
+or 
+
+ls -l
+
+to save the list of files in a text:
+
+ls > listfile.txt
+
+to list all files (included hidden ones):
+
+ls -a
+
+
+to move between directories:
+
+cd
+
+cd means change directory
+
+cd /tmp
+to move to temporary
+
+cd..
+to go up to the parent directory
+
+
+
+to create a file
+
+touch test.txt
+
+to edit a file
+
+nano test.txt
+
+to save the file ctrl+x type 'y' and press enter
+to search ctrl+w and type the word that you are looking for
+ctrl+6 to highlight the text
+alt+6 to copy the text
+
+the alternative to nano is vim
+to exit from vim: 
+
+:q!
+to save and exit:
+
+:wq
+
+
+to rename a file
+
+mv test.txt renamedtest.txt
+
+in this case the test.txt file will be renamed as 'renamedtest.txt'
+
+
+to delete a file
+
+rm test.txt
+
+you can check the removal with
+ls
+
+
+
+
+
+
+Finally for user01, a random test.txt:
+
+
+/home/user01/test.txt 
+
+can also be denoted by
+
+ ~/test.txt. 
