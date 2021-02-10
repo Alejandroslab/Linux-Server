@@ -1,0 +1,49 @@
+cd /tmp
+
+curl -O https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+bash Anaconda3-2020.11-Linux-x86_64.sh
+
+
+At some time It will ask:
+
+Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/sammy/.bashrc ? [yes|no]
+
+
+Type yes so that you can use the conda command.
+
+If you don't type yes you can change it at the end with this 2 lines:
+
+
+eval "$(/home/as/anaconda3/bin/conda shell.bash hook)"
+
+
+
+
+Create a new environemnt with the python version you prefer
+
+
+conda create --name my_env python=3
+
+To activate your environment
+
+Conda activate my_env
+
+To deactivate:
+
+conda deactivate my_env
+
+Inside conda you can call Python 
+
+And the python interpreter will open
+
+
+ADD CONDA TO THE PATH
+sudo nano /.bashrc
+export PATH=/home/as/anaconda3/bin
+cd anaconda3/bin
+./conda init bash
+
+ source ~/.bashrc
+
+
