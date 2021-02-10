@@ -7,3 +7,12 @@ print cows:
 
 sudo apt install cowsay
 cowsay ciao
+
+
+snake game:
+sudo apt-get install nsnake
+nsnake
+
+tetris game:
+sudo apt install bastet
+bastet
