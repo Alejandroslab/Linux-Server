@@ -1,3 +1,5 @@
+A list of useful commands:
+
 To show the current path
 
 pwd
@@ -99,6 +101,14 @@ to rename a file
 mv test.txt renamedtest.txt
 
 in this case the test.txt file will be renamed as 'renamedtest.txt'
+
+to move a file
+
+mv renamedtest.txt \home\user1\newfolder
+
+you can move files indicating the destination path
+
+
 
 
 to delete a file
