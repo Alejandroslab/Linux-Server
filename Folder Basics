@@ -17,3 +17,23 @@ his working folder will be:
 
 Inside the working folder you will be able to create folders, files etc.
 
+To remove a directory
+
+rmdir
+
+to save the list of files in a text:
+
+ls > listfile.txt
+
+to list all files (included hidden ones):
+
+ls -a
+
+Finally for user01, a random test.txt:
+
+
+/home/user01/test.txt 
+
+can also be denoted by
+
+ ~/test.txt. 
