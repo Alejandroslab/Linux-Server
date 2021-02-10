@@ -87,4 +87,11 @@ sudo systemctl start calibre-server
 
 
 
+You can then connect BookCut folder to cron to add automatically all the books from BookCut
 
+to install BookCut
+
+pip install bookcut
+
+(if you have Anaconda just activate your environment)
+conda activate my_environment
