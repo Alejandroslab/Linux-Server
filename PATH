@@ -1,0 +1,27 @@
+The PATH is the list of paths that the system will inspect to run applications.
+
+You can add whichever folder you wish to the path.
+
+
+sudo nano ~/.bash_profile
+
+insert:
+
+export PATH="$PATH:/home/user1/FolderforPath"
+
+alwyas remember that the syntax $PATH is mandatory. If you delete it any command will work.
+
+
+now refresh
+
+source ~/.bash_profile
+
+
+
+In the worst case scenario in which you mess up with the PATH, just type:
+
+export PATH="/usr/bin:$PATH"
+
+it will add the correct folder to the path and all the system commands will work.
+It will be just for 1 session.
+You have to restore the PATH at the previous state before closing the session.
