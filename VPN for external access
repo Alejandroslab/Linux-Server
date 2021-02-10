@@ -1,0 +1,3 @@
+It seems that Putty cannot establish connection if the hostname is provided.
+
+If IP is provided then there is no error..
