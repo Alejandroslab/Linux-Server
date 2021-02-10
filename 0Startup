@@ -1,0 +1,10 @@
+First!
+Rememeber to unencrypt the disk otherwise SSH connection
+could not be established
+
+
+The system reads the following files in this specific order:
+	1. /etc/profile
+	2. ~/.bash_profile
+	3. ~/.bash_login 
+~/.profile
