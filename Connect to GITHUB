@@ -1,0 +1,52 @@
+ssh-keygen -t rsa -b 4096 -C "email@email.com"
+
+then just press enter
+
+eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+then open the file 
+
+id_rsa.pub
+
+copy the code inside
+
+Open Github
+go to settings->SSH and GPG keys->click on new SSH key 
+Paste the code!
+
+Done!
+
+To clone repository
+Git clone code
+
+where code is the code that you will find in the website (code SSH)
+In the repository create a new text file
+touch file.txt
+
+to commit the fill follow this process:
+
+git add
+git status
+git commit
+the first time will ask for a Name and an e-mail
+
+you can set them with:
+
+  git config --global user.email "you@mail.com"
+  git config --global user.name "Name"
+  
+
+now you can retype
+
+git commit
+
+if you want to send the changes to the server just type:
+
+git push
+
+END!
+
+  
+  
