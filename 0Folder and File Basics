@@ -1,4 +1,11 @@
-A list of useful commands:
+To show the type of shell used:
+
+echo$0
+
+
+
+
+A list of other useful commands:
 
 To show the current path
 
