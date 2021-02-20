@@ -2,9 +2,10 @@ hostname -I
 
 hostname without 'I' will provide just the hostname of the machine
 
+remember that the 'I' is capital letter.
+
+if you put 'i' you will get another Ip
 
 ifconfig
 This latter requires 'net tools' package installed. Otherwise:
 sudo apt install net-tools
-
-
