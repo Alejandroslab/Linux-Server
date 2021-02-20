@@ -7,8 +7,18 @@ example
 cp test.txt \home\user1\destionationfolder
 
 
+
 BUT!
 when you have to copy a folder you have to add -r option (recursive. that
 means that will copy all the files of the folder)
 
 cp -r myfolder \home\user1
+
+
+if you need 2 files or folder just:
+
+cp file1 file2 \home\user1\destionationfolder
+
+for folders:
+
+cp -r folder1 folder 2 \home\user1
