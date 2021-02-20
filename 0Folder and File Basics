@@ -12,8 +12,8 @@ To show the current path
 pwd
 pwd means print working directory
 
-The main folder is 
-\home 
+The main folder is
+\home
 
 Inside home there are the users like:
 
@@ -44,6 +44,17 @@ To remove a directory
 rmdir
 
 
+
+BUT! rmdir will work only if the folder is empty!
+
+If it is not empty you can use
+
+rm -r myfolder
+
+(the same logic for copying folder (that is adding -r that means recursively))
+
+
+
 to list all the files in a directory
 
 ls
@@ -54,7 +65,7 @@ to a more clean view:
 
 ls -ls
 
-or 
+or
 
 ls -l
 
@@ -95,7 +106,7 @@ ctrl+6 to highlight the text
 alt+6 to copy the text
 
 the alternative to nano is vim
-to exit from vim: 
+to exit from vim:
 
 :q!
 to save and exit:
@@ -133,8 +144,8 @@ ls
 Finally for user01, a random test.txt:
 
 
-/home/user01/test.txt 
+/home/user01/test.txt
 
 can also be denoted by
 
- ~/test.txt. 
+ ~/test.txt.
