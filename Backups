@@ -1,0 +1,5 @@
+sudo apt-get install rsync
+
+rsync -av --delete folder1 folder2
+
+Sync the 2 folders without leaving differences.
