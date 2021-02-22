@@ -1,0 +1,13 @@
+To scan open ports (of every server)
+Just insall nmap
+
+sudo apt-get update
+sudo apt-get install nmap
+
+nmap --Version
+
+you can scan ips or directly webpages
+
+nmap 192.168.1.1
+
+nmap www.debian.org
