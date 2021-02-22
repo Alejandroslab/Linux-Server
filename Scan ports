@@ -8,6 +8,9 @@ nmap --Version
 
 you can scan ips or directly webpages
 
-nmap 192.168.1.1
+nmap 192.168.0.1
 
 nmap www.debian.org
+
+Detect Firewall settings:
+nmap -sA 192.168.0.1
