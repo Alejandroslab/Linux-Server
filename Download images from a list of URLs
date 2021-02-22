@@ -39,16 +39,10 @@ save and close the file
 now:
 sudo chmod +x downloadimages.sh
 
+_____________________________________________________________
+
+
 run the script:
 ./downloadimages.sh
 
 now images will be downloaded with a progressive number in the name.
-
-
-
-
-
-
-
-
-
