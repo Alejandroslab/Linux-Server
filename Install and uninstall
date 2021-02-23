@@ -1,0 +1,13 @@
+commands
+
+sudo apt-get install vnstat
+
+sudo apt-get remove vnstat
+
+
+you can also use 'purge'
+
+sudo apt-get purge
+
+the difference is that this command remove also all the dependencies, including
+the configuration files.
