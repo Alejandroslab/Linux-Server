@@ -22,3 +22,14 @@ nmap -sP 192.168.0.1/24
 it will scan all the Network
 
 nmap --packet-trace 192.168.0.1 will show all the packets sent from nmap
+
+
+if 'hosts seems down' message just do:
+
+nmap -Pn IP
+
+with option -Pn that in a sense "forces" to scan even if the receiver does not
+manage ping.
+
+nmap can also "decoy" that measn that sends a lot of packets and most of all will
+confuse receiver. Only one packet will scan the others are just noise...
