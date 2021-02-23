@@ -24,6 +24,21 @@ sudo apt-get update
 
 sudo apt-get install r-base
 
+
+
+
+After that you can instaló r-studio server
+
+sudo apt-get install gdebi-core
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.1106-amd64.deb
+sudo gdebi rstudio-server-1.4.1106-amd64.deb
+
+
+Sudo rstudio-server status
+
+
+
+
 The server will listen to 8787 port 
 
 So go to a browser and type:
