@@ -1,0 +1,13 @@
+To launch a python script (it will not install nothing):
+
+curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+
+
+or just install
+
+sudo apt install speedtest-cli
+
+
+launch with:
+
+speedtest-cli
