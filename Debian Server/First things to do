@@ -1,0 +1,46 @@
+By default sudo is not installed on Debian, but you can install it.
+
+first:
+
+su-
+
+apt-get install sudo -y
+
+then add you username to sudo
+
+usermod -aG sudo yourusername
+
+
+Make sure your sudoers file have sudo group added.
+Run:
+visudo to modify sudoers file and add following line into it (if it is missing):
+
+# Allow members of group sudo to execute any command
+%sudo   ALL=(ALL:ALL) ALL
+
+You need to relogin or reboot device completely for changes to take effect.
+
+
+
+-----
+
+ls will not show anything as the home folder will be empty at the beginning
+
+you can check where you are
+
+pwd
+
+
+to see all the files included the hidden files type
+
+ls -la
+
+let's try to create a new file:
+
+touch test.txt
+
+then try
+
+ls
+
+now you will se your first file!
