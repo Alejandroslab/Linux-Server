@@ -46,3 +46,8 @@ run the script:
 ./downloadimages.sh
 
 now images will be downloaded with a progressive number in the name.
+
+
+
+remember that if you put an empty line, the script will create a picture anyways.
+That picture will be empty.
