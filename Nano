@@ -7,3 +7,21 @@ If you just type
 nano
 
 then it will open a temporary file (to take quick notes is even faster than the previous command)
+
+
+
+copy and paste with Nano
+
+first press
+
+ctrl+6
+
+this will set mar
+then move with arrows to select text
+
+now to copy
+
+alt + 6
+
+to paste
+ctrl+u
