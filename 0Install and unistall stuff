@@ -1,0 +1,39 @@
+Update repositories
+
+sudo apt-get update
+
+
+
+list all the installed packages
+
+apt list --installed
+
+
+
+update packages
+
+sudo apt-get upgrade
+
+
+
+To install:
+
+sudo apt-get install -y
+
+-y stands for silent install. it will install without asking questions.
+
+
+keep in mind that 'apt' and 'apt-get' are pretty much interchangeable where
+'apt-get' is the older command.
+
+
+
+to list available updates without install them:
+
+apt list --upgradable
+
+or with the old command:
+
+sudo apt-get -u upgrade --assume-no
+
+(sudo is necessary as it will check permissions (at least this happen in Debian))
