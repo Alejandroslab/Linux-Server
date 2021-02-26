@@ -1,0 +1,13 @@
+first option:
+
+ls -l | wc -l
+
+it will pipe ls inside wc commands that counts characters, bytes or newlines counts
+
+the other option is to install 'tree' package (if you have not already)
+
+then launch
+
+tree
+
+at the end of the command it will be displayed the number of folders!
