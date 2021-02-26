@@ -35,6 +35,8 @@ and you can stop with:
 
 Then you are done.
 
+_________________________________________
+
 In Windows you have to download Putty and connect to the server with hostname or IP address
 hostname, hostname -I
 
