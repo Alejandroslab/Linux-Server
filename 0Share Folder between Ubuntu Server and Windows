@@ -6,7 +6,7 @@ Configure new user:
 
 sudo smbpasswd -a utentesamba
 
-Where 'utentesamba' is a name that you will provide as user. To keep it simple you could choose 
+Where 'utentesamba' is a name that you will provide as user. To keep it simple you could choose
 a username equal to the login user in linux.
 
 Now create a shared folder
@@ -23,8 +23,8 @@ Just type these commands at the end of the document:
 path = /home/utentelinux/nomecartelladacondividere
 available = yes
 valid users = utentesamba
-Read only = no 
-Browsable = yes 
+Read only = no
+Browsable = yes
 public = yes
 writable = yes
 
@@ -48,3 +48,11 @@ You can swap ip address with hostname if you desire (without the suffix '.local'
 Now when you will try to open it will request username and password (the ones created in the configuration file).
 
 
+to check online users:
+
+sudo smbstatus
+
+
+
+REMEMBER! that the samba password could be different from the user account password!
+Keep in mind when you set samba password!(sometimes you can just typing the wrong password and it will not connect to your folder)
