@@ -9,7 +9,11 @@ sudo smbpasswd -a utentesamba
 Where 'utentesamba' is a name that you will provide as user. To keep it simple you could choose
 a username equal to the login user in linux.
 
-Now create a shared folder
+Then it will ask for a password and to confirm it.
+
+
+
+Now create a shared folder (or you can just use a prexisting folder)
 
 mkdir nomecartelladacondividere
 
