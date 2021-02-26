@@ -1,16 +1,33 @@
 Install
 
+sudo apt update
+
+then
+
  sudo apt install -y libfontconfig libgl1-mesa-glx
- 
+
+
+REMEMBER: you can explicit more than one command with '&&'
+
+so it could be:
+
+sudo apt update &&  sudo apt install -y libfontconfig libgl1-mesa-glx
+
+Now download calibre:
+
  wget https://download.calibre-ebook.com/linux-installer.sh
- 
+
 sudo sh linux-installer.sh
 
-download a book (it will be necessary to create the right config. files (.db) in calibre)
+
+
+Now download a book (it will be necessary to create the right config. files (.db) in calibre)
 
 wget http://www.gutenberg.org/ebooks/46.kindle.noimages -O christmascarol.mobi
 
-create a directory for calibre
+
+
+create a directory for calibre (it will be the directory of calibre)
 
 mkdir calibre-library
 
@@ -18,9 +35,12 @@ add all mobi books (included the one donwloded):
 
 calibredb add *.mobi --with-library calibre-library/
 
-(If you have firewall enabled than you have to add a rule for the program and the port 
+(Now, if you have firewall enabled than you have to add a rule for the program and the port
 sudo ufw allow 8080
 sudo ufw status)
+
+
+
 
 Now run the server:
 
@@ -29,8 +49,10 @@ calibre-server calibre-library
 You can access the library from a client. Open a browser and type:
 
 IP:8080
-or 
+or
 hostname:8080
+
+
 
 CALIBRE SERVER IN BACKGROUND
 
@@ -62,9 +84,15 @@ sudo systemctl start calibre-server
 Eventually reboot all the system
 sudo reboot
 
+
+
 you can also add users:
+first stop the server:
 
 sudo systemctl stop calibre-server
+
+then add:
+
 calibre-server --manage-users
 
 add a new user and choose an username and password
