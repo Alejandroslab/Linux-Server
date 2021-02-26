@@ -1,0 +1,61 @@
+In Windows
+
+download  VcXsrv or Xming (X11 for Windows) from sourceforge
+
+I have chosen VcXsrv
+Install and open it.
+
+Keep 'Multiple Windows'
+Click on 'Next'
+Then tick 'Disable access control' and UNtick 'Native opengl'
+
+Click on 'Finish'
+
+Now it will begin to listen from server..
+
+Open Putty and be sure that X11 Forwarding is enabled.
+
+you will find it in
+
+setting- > SSH->Auth->X11
+
+
+Go to your server
+
+generally x11 is enabled by default in ubuntu (or should also in debian)
+anyways, you can check it here:
+
+sudo nano /etc/ssh/ssh_config
+
+
+now you have to install python tk
+
+sudo apt-get install python3-tk
+
+
+Now you have to set the IP where point the images
+
+export DISPLAY=IP_ADDRESS:0.0
+
+e.g.
+
+export DISPLAY=192.168.1.18:0.0
+
+you could put this in the 'bashrc' file in order to automatically open it at startup
+in this case the client should have static IP (it should work even with hostnames)
+
+
+
+to quickly test this you can download the x11 apps:
+
+sudo apt-get install x11-apps
+
+let's start the calculator:
+
+xcalc
+
+if it opens on the screen of the client pc, it works!
+
+this obviously works also with python
+
+therefore you can plot everything in your client pc while make the computation in the server
