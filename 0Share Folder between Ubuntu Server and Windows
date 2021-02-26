@@ -30,6 +30,11 @@ writable = yes
 
 Between the squared brackets you have to type the name of the shared folder previously created.
 
+Tip: The name that you put between squared brackets is just a title.
+This is the name that the Guest will see (as for example in windows).
+This means that this name could differ from the real folder name that anyways is
+specified in the path field
+
 Save and close (with classic nano commands)
 
 
