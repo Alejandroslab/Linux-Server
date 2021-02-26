@@ -75,6 +75,9 @@ ExecStart=/opt/calibre/calibre-server /home/UTENTE/calibre-library --enable-loca
 WantedBy=multi-user.target
 
 
+REMEMBER to correctly indicate the path (with the correct user) and the name of the folder
+that will be loaded as a calibre library.
+
 Save and close the file.
 Now enable the service and start it:
 
