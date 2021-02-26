@@ -1,8 +1,15 @@
 first option:
 
-ls -l | wc -l
+ls | wc -l
 
 it will pipe ls inside wc commands that counts characters, bytes or newlines counts
+
+
+if you use:
+ls -l | wc -l
+
+it will be counted another line (the first that appears only launching ls -l
+that is 'total...' that is the total disk allocation)
 
 the other option is to install 'tree' package (if you have not already)
 
