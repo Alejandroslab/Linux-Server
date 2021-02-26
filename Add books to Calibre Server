@@ -1,0 +1,23 @@
+Open cron
+
+ crontab -e
+
+ select 1 for nano
+
+now put this code at the end of the file
+
+
+*/5 * * * * calibredb add /home/LINUXUSER/Documents/MYFOLDER/ -r
+--with-library http://localhost:8080#calibre-library
+--username CALIBRE_USERNAME
+--password CALIBRE_PASSWORD && rm -r /home/LINUXUSER/Documents/MYFOLDER/*
+
+
+Where LINUXUSER is the user with which you relogin
+MYFOLDER is the folder that will be the target
+CALIBRE_USERNAME is the username set in calibre server
+CALIBRE_PASSWORD is the password of the calibre user
+calibre-library is the name of the calibre library folder (could also have another name)
+
+
+This script will inspect content in MYFOLDER and it will add them to the calibre library folders
