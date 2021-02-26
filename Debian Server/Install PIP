@@ -1,0 +1,8 @@
+sudo apt install python3-pip
+
+Print the pip3 version to verify the installation:
+
+pip3 --version
+
+
+it is better to install pip for python 3 as this is the last version
