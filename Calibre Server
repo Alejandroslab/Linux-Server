@@ -95,11 +95,15 @@ then add:
 
 calibre-server --manage-users
 
-add a new user and choose an username and password
+add a new user (choose 1) and choose an username and password
+It will ask twice the password.
+
 You will then see:
 
 Output
 User mycalibreuser added successfully!
+
+
 
 now reopen the config file
 
