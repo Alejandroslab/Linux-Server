@@ -38,6 +38,9 @@ specified in the path field
 Save and close (with classic nano commands)
 
 
+
+
+
 Now restart Samba
 
 sudo service smbd restart
