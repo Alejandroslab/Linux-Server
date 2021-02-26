@@ -1,3 +1,4 @@
-# Linux-Terminal
+# Linux-Server
 
-Principal commands on terminal
+Principal commands on terminal for servers.
+General stuff.
