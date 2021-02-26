@@ -25,3 +25,10 @@ alt + 6
 
 to paste
 ctrl+u
+
+
+____________________
+
+move with nano at the end of the file:
+
+ctrl+w and then ctrl+v
