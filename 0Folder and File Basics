@@ -91,6 +91,13 @@ cd..
 to go up to the parent directory
 
 
+to move directly to the home directory (no matter the folder in which you are):
+
+cd ~
+
+
+
+
 
 to create a file
 
