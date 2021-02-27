@@ -19,5 +19,7 @@ CALIBRE_USERNAME is the username set in calibre server
 CALIBRE_PASSWORD is the password of the calibre user
 calibre-library is the name of the calibre library folder (could also have another name)
 
+remember also that the password will be clearly printed without any mark like "" or ''
+
 
 This script will inspect content in MYFOLDER and it will add them to the calibre library folders
