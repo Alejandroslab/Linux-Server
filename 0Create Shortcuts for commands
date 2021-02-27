@@ -17,3 +17,6 @@ to store permanently aliases just open .bashrc (that is hidden) in home folder
 and add them
 
 (plus when opening .bashrc you will see some commented example of aliases)
+
+
+alias will work even in Mac
