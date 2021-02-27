@@ -6,3 +6,7 @@ pip3 --version
 
 
 it is better to install pip for python 3 as this is the last version
+
+to install just use
+
+pip3 install namepackage
