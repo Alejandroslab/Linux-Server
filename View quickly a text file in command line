@@ -1,0 +1,5 @@
+just use 'cat' command that is concatenate
+
+cat file.txt
+
+it will print the content of 'file.txt'
