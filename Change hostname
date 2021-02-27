@@ -1,0 +1,8 @@
+change the hostname here:
+
+sudo nano /etc/hostname
+sudo nano /etc/hosts
+
+then reboot
+
+sudo reboot
