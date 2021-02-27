@@ -124,9 +124,28 @@ sudo systemctl start calibre-server
 
 You can then connect BookCut folder to cron to add automatically all the books from BookCut
 
-to install BookCut
+to install BookCut (for all users)
 
-pip install bookcut
+sudo pip install bookcut
+
+if you not put 'sudo' at the beginning it will not be possible to retrieve the program
+
+
 
 (if you have Anaconda just activate your environment)
 conda activate my_environment
+
+
+In Debian you have to install pip first. This divides in pip2 or pip3 depending on the version of python that you want to user
+
+therefore:
+
+sudo pip3 install bookcut
+
+if you wrongly just type
+
+pip3 install bookcut
+
+without 'sudo' then you can remove the package with the commands
+
+pip3 uninstall bookcut
