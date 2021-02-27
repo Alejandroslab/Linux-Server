@@ -1,0 +1,6 @@
+apt list --upgradable
+
+
+for the old command 'apt-get':
+
+apt-get -u upgrade --assume-no
