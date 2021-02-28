@@ -1,0 +1,12 @@
+Another way to scan network is using arp-scan
+
+On Debian
+
+sudo apt-get install arp-scan
+
+sudo arp-scan —localnet —interface=wlan0
+
+
+Or just
+
+sudo arp-scan —localnet
