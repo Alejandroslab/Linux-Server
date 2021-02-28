@@ -1,0 +1,32 @@
+just install googler (FOSS)
+
+you should install with snap because the version with 'apt' seems to not work properly
+
+Therefore
+
+sudo apt update
+
+sudo apt upgrade
+
+
+sudo apt install snapd
+
+
+now:
+
+sudo snap install googler
+
+now to run with snap type:
+
+snap run googler
+
+another way to run is to add the snap folder to our PATH
+
+
+
+
+if you have the other version install with apt that is 'sudo apt install googler'
+
+then remove it within
+
+sudo apt purge googler
