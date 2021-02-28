@@ -1,0 +1,25 @@
+Vi commands (pronounced 'vee eye')
+
+vi test.txt
+
+after opening to write some text you have to enter in 'insert mode'
+
+you can do that pressing the 'i' key
+
+try typing some words
+
+then press the 'ESC' key to exit 'Insert mode'
+
+now to save the text type
+
+:w
+
+and press enter
+
+to quit:
+
+:q
+
+done!
+
+remember to press the 'i' key to enable 'insert mode' or you will do a mess
