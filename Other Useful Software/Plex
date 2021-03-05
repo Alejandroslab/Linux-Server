@@ -1,0 +1,68 @@
+The main idea was to install plex on raspberry and then connect the contents of a wdmycloud
+(see how to mount a network folder)
+
+Update first always
+
+sudo apt-get update
+sudo apt-get upgrade
+
+install this package that allows to retrieve packages over https
+
+sudo apt-get install apt-transport-https
+
+Add the Plex repositories to the apt package managers key list:
+
+curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
+
+Add the official plex repository to the sources list:
+
+echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+
+
+sudo apt-get update
+
+now install!
+
+sudo apt-get install plexmediaserver
+
+after installation plex will run automatically you can control the status with the usual:
+
+sudo systemctl status plexmediaserver
+
+
+Now, the Plex Media Server package will utilize a user named plex.
+To reduce the chances of dealing with permission issues, we could change the server’s default file:
+
+sudo nano /etc/default/plexmediaserver
+
+export PLEX_MEDIA_SERVER_USER=pi
+
+sudo systemctl restart plexmediaserver
+
+
+
+Now you can run it via web browser:
+
+MyIPorHostname:32400/web/
+
+in the case of a Rasperrypi
+
+raspberrypi:32400/web/
+
+now signup for a plex account (yes you have to register..)
+
+then you can choose a name for the media server and finally choose the folder
+
+when choosing a folder you will choose the network folder that point to wdmycloud
+
+
+
+remember!
+to unistall
+sudo apt-get purge plexmediaserver
+
+you can also delete:
+sudo userdel plex
+sudo rm -rf /var/lib/plexmediaserver
+
+/var/lib/plexmediaserver is the folder for plex to manage data
