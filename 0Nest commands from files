@@ -1,0 +1,33 @@
+You can also create a file in which insert your command and then run from the file in this WAY
+let's suppose that the command is 'pwd'
+
+therefore
+create
+
+vi mycommandfile
+
+
+insert inside
+
+pwd
+
+save and exit
+
+
+now you can run the file using '$' symbol and cat that will retrieve the text from a file.
+
+it can open text files basically without using an Editor
+
+cat mycommandfile
+
+you will see
+
+pwd
+
+as this is what was written inside
+
+now:
+
+$(cat mycommandfile)
+
+will run the text inside the file. therefore in this case will run 'pwd'
