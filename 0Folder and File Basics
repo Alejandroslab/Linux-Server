@@ -95,7 +95,8 @@ to move directly to the home directory (no matter the folder in which you are):
 
 cd ~
 
-
+REMEMBER! if your folders has spaces inside the name, the autocomplete with 'tab' key will not work!
+you will have to specify the title!
 
 
 
