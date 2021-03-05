@@ -35,3 +35,12 @@ password=value
 In the case of just a guest account:
 
 sudo mount -t (mountype) (source path) (destination path) -o guest
+
+
+to keep mounted the folder you should put them in fstab
+
+sudo nano /etc/fstab
+
+//MyNAS/Media/Videos/'Movies and others' /home/myuser/wdmycloud cifs guest     0       0
+
+this will automatically mount the folder when you boot the system (if you leave your system always on then this problem does not exist)

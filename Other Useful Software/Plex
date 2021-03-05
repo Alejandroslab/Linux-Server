@@ -54,6 +54,9 @@ now signup for a plex account (yes you have to register..)
 then you can choose a name for the media server and finally choose the folder
 
 when choosing a folder you will choose the network folder that point to wdmycloud
+remmeber that the folder should be always mounted (it should be put a line on fstab)
+
+this means that if you reboot your system it will unmount the link of the folder
 
 
 
