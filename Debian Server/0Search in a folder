@@ -1,0 +1,19 @@
+if you need to search a folder:
+
+
+find /home/myuser/myfolder -type d | grep "directory name"
+
+wildcards also are available that means that you can look folder
+
+
+find /home/myuser/myfolder -type d | grep "nam*"
+
+will retrieve all directory whose title starts with nam..
+
+
+in case you need a file:
+
+find /home/myuser/myfolder -type f | grep "file name"
+
+
+just change the option from directory (d) to file (f)
