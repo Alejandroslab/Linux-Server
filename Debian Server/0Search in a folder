@@ -6,9 +6,19 @@ find /home/myuser/myfolder -type d | grep "directory name"
 wildcards also are available that means that you can look folder
 
 
+
 find /home/myuser/myfolder -type d | grep "nam*"
 
 will retrieve all directory whose title starts with nam..
+
+the usefeul command to not have the necessity of type everytime the path folder is using 'pwd'
+in this way:
+
+find $pwd -type d | grep "directory name"
+
+in this way it will search the term inside the current working directory!
+
+
 
 
 in case you need a file:
