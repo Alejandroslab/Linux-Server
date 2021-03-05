@@ -31,11 +31,11 @@ username=value
 password=value
 
 
-
+____________________
 In the case of just a guest account:
 
 sudo mount -t (mountype) (source path) (destination path) -o guest
-
+____________________
 
 to keep mounted the folder you should put them in fstab
 
