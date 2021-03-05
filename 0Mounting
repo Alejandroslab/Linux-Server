@@ -1,0 +1,37 @@
+let's create a folder in which we will create the link
+
+mkdir wdmycloud
+
+
+then mount the network path inside this folder with this command
+
+
+
+sudo mount -t cifs //MyNAS/Media/Videos/'Movies and others' /home/myuser/wdmycloud -o credentials=/home/myuser/mycredentials
+
+the syntax:
+
+sudo mount -t (mountype) (source path) (destination path) -o (options) credentials=(credentials path)
+
+in this case the folder will be accessed with a credentials file called 'mycredentials' that will be available in the home folders
+
+inside mycredentials file you just have to put:
+
+username=value
+password=value
+domain=value
+
+without spaces between username, password and domain and their correpsondent Value
+
+anyways the command will work even without 'domain=value'
+
+therefore just with:
+
+username=value
+password=value
+
+
+
+In the case of just a guest account:
+
+sudo mount -t (mountype) (source path) (destination path) -o guest
