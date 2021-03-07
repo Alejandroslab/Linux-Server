@@ -1,14 +1,24 @@
-Ctrl+U delete all the row
+DELETE LINES, WORDS
+Ctrl+u delete all the row
 
 Ctrl+ w deletes just the last word
 
+MOVE
+
 Ctrl+e go at the end of the row
 
-Ctrl+a va go at the beginning of the row
+Ctrl+a  go at the beginning of the row
+
+alt+left arrow, right arrow   move by a word to the left or to the right
+
 
 ctrl+c to quit the process
 
 ctrl+d or 'exit' to logut (or quit Putty in Windows)
+
+
+
+
 
 TO PASTE:
 

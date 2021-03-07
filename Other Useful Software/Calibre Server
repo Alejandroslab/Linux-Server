@@ -115,11 +115,53 @@ and add --enable-auth to this line:
 
 ExecStart=/opt/calibre/calibre-server /home/UTENTE/calibre-library --enable-local-write --enable-auth
 
-Now restart:
+Now restart (whenever you change the file you have to restart both the daemon that includes the service and then the calibre-server itself (not the
+service but the program itself))
 
 sudo systemctl daemon-reload
 sudo systemctl start calibre-server
 
+
+in the case that you need to deaticvate the authentication:
+
+sudo systemctl stop calibre-server.service
+
+
+remember that you have to stop just the service thati is 'calibre-server.service' not 'calibre-server'!
+
+now open the Service
+
+sudo nano /etc/systemd/system/calibre-server.service
+
+and delete the "--enable-auth" part
+
+save the file.
+
+Now if you check the status of the service:
+
+sudo systemctl status calibre-server.service
+
+you will see the message:
+The unit file, source configuration file or drop-ins of calibre-server.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+● calibre-server.service - calibre content server
+
+therefore we have to restart the daemon and then calibre-server:
+
+sudo systemctl daemon-reload
+
+now daemon has been reloaded. anyways it will stay still inactive. you can check this with:
+
+sudo systemctl status calibre-server.service
+
+therefore just reload the program:
+
+sudo systemctl start calibre-server
+
+now if you check with 'status' you will get the service as running
+
+
+
+_________________________________
 
 
 You can then connect BookCut folder to cron to add automatically all the books from BookCut
