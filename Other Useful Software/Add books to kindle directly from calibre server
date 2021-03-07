@@ -13,6 +13,9 @@ this will link to the mobile version of calibre, a lightweight version that even
 
 with this version even authentication will work!
 
+(if you forgot the '/mobile' calibre will not display in kindle. it will continue to load but will never end..)
+
+
 anyways, it will not you allow to read from the browser but will download a copy directly to you home kindle
 the format of the book should be .mobi or .txt, other format (as .epub) will not be supported and you will not be able to download
 
