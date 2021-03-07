@@ -1,0 +1,22 @@
+just take your kindle
+
+open the experimental web browser
+
+just go to
+
+http://xxxxxx:8080/mobile
+
+where xxxxxx is the calibre server name (hostname) or the ip address
+
+remember to add '/mobile'
+this will link to the mobile version of calibre, a lightweight version that even the kindle's experimental browser will be able to manage
+
+with this version even authentication will work!
+
+anyways, it will not you allow to read from the browser but will download a copy directly to you home kindle
+the format of the book should be .mobi or .txt, other format (as .epub) will not be supported and you will not be able to download
+
+the other limitation is that it will be possible to interact only with 25 items while the other will be seens as a list of titles and images
+
+anyways the search function will allow to search from all the calibre libraryr database and you will be able to download the book who you are looking for,
+even if it does not appear in the first 25 elements. (By the way it should be formatted in the formats supported like .mobi)
