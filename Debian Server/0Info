@@ -1,3 +1,25 @@
 The downloaded version is Debian Stable (10 'Buster')
 
 Debian testing is another version with also another name ('Bullseye')
+
+In Debian, contrary on what happens on Ubuntu, there is nothing installed except
+the very core packages.
+
+Therefore you may need to install more stuff than usual if compared to Ubuntu
+
+But this is the good thing about Debian. You will have a Linux Server OS
+without any unnecessary package
+
+However in Debian there are not some important packages like:
+
+sudo
+
+Debian always work as root initially. You can install sudo if you want but Debian
+will not install it by default.
+
+nano, openssh
+
+Some useful packages are not installed as mentioned. You have to install them manually
+
+There will not be even the usual 'home' folder.
+You have to create it by yourself like the 'Documents, Photos, Downloads, Videos' folders if you need them.

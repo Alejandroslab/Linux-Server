@@ -1,4 +1,6 @@
 Firs install
+REMEMBER! In Debian you have to install 'openssh-server' as it is not installed by defaul
+sudo apt-get update
 
 sudo apt-get install openssh-server
 
