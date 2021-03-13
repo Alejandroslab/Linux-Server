@@ -42,6 +42,12 @@ and you can stop with:
 
 Then you are done.
 
+REMEMBER! To autostart on boot the service use this syntax.
+
+sudo systemctl enable ssh
+
+Use this instead of 'sudo service ssh start'.
+Because this seems to work only once,
 
 REMEMBER! In Debian root is the only user at first. If you want to login as root
 you should add the line 'PermitRootLogin yes' to the ssh config file.
