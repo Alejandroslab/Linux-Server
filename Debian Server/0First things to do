@@ -6,6 +6,8 @@ su-
 
 apt-get install sudo -y
 
+
+
 then add you username to sudo
 
 usermod -aG sudo yourusername
