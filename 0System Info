@@ -4,9 +4,9 @@ free -m
 
 Check cpu
 
-lscpu 
+lscpu
 
-Check processes 
+Check processes
 
 ps
 
@@ -16,10 +16,13 @@ env
 
 Display Free disk space
 
-df 
+df
 
 
 Disk space in a directory
 
-du 
+du
 
+check the Debian version
+
+cat /etc/issue
