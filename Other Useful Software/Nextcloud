@@ -1,0 +1,6 @@
+It is better to install nextcloud in a Linux (Ubuntu, Debian) server
+rather than on a container
+
+
+it is easier for troubleshooting.
+Docker lacks some basic function like 'crontab'!
