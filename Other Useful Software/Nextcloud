@@ -18,6 +18,7 @@ sudo apt update && sudo apt upgrade -y
 
 now install nextcloud just with one line!
 look at raspbian how many things you have to do.. Debian is similar.
+(you have to install apache, php, mysql etc..)
 The fact is that in Ubuntu comes preinstalled a lot of stuff while in Debian
 everything is up to you.
 Anyways just launch:
