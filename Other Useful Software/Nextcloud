@@ -4,3 +4,65 @@ rather than on a container
 
 it is easier for troubleshooting.
 Docker lacks some basic function like 'crontab'!
+
+
+____________________
+
+installing Nextcloud in Ubuntu server is far far easier than installing on Raspbian
+
+you will see here:
+
+first! as usual first update and upgrade your server!
+
+sudo apt update && sudo apt upgrade -y
+
+now install nextcloud just with one line!
+look at raspbian how many things you have to do.. Debian is similar.
+The fact is that in Ubuntu comes preinstalled a lot of stuff while in Debian
+everything is up to you.
+Anyways just launch:
+
+sudo snap install nextcloud
+
+we have almost finished. Now just launch this final command to
+setup the user and the password that will allow you to connect to
+nextcloud:
+
+sudo nextcloud.manual-install myuser mypassword
+
+where 'myuser' and 'mypassword' are the username and the mypassword
+that will allow you to login to the nextcloud
+
+DONE!
+
+now if you want to access you can type in your browser
+the ip address or the hostname of the server linked
+
+192.168.1.20
+
+or
+
+myubuntuserver.local
+
+anyways it will come up: 'Access through untrusted domain'
+
+This because Nextcloud will not allow to login if you have not indicate
+the domains.
+
+to do that just launch:
+
+sudo nextcloud.occ config:system:set trusted_domains 1 --value=192.168.1.*
+sudo nexcloud.occ config:system:set trusted_domains 2 --value=myubuntuserver.local
+
+(remember to leave the numbers 1,2 as they indicate the order to be listed in
+the config file. if you want to authorize another domain just insert '3' and so on)
+
+I listed even 'myubuntuserver.local' as it is always more safe to hide the real
+ip (even if internal)
+
+DONE!
+you have now have nextcloud inside your LAN Network
+in order to have external access is always suggested to setup a VPN to the LAN
+network.
+It is preferable to setup the vpn not inside the server/NAS
+but on a separated and dedicated appliance
