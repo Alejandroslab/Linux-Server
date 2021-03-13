@@ -38,13 +38,21 @@ The fact is that in Ubuntu comes preinstalled a lot of stuff while in Debian
 everything is up to you.
 Anyways just launch:
 
+
+
 sudo snap install nextcloud
+
+
 
 we have almost finished. Now just launch this final command to
 setup the user and the password that will allow you to connect to
 nextcloud:
 
+
+
 sudo nextcloud.manual-install myuser mypassword
+
+
 
 where 'myuser' and 'mypassword' are the username and the mypassword
 that will allow you to login to the nextcloud
@@ -59,6 +67,11 @@ the ip address or the hostname of the server linked
 or
 
 myubuntuserver.local
+
+(REMEMBER that when you type myubuntuserver.local the browser
+but also nextcloud itself will attempt to connect via 'https'
+you have to change it to 'http' until at least you get ssl certificates)
+(ssl certifcates are free from let's encrypt)
 
 anyways it will come up: 'Access through untrusted domain'
 
@@ -76,12 +89,23 @@ the config file. if you want to authorize another domain just insert '3' and so 
 I listed even 'myubuntuserver.local' as it is always more safe to hide the real
 ip (even if internal)
 
+
 DONE!
 you have now have nextcloud inside your LAN Network
 in order to have external access is always suggested to setup a VPN to the LAN
 network.
-It is preferable to setup the vpn not inside the server/NAS
-but on a separated and dedicated appliance
+(It is preferable to setup the vpn not inside the server/NAS
+but on a separated and dedicated appliance like a raspberrypi..)
 
 
 you will have otherwise to rely on external service like duckdns
+
+______________________
+data will be stored here:
+
+/var/snap/nextcloud/common/nextcloud/data/myuser/files
+
+
+the good thing about Nextcloud is that it will use all the size of the Disk
+As in Ubuntu Server virtualized, the image will expand as necessary, this means
+also that nextcloud folders will expand as much as they need!
