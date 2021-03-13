@@ -1,0 +1,31 @@
+You can create a container on a NAS server and run there your
+linux distro (Debian, Ubuntu etc)
+
+Now follow this if you want to add ssh connection:
+
+in the container just follow the ssh instructions as usual
+
+then in the container settings youhave to set a port forwarding to your container
+
+it will basically linka a port of the NAS to the port 22 in the container
+
+leave the network mode as NAT
+then in portforwarding set:
+
+Host: (the port in the NAS. it could be any port): 1099
+Container: (the port in the container for the ssh that usually is 22): 22
+Protocol: leave TCP
+
+now it's done!
+
+you will be able to connect with the following line from a remote machine:
+
+ssh user@NASserver -p 1099
+
+where NASserver is the hostname or IP of your server
+you will indicate which port to look into with the syntax
+
+-p 1099
+
+therefore ssh will look in the port 1099 that is linked to port 22 of the Container
+then you are done!

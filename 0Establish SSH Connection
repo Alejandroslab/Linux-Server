@@ -132,3 +132,15 @@ diff remotemachine_finger.txt mac_finger.txt
 if it outputs nothing, then you are done! no differences between fingerprints.
 
 You can safely add to cache the connection.
+
+______________________________________________
+
+if you have a specific port to connect (look at the case of LXC containers)
+the syntax will be:
+
+ssh username@IPserverOrHostname -p numberofport
+
+where numberofport is the number where ssh should look
+it could be like:
+
+ssh username@IPserverOrHostname -p 1099
