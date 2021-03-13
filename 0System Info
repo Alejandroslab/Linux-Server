@@ -26,3 +26,7 @@ du
 check the Debian version
 
 cat /etc/issue
+
+or
+
+cat /etc/debian_version
