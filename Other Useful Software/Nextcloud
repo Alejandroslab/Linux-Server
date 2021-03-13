@@ -1,20 +1,35 @@
+Nextcloud is the best solution to manage files even in a collaboration!
+it is very similar to Dropbox but you will be in full control of
+your own data
+
+I think that this could be the best platform-based solution
+(as it is also open source) in order to manage folders and share
+data with external people, but inside your server.
+
+(the other way is to use proprietary software like in qnap that has
+qsync, myqnapcloud and so on..
+i prefer to use open source stuff)
+
+first we have to run a VM in Ubuntu!
+
+_________________________________-
 It is better to install nextcloud in a Linux (Ubuntu, Debian) server
-rather than on a container
+rather than on a Container
 
 
-it is easier for troubleshooting.
-Docker lacks some basic function like 'crontab'!
+Because it is easier for troubleshooting and then because
+docker lacks some basic function like 'crontab' and much others..
 
-
+therefore just go safe with VM
 ____________________
 
 installing Nextcloud in Ubuntu server is far far easier than installing on Raspbian
 
-you will see here:
-
 first! as usual first update and upgrade your server!
 
 sudo apt update && sudo apt upgrade -y
+
+(silently as always with opton -y)
 
 now install nextcloud just with one line!
 look at raspbian how many things you have to do.. Debian is similar.
@@ -67,3 +82,6 @@ in order to have external access is always suggested to setup a VPN to the LAN
 network.
 It is preferable to setup the vpn not inside the server/NAS
 but on a separated and dedicated appliance
+
+
+you will have otherwise to rely on external service like duckdns
