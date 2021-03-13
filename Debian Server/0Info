@@ -14,6 +14,11 @@ However in Debian there are not some important packages like:
 
 sudo
 
+Therefore any command that you will run will not have the need to run with 'sudo'
+like sudo apt-get update would become:
+
+apt-get update
+
 Debian always work as root initially. You can install sudo if you want but Debian
 will not install it by default.
 
