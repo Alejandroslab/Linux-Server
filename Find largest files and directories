@@ -1,0 +1,7 @@
+create this alias
+
+alias ducks='du -cks * | sort -rn | head'
+
+and run:
+
+ducks
