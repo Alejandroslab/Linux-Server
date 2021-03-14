@@ -69,3 +69,50 @@ sudo userdel plex
 sudo rm -rf /var/lib/plexmediaserver
 
 /var/lib/plexmediaserver is the folder for plex to manage data
+
+
+____________
+you can install plex also on QTS donwloading the specific app
+in case you just want to use data from another network folder
+you can use the app 'Hybrid Mount' in order to mount
+the specific folder.
+
+During the plex installation (way more straightforward)
+it will ask to choose the Library folder to scan
+go to 'share' folder of the NAS and inside that
+you will find your network folder mounted by Hybrid Mount app
+(in this case the hybrid mount will create just a link
+to the real path that is on another folder. it is a good
+workaround to use plex inside qts)
+
+then you are done!
+
+remember! if you not manage to load all the metadata
+(covers, name of actors, etc) you have first go to settings
+(the wrench icon on the top right side of Plex bar)
+then select you library (if you have more than one)
+in setting you will find 'Agents'
+now for every category (film, programme, artist etc)
+open it and go to 'The Movie Database'
+check 'The Movie Database' option and put it at the top
+of the list
+
+you can leave checked also 'Local Media Assets' option
+but be sure to leave it as second option.
+
+now click on Home button
+
+select your library on the left column.
+you wil find three dots
+click on 'Manage Library' and then 'Refresh All Metadata'
+
+wait and you are done.
+
+REMEMBER! 'Analyse library' and 'Refresh All Metadata'
+will not perform the same operations.
+
+Analyse library will check library consistency and edits
+like if a movie has been removed etc...
+On the contrary 'Refresh all Metadata' option will
+allow to redownload (or download if you have not already any metadata)
+the metadata for every file you have in your library.
