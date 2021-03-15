@@ -29,4 +29,6 @@ to move the cursor just use the arrows.
 $ to go to the end of the line
 G to go to the last line of the file
 
+y to copy
 p to paste
+d to cut
