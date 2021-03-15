@@ -1,0 +1,6 @@
+just use the 'cat' command in this way:
+
+cat /home/user/oldfile.txt > myfile.txt
+
+if 'myfile.txt' does not exist in your current working
+folder, it will be created. if it exist tit will be overwritten

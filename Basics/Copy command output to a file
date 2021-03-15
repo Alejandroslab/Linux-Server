@@ -1,0 +1,9 @@
+you can use the symbol '>' that will redirect the output to
+a file
+
+like:
+
+ls > file.txt
+
+you can also omit the extension 'txt' but I will leave that
+in order to be able to distinguish between files.
