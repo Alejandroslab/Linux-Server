@@ -1,0 +1,27 @@
+just Type
+
+who
+
+or
+
+w
+
+(that stands for who)
+
+or
+
+who -a
+
+for more details
+
+to list all the connection to the machine even the ssh one
+that will appear as 'pts' session (pseudo-terminal slave) (even
+if not all pts conneections are ssh)
+
+another way is (with root privileges):
+
+sudo netstat -tnpa | grep 'ESTABLISHED.*sshd'
+
+a more modern version of the latter (that does not require root):
+
+ss | grep ssh
