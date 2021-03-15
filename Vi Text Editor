@@ -28,3 +28,5 @@ to move the cursor just use the arrows.
 0 to go to the beginning of the line
 $ to go to the end of the line
 G to go to the last line of the file
+
+p to paste

@@ -1,0 +1,74 @@
+IN WINDOWS
+
+At the first starting of Putty, a security alert will appear indicating then
+'key fingerprint' in md5 format. Keep note of this fingerprint.
+
+Click 'No' the first time then login in the server (Putty will ask to save in the cache)
+
+type:
+
+ssh-keygen -E md5 -l -f /etc/ssh/ssh_host_ed25519_key.pub
+
+now compare the two fingerprint. if they are the same you can safely save the Connection
+to the Putty's cache)
+__________________________________-
+
+
+IN MAC AND LINUX
+
+In Mac and Linux (whichever distro) just open Terminal, check if openssh is installed typing
+
+ssh
+
+then just:
+
+ssh username@IPserverOrHostname
+
+it will then ask for your password and then you will connect to the server.
+
+
+For the fingerprint check, in mac it will be printed the ECDSA key in SHA256
+
+therfore just type in your remote machine:
+
+ssh-keygen -l -f /etc/ssh/ssh_host_ecdsa_key.pub
+
+ECDSA it's a public key available in the folder /etc/ssh
+
+REMEMBER! that you can always check any public key (those with extension .pub)
+that are available in the folder going to:
+
+cd /etc/ssh
+
+ls -l
+
+you will then use the command (for SHA256)
+
+ssh-keygen -l -f
+
+or the command
+
+ssh-keygen -E md5 -l -f
+
+for md5
+
+
+next you can quickly check differences with 'diff' command
+
+first copy and paste the output from the remote machine
+
+nano remotemachine_finger.txt
+
+then do the same for the fingerprint displayed in Mac:
+
+nano mac_finger.txt
+
+
+then:
+
+diff remotemachine_finger.txt mac_finger.txt
+
+
+if it outputs nothing, then you are done! no differences between fingerprints.
+
+You can safely add to cache the connection.
