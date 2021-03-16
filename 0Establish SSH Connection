@@ -150,3 +150,7 @@ where numberofport is the number where ssh should look
 it could be like:
 
 ssh username@IPserverOrHostname -p 1099
+
+REMEMBER! it is not necessary to add the suffix like
+'.local' to the name of your server
+and remmember that is not case sensitive 
