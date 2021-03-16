@@ -1,6 +1,12 @@
 You can create a container on a NAS server and run there your
 linux distro (Debian, Ubuntu etc)
 
+REMEMBER! Difference between docker and LXC: while 'docker'
+is just an image and it does not allow installation of 3rd party stuff,
+about the second one (LXC) it is known that in LXC there is
+the possibility to install app.
+
+
 Now follow this if you want to add ssh connection:
 
 in the container just follow the ssh instructions as usual
