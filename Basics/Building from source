@@ -3,6 +3,7 @@ is for example usually .c if the code is written in C language) of
 the software that you are trying to install and
 build the binary from scratch (compiling it)
 
+(source = codice sorgente ovvero codice)
 (An example of this is Python in Debian.)
 
 Therefore you the source code that you have downloaded
