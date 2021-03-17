@@ -1,0 +1,58 @@
+
+In Debian you will have to build Python from source:
+
+
+update as usual
+sudo apt-get update && sudo apt-get upgrade -y
+
+install dependencies
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+
+install wget if you don't have it
+sudo apt-get install wget
+
+
+now get the last tar python file from the official website:
+
+wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz
+
+
+extract the gzipped archive with:
+
+tar -xf Python-3.9.2.tgz
+
+now move to the folder
+cd Python-3.9.2
+
+run 'configure' file the option '--enable-optimizations'
+will perform consistency test while building the python binary
+(will check if dependecies are available. it will take some time)
+
+./configure --enable-optimizations
+
+
+run
+
+nproc
+
+to know the number of processors of your machine
+
+now:
+
+make -j 2
+
+where j is the number of cores. it will allow you to get
+more speed while building
+
+When the build process will end install python binaries
+
+sudo make altinstall
+
+'altinstall' is used because later it will overwrite then
+default system python3 binary
+
+DONE!
+
+check your version with:
+
+python3.9 --version
