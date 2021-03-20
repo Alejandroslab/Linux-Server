@@ -22,3 +22,5 @@ if you don't put the slash you will copy the entire folder
 with all the container
 
 if you use -z you can compress them
+
+with --progress you can see the progress
