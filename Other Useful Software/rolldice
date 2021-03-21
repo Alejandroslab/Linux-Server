@@ -1,0 +1,11 @@
+Install with (also in Debian):
+
+sudo apt-get install rolldice
+
+then use it:
+
+rolldice
+
+if you want to roll more dices (like 4):
+
+rolldice 4x
