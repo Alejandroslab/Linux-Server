@@ -1,0 +1,17 @@
+this is an easy to use text editor
+
+to edit a file
+
+nano test.txt
+
+to save the file ctrl+x type 'y' and press enter
+to search ctrl+w and type the word that you are looking for
+
+ctrl+6 to highlight the text
+alt+6 to copy the text
+
+ctrl + u to paste the text 
+
+to go at the end of the document press:
+
+ctrl + w and ctrl + v

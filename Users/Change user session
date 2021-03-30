@@ -1,0 +1,3 @@
+su -username2
+
+will allow to logout from current session and login as username2

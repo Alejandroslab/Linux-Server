@@ -22,3 +22,14 @@ cp file1 file2 \home\user1\destionationfolder
 for folders:
 
 cp -r folder1 folder 2 \home\user1
+
+
+to move:
+
+
+mv file folder
+
+to move more than 1 item:
+
+
+cp file file2 destionation_folder

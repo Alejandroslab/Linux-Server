@@ -2,3 +2,44 @@ It allows to manage multiple screens in terminal
 
 sudo apt-get install screen
 
+open it with
+
+screen
+
+to get more info on all commands
+
+Ctrl-a ?
+
+to create a new screen
+
+Ctrl-a c
+
+to go back to the previous screen
+
+Ctrl-a n
+
+to divide the screen vertically
+
+Ctrl-a |
+
+the last symbol is a pipe
+
+to move from a terminal to another
+
+Ctrl-a TAB
+
+to move from one to another
+
+Ctrl-a "
+
+to rename screen:
+
+Ctrl-a A
+
+to close a screen:
+
+Ctrl-a k
+
+to close a region (one of the sides of the termianl when you split it)
+
+Ctrl-a X

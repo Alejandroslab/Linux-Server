@@ -34,3 +34,6 @@ cat /etc/debian_version
 nproc
 
 to see the number of processors
+
+processes:
+top

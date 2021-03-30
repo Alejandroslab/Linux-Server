@@ -5,3 +5,13 @@ ctrl+shift+v
 as ctrl+v will not work!
 
 remember! the system is case sensitive!
+
+to exit process:
+
+ctrl+c
+or
+ctrl+d
+
+remember that there is autocomplete for files and folders
+
+you can use it pressing tab. it will autosuggest files and folders name and paths

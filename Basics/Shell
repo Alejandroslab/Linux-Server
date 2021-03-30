@@ -1,0 +1,10 @@
+There are different type of shell
+
+• Bourne shell (sh)
+• C shell (csh)
+• TC shell (tcsh)
+• Korn shell (ksh)
+Bourne Again shell (bash)
+
+You can type the following command in your terminal to see which shell you are using:
+echo $0

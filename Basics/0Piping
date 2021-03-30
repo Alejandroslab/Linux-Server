@@ -1,0 +1,3 @@
+cat file.txt | uniq | wc -l
+
+display the counting of unique lines in the file.txt

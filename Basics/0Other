@@ -1,0 +1,7 @@
+Count words
+
+wc file.txt
+
+to count lines:
+
+wc -l file.txt

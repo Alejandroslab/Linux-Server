@@ -12,6 +12,9 @@ To show the current path
 pwd
 pwd means print working directory
 
+
+
+
 The main folder is
 \home
 
@@ -78,6 +81,9 @@ to list all files (included hidden ones):
 ls -a
 
 
+
+
+
 to move between directories:
 
 cd
@@ -89,6 +95,10 @@ to move to temporary
 
 cd..
 to go up to the parent directory
+
+If we wanted to go straight from our home directory to the “etc” directory (which is directly inside the root of the file system), we could use this approach:
+
+cd ../../etc
 
 
 to move directly to the home directory (no matter the folder in which you are):

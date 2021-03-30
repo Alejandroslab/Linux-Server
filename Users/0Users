@@ -35,3 +35,13 @@ and then
 su myuser
 
 Users will be located inside home folder
+
+on Ubuntu root user exists and it does not have a password as it is blocked by the system
+root has no password
+
+Debian is different. It allows to log as root unlike Ubuntu server system.
+
+
+
+To modify the username of a user:
+sudo usermod -l new_username old_username
