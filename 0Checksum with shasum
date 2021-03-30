@@ -23,4 +23,4 @@ if the checksum file is an .mds file then you should use:
 
 shasum -a 256 hadopp-3.2.2.tar.gz
 
-and then compare the 2 codes
+and then compare the 2 codes (using also diff)
