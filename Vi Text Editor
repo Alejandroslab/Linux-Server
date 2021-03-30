@@ -32,3 +32,11 @@ G to go to the last line of the file
 y to copy
 p to paste
 d to cut
+
+
+
+_____
+to quickly save and exit
+press ESC then
+:wq
+done!

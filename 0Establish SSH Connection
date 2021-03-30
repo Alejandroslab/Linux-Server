@@ -153,4 +153,19 @@ ssh username@IPserverOrHostname -p 1099
 
 REMEMBER! it is not necessary to add the suffix like
 '.local' to the name of your server
-and remmember that is not case sensitive 
+and remmember that is not case sensitive
+
+
+____________________
+configuration files:
+
+ssh_config is the config file for the ssh client
+if you want to ssh to another remote host machine, you use a SSH client.
+
+
+sshd_config is the config file for the daemon
+
+If someone wants to connect to your host machine via SSH,
+their SSH client settings (port number, version etc)
+must match your sshd_config
+settings in order to communicate with you, 

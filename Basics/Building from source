@@ -1,0 +1,42 @@
+Building from source means download the source code (extension
+is for example usually .c if the code is written in C language) of
+the software that you are trying to install and
+build the binary from scratch (compiling it)
+
+(source = codice sorgente ovvero codice)
+(An example of this is Python in Debian.)
+
+Therefore you the source code that you have downloaded
+Next you proceed to compile it. This means that the computer
+will perform all the necessary to make the
+source code understandable for the system..
+
+This work is done by the compiler that will at the end create
+a binary file that is a file ready to be used.
+(In Windows a binary file is .exe or .dll, but could also be
+an .msi file)
+
+A source code (the .c file) will instead be inserted in a zip file,
+more specifically in a .7z, or .tar.bz2 files.
+
+Therefore when you download some .tar files
+you are basically downloading the code of the program
+and you will make it compile (remember the command 'make'?)
+
+The notorious setup installers in Windows are basically
+like zip files that unzip themselves and copy
+the binaries to the right folders in your system
+
+Binaries therefore are the programs built from sources using compilers
+
+In Linux binaries should be copied to the PATH folder
+to make available the invoke from every path of the system
+but can also be installed everywhere and run everywhere
+if you move to their folder
+
+Therfore the notorious installation in Windows is
+basically an extracting process of the binaries (the .exe file/s)
+While in Windows something else could also be annotated
+in the famous Registry..
+
+In Linux installation means only extracting the binaries
