@@ -1,0 +1,5 @@
+su root
+
+Add user to sudo group
+
+usermod -aG sudo username
