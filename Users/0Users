@@ -33,3 +33,5 @@ sudo adduser myuser sudo
 and then
 
 su myuser
+
+Users will be located inside home folder

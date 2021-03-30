@@ -47,7 +47,7 @@ run the script:
 
 now images will be downloaded with a progressive number in the name.
 
-
+you have to insert ./ at the beginning otherwise it will not work
 
 remember that if you put an empty line, the script will create a picture anyways.
 That picture will be empty.

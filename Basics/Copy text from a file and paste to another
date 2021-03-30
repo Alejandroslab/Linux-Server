@@ -3,4 +3,10 @@ just use the 'cat' command in this way:
 cat /home/user/oldfile.txt > myfile.txt
 
 if 'myfile.txt' does not exist in your current working
-folder, it will be created. if it exist tit will be overwritten
+folder, it will be created. if it exist this will be overwritten
+
+cat means concatenate
+
+cat test1.txt test2.txt
+
+will concatenate and display the content of the 2 files
