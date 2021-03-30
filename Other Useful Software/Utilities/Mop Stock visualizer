@@ -1,0 +1,43 @@
+First install go language
+
+sudo apt-get install golang
+
+
+go version
+
+mkdir ~/go
+
+sudo nano /etc/profile.d/goenv.sh
+
+Insert:
+
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+Then
+
+source /etc/profile.d/goenv.sh
+
+Logout and login again
+
+
+
+Now
+
+go get github.com/mop-tracker/mop/cmd/mop
+
+cd $GOPATH/src/github.com/mop-tracker/mop
+
+make install
+
+
+
+commands:
+
+
+mop
+
+Press + to add a stock
+Press - to remove a stock
+Press o to change the column sort order

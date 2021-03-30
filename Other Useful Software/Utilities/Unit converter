@@ -1,0 +1,6 @@
+sudo apt install units
+
+The answer will be displayed in two ways. The first line of output, which is marked with a '*' to indicate multiplication, gives the result of the conversion you have asked for. The second line of output, which is marked with a '/' to indicate division, gives the inverse of the conversion factor. If you convert 10 meters to feet, 'units' will print
+    * 32.808399
+    / 0.03048
+which tells you that 10 meters equals about 32.8 feet. The second number gives the conversion in the opposite direction. In this case, it tells you that 1 foot is equal to about 0.03 dekameters since the dekameter is 10 meters. It also tells you that 1/32.8 is about 0.03.

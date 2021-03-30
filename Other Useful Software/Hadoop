@@ -1,6 +1,6 @@
 
 To run Hadoop
-/usr/local/hadoop/bin/hadoop 
+/usr/local/hadoop/bin/hadoop
 
 you can check the version
 
@@ -8,10 +8,10 @@ you can check the version
 
 Run a query
 
-/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar grep 
+/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar grep
 ~/input ~/outputfolder 'ciao'
 
-It will invoke Hadoop then invoke jar files 
+It will invoke Hadoop then invoke jar files
 
 then grep will allow to search in the folder called input
 

@@ -1,0 +1,5 @@
+sudo npm install -g weather-cli
+
+weather --help
+
+weather -c Dhaka -C Bangladesh

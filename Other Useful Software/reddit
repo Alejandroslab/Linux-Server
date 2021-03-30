@@ -1,0 +1,7 @@
+https://gitlab.com/ajak/tuir
+
+tuir
+
+Configuration files are stored in the {HOME}/.config/tuir/ directory.
+Check out tuir.cfg for the full list of configurable options. You can clone this file into your home directory by running:
+$ tuir --copy-config

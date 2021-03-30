@@ -1,0 +1,3 @@
+sudo npm install idea
+
+idea create 'nuova idea'

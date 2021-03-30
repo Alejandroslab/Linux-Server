@@ -1,0 +1,14 @@
+watson
+pip install td-watson
+
+COMMANDS
+watson start work
+
+Watson status
+
+watson stop work
+
+
+watson log
+
+watson report

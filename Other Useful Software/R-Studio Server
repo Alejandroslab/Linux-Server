@@ -4,7 +4,7 @@ add this line to the repository
 
 deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
 
-the repositories file can be find in 
+the repositories file can be find in
 
  /etc/apt/sources.list
 
@@ -14,11 +14,11 @@ sudo nano  /etc/apt/sources.list
 
 Now go to the end (shortcut: ctrl+w and then ctrl+v)
 
-Then add the line 
+Then add the line
 
 Save (ctrl + o and then enter) and then quit (ctrl + x)
 
-NOW (and just now!) 
+NOW (and just now!)
 
 sudo apt-get update
 
@@ -27,7 +27,7 @@ sudo apt-get install r-base
 
 
 
-After that you can instaló r-studio server
+After that you can install r-studio server
 
 sudo apt-get install gdebi-core
 wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.1106-amd64.deb
@@ -39,12 +39,12 @@ Sudo rstudio-server status
 
 
 
-The server will listen to 8787 port 
+The server will listen to 8787 port
 
 So go to a browser and type:
 
 http://hostname:8787
 
-or 
+or
 
 http://IPaddress:8787

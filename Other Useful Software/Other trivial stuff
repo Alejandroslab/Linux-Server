@@ -12,7 +12,14 @@ cowsay ciao
 snake game:
 sudo apt-get install nsnake
 nsnake
+Use arrow keys to move the snake and feed it.
 
 tetris game:
 sudo apt install bastet
 bastet
+Use spacebar to rotate the bricks and arrow keys to guide.
+
+some quotes
+sudo apt-get install fortune
+
+fortune

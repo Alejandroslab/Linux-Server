@@ -1,0 +1,7 @@
+ sudo apt-get install translate-shell
+
+ trans
+
+ trans :es hi
+
+ trans -s en :es hi
