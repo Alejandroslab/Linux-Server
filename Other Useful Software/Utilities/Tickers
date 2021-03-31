@@ -1,0 +1,60 @@
+create a new file:
+
+Installticker.sh
+
+and insert:
+
+#!/bin/bash
+curl -Ls https://api.github.com/repos/achannarasappa/ticker/releases/latest \
+| grep -wo "https.*linux-amd64*.tar.gz" \
+| wget -qi - \
+&& tar -xf ticker*.tar.gz \
+&& chmod +x ./ticker \
+&& sudo mv ticker /usr/local/bin/
+
+
+make it executable:
+
+sudo chmod +x Installticker.sh
+
+run it with:
+./installticker.sh
+
+
+done!
+
+now start the ticker with
+
+ticker
+
+configuation file can be retrieved here:
+
+nano .ticker.yaml
+
+inside there will be:
+
+
+# ~/.ticker.yaml
+show-tags: true
+show-fundamentals: true
+show-separator: true
+interval: 10
+proxy: http://localhost:3128
+watchlist:
+  - NET
+  - TEAM
+  - ESTC
+  - BTC-USD
+lots:
+  - symbol: "ABNB"
+    quantity: 35.0
+    unit_cost: 146.00
+  - symbol: "ARKW"
+    quantity: 20.0
+    unit_cost: 152.25
+  - symbol: "ARKW"
+    quantity: 20.0
+    unit_cost: 145.35
+
+
+all properties are optional! just put # at the beginning to not run it
