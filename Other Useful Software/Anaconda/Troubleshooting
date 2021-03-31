@@ -1,0 +1,20 @@
+it could happens sometimes that anaconda is deleted from PATH
+
+you have to readd it manually
+
+sudo nano /.bashrc
+
+insert This
+export PATH=/home/as/anaconda3/bin
+
+now refresh anaconda with init:
+
+first go to the installation folder
+
+
+cd anaconda3/bin
+./conda init bash
+
+now reload the configuration file:
+
+ source ~/.bashrc
