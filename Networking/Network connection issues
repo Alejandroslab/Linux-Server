@@ -1,0 +1,32 @@
+to try to restart the network connection:
+
+sudo ifconfig eth0 mtu 1000
+
+the mtu Maximum Transmission Unit(MTU), the largest physical packet size, measured in bytes, that a network can transmit.
+Any messages larger than the MTU are divided into smaller packets before being sent.
+By optimizing the MTU setting you can gain substantial network performance increases
+
+sudo dhclient
+
+open
+/etc/dhcp3/dhclient.conf
+
+inside the code:
+
+...
+#prepend domain-name-servers 127.0.0.1;
+request subnet-mask, broadcast-address, time-offset, routers,
+	domain-name, domain-name-servers, domain-search, host-name,
+	netbios-name-servers, netbios-scope, interface-mtu;
+#require subnet-mask, domain-name-servers;
+#timeout 60;
+....
+delete iinterface-mtu (delete also the previous comma)
+
+save exit and reboot
+
+
+To change it permanently on Debian,
+put it in the /etc/network/interfaces file
+where almost all network parameters are found.
+To do this, just add a line mtu to the definition of your interface and save the file.
