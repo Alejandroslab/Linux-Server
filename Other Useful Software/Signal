@@ -1,0 +1,140 @@
+First we will install the 'engine' with java and some python dependecies
+
+(first thing to do: if you are on pUtty reduce your font size for the qrcode
+otherwise it will not be readable)
+
+first install java
+
+sudo apt-get install default-jre
+
+then if you don't have you need python
+
+now you need signal-cli
+wget https://github.com/AsamK/signal-cli/releases/download/v0.7.4/signal-cli-0.7.4.tar.gz
+sudo tar xf signal-cli-0.7.4.tar.gz -C /opt
+sudo ln -sf /opt/signal-cli-0.7.4/bin/signal-cli /usr/local/bin/
+
+you need also urwid (use pyhton pip)
+
+pip install urwid
+
+then you need pyqrcode to read qr codes
+
+pip install pyqrcode
+
+now download the interface:
+git clone https://github.com/isamert/scli
+
+cd scli
+
+you can move scli on a PATH folder (you can also add any folder to your PATH and then
+add scli to that folder)
+
+now we start the linking with signal servers
+
+scli link --name mydevice
+
+where as 'mydevice' you will insert the name of your device (any name is ok)
+
+wait now (it could hang for some minutes)
+it will appear a qrcode
+(if you are in Putty and the QRcode is too big you have to reduce the font Size
+you may need to restart your session)
+
+take your smartphone and scan the qrcode
+it will start syncing. at the end it will print
+'Done'
+
+
+Now check that everything works with
+
+signal-cli -u USERNAME receive
+
+where USERNAME is the mobile number with the country code
+
+like +33344...
+
+then:
+
+signal-cli -u USERNAME daemon
+
+if any errors appears just stop the process with ctrl+c
+
+
+now we can start the interface with:
+
+scli
+
+it will appear 2 columns: one for the contact and one for the messages
+with tab key you will be able to move between the 2 of them
+with enter you will select your contact
+
+
+
+COMMANDS:
+
+There are some basic commands that you can use. Hit : to enter command mode (or simply focus the input line and type :).
+	• :edit or :e lets you edit your message in your $EDITOR.
+	• :attach FILE_PATH or :a FILE_PATH attaches given file to message.
+	• :attachClip or :c attaches clipboard content to message. This command tries to detect clipboard content. If clipboard contains something with the mime-type image/png or image/jpg, simply attaches the image to message. If clipboard contains text/uri-list it attaches all the files in that URI list to your message. This command needs xclip installed.
+	• :openUrl or :u opens last URL in messages, if there is one.
+	• :openAttach or :o opens last attachment in messages, if there is one.
+	• :toggleNotifications or :n toggles desktop notifications.
+	• :toggleContactsSort or :s toggles between sorting contacts alphabetically and by the most recent message.
+	• :toggleAutohide or :h hides the contacts pane when it's not in focus.
+	• :addContact NUMBER [NAME] adds a new contact to the contact list. Added contacts' names are local (not synced with signal servers).
+	• :renameContact [ID] NEW_NAME renames contact ID to NEW_NAME. ID can be either contact's phone number or contact's name. If ID is skipped, the contact from the currently opened conversation is used. If ID is a name that contains spaces, they need to be escaped or the whole name put in quotes. NEW_NAME can contain spaces without quotes or escaping. 'Contact' can be a group as well as an individual. Individual contacts' renames are local (not synced with the signal servers).
+	• :reload re-reads the signal-clis data file. (Updates contacts list etc.)
+:quit or :q quits the program.
+
+Examples:
+:attach ~/cute_dog.png check out this cute dog!
+:attachclip here is another picture.
+Note: Commands are case insensitive, :quit and :qUiT do the same thing.
+
+
+SEARCHING
+
+There is a built-in search feature. Simply hit / while you are on the chat window (or focus the input line then type /) and start typing, the chat will be filtered out based on your input. You can focus any of the search results and hit enter (or l) to open that result in full conversation.
+For searching through contacts, you need to hit / while you are on the contacts window and start typing, contacts will be filtered out while you are typing. Hit enter to focus the results. Hitting Esc will clear the search.
+
+
+Configuration
+There are some simple configuration options. You can either pass them as command-line arguments or add them to your configuration file. Run scli --help to see all options.
+Configuration file syntax is also pretty easy. Lines starting with # and empty lines are ignored, other lines are key = value pairs. Optional arguments (flags) like --debug, can be enabled in config file with any of: true, t, yes, y (with any capitalization, case insensitive).
+Example
+scli -u +1234567890 --enable-notifications
+Configuration file equivalent of this command is:
+# Long option forms are used in config file. (u = +123... is not valid.)
+username = +1234567890
+enable-notifications = true
+
+
+History
+Conversations history can be enabled with --save-history or -s flag. If enabled, the file is saved in plain text (to ~/.local/share/scli/history by default).
+
+FOR MORE INFO CHECK: https://github.com/isamert/scli
+
+
+TO SAVE MESSAGES:
+
+just start with:
+
+scli --save-history
+
+this will create a file in ~/.local/share/scli/history).
+
+
+TROUBLESHOOTING
+
+if scli does not start up the contacts just type:
+
+:reload
+
+or exit scli and type:
+
+signal-cli -u +yourphonenumber receive --json
+
+if it appears that the command is 'deprecated' use:
+
+signal-cli -u +yourphonenumber --output=json receive
