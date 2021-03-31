@@ -23,3 +23,6 @@ remember also that the password will be clearly printed without any mark like ""
 
 
 This script will inspect content in MYFOLDER and it will add them to the calibre library folders
+
+
+you can also install apache2 and serve your library over https
