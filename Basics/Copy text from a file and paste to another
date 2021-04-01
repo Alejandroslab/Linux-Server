@@ -10,3 +10,7 @@ cat means concatenate
 cat test1.txt test2.txt
 
 will concatenate and display the content of the 2 files
+
+it can also be use with
+
+echo "I've appended a line!" >> combined.txt
