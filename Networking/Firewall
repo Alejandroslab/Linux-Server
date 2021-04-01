@@ -1,3 +1,5 @@
+UFW is also known as Uncomplicated firewall
+
   If the firewall is active some apps will not work properly as for example OpenSSH:
 
   therefore
