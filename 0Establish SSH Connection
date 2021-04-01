@@ -92,6 +92,7 @@ ssh username@IPserverOrHostname
 
 it will then ask for your password and then you will connect to the server.
 
+_________________________
 
 For the fingerprint check, in mac it will be printed the ECDSA key in SHA256
 
@@ -168,4 +169,4 @@ sshd_config is the config file for the daemon
 If someone wants to connect to your host machine via SSH,
 their SSH client settings (port number, version etc)
 must match your sshd_config
-settings in order to communicate with you, 
+settings in order to communicate with you,
