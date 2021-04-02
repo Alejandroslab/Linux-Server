@@ -6,7 +6,8 @@ in order to do that:
 sudo apt-get install git
 sudo apt-get install gawk
 
-then:
+
+then proceed to download the  binaries:
 
 git clone https://github.com/soimort/translate-shell && cd translate-shell
 
