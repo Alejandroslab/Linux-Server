@@ -1,0 +1,15 @@
+first install git and gawk (in order to use 'make')
+if you don't have it in your Debian
+
+in order to do that:
+
+sudo apt-get install git
+sudo apt-get install gawk
+
+then:
+
+git clone https://github.com/soimort/translate-shell && cd translate-shell
+
+make
+
+sudo make install
