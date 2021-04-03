@@ -1,0 +1,19 @@
+to list the history of all commands:
+
+history
+
+it will list all the commands you typed (with a number
+at the beginning of every command)
+
+to delete a command from history:
+
+history -d numberofcommand
+
+where numberofcommand is a number that corresponds to the
+command you want to delete
+
+
+to delete ALL the command history:
+type:
+
+history -c
