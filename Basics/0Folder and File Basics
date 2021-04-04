@@ -42,19 +42,6 @@ mkdir 'new folder'
 if the folder has a space in the name
 
 
-To remove a directory
-
-rmdir
-
-
-
-BUT! rmdir will work only if the folder is empty!
-
-If it is not empty you can use
-
-rm -r myfolder
-
-(the same logic for copying folder (that is adding -r that means recursively))
 
 
 

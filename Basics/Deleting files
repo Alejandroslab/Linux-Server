@@ -1,0 +1,17 @@
+To remove a directory
+
+rmdir
+
+
+
+BUT! rmdir will work only if the folder is empty!
+
+If it is not empty you can use
+
+rm -r myfolder
+
+(the same logic for copying folder (that is adding -r that means recursively))
+
+
+REMEMBER! rm is irreversible
+be careful on what you delete!
