@@ -1,0 +1,5 @@
+to check a folder size just type:
+
+du -hs /path/to/directory
+
+where /path/to/directory is the path of your chosen folder
