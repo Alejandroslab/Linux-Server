@@ -1,0 +1,9 @@
+when connecting to a container with the format:
+
+ssh user@serverhostname -p 1000
+
+it display this error:
+
+kex_exchange_identification: read: Connection reset by peer
+
+the solution is just to reboot your server
