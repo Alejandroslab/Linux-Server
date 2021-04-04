@@ -1,26 +1,30 @@
-First install R, the language
+First install R, the language. You can install with the following:
 
-add this line to the repository
-
-deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
-
-the repositories file can be find in
-
- /etc/apt/sources.list
-
-Therefore just type
+open the repositories files:
 
 sudo nano  /etc/apt/sources.list
 
+
+
+
+
 Now go to the end (shortcut: ctrl+w and then ctrl+v)
 
-Then add the line
+Then add the line at the end
 
-Save (ctrl + o and then enter) and then quit (ctrl + x)
+deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/
+
+
+Save ctrl+x and then 'y' and enter
 
 NOW (and just now!)
 
+
+
+
 sudo apt-get update
+
+let's install r language:
 
 sudo apt-get install r-base
 
@@ -33,8 +37,8 @@ sudo apt-get install gdebi-core
 wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.1106-amd64.deb
 sudo gdebi rstudio-server-1.4.1106-amd64.deb
 
-
-Sudo rstudio-server status
+check the status:
+sudo rstudio-server status
 
 
 
