@@ -3,3 +3,6 @@ which program
 with 'which' you can know if a program is installed
 
 it will provide the folder path in which the program has been installed.
+
+If it does not provide anything 
+It means that no app with the name typed has been encountered 
