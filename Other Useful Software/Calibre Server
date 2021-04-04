@@ -46,6 +46,15 @@ Now run the server:
 
 calibre-server calibre-library
 
+if you want to load other library at once just type:
+
+calibre-server calibre-library library2
+
+and so on:
+
+calibre-server calibre-library library2 library3  ....
+
+
 You can access the library from a client. Open a browser and type:
 
 IP:8080

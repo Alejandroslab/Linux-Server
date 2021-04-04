@@ -1,0 +1,10 @@
+if you are looking in a very big folder you may use:
+
+find folder1
+
+or
+
+find fol*
+
+with the * symbol that allow to search all the file and folders
+which names starts with 'fol'
