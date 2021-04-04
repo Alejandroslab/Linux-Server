@@ -1,0 +1,9 @@
+rename a file:
+
+mv file1.txt file2.txt
+
+rename a folder
+
+mv folder1 folder2
+
+where folder1 is the old name and folder2 is the newst one

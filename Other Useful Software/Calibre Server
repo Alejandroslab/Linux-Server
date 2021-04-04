@@ -4,7 +4,7 @@ sudo apt update
 
 then
 
- sudo apt install -y libfontconfig libgl1-mesa-glx
+sudo apt install -y libfontconfig libgl1-mesa-glx
 
 
 REMEMBER: you can explicit more than one command with '&&'
@@ -15,7 +15,7 @@ sudo apt update &&  sudo apt install -y libfontconfig libgl1-mesa-glx
 
 Now download calibre:
 
- wget https://download.calibre-ebook.com/linux-installer.sh
+wget https://download.calibre-ebook.com/linux-installer.sh
 
 sudo sh linux-installer.sh
 
@@ -31,7 +31,7 @@ create a directory for calibre (it will be the directory of calibre)
 
 mkdir calibre-library
 
-add all mobi books (included the one donwloded):
+add all mobi books (included the one downloaded):
 
 calibredb add *.mobi --with-library calibre-library/
 
@@ -56,7 +56,7 @@ hostname:8080
 
 CALIBRE SERVER IN BACKGROUND
 
-sudo nano /etc/systemd/system/calibre-server.service:
+sudo nano /etc/systemd/system/calibre-server.service
 
 ADD THESE LINES:
 
