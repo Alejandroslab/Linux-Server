@@ -3,3 +3,38 @@ in Debian:
 sudo apt-get install youtube-dl -y
 
 a tool to download videos from everywhere in the web
+
+
+If you need 720p videos you wi have to install FFmpeg
+
+Install with this:
+
+sudo apt-get install ffmpeg
+
+
+
+
+To download multiple videos just put all the urls in sequence separated by a space
+
+youtube-dl <url1> <url2>
+
+
+Alternatively, you can put them all in a text file and pass it to Youtube-dl as an argument
+
+youtube-dl -a url.txt
+
+
+This command will download all videos mentioned in the url.txt file.
+
+
+audio-only from a video:
+
+youtube-dl -x <url1>
+
+By default, Youtube-dl will save the audio in Ogg (opus) format.
+
+If you prefer to download any other formats, for example mp3, run:
+
+$ youtube-dl -x —audio-format mp3 <url1>
+
+This command will download the audio from the given video/playlist, convert it to an MP3 and save it in the current directory. Please note that you should install either ffmpeg or avconv to convert the file to mp3 format.
