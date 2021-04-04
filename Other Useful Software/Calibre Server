@@ -19,12 +19,13 @@ wget https://download.calibre-ebook.com/linux-installer.sh
 
 sudo sh linux-installer.sh
 
+DONE!
 
 
+now: to create an EMPTY LIBRARY:
 Now download a book (it will be necessary to create the right config. files (.db) in calibre)
 
 wget http://www.gutenberg.org/ebooks/46.kindle.noimages -O christmascarol.mobi
-
 
 
 create a directory for calibre (it will be the directory of calibre)
@@ -35,32 +36,82 @@ add all mobi books (included the one downloaded):
 
 calibredb add *.mobi --with-library calibre-library/
 
+this last command will allow to create the 'metadata.db' file
+that will define the structure of the library for calibre
+
 (Now, if you have firewall enabled than you have to add a rule for the program and the port
 sudo ufw allow 8080
 sudo ufw status)
 
+then run the server as defined below
 
 
+TO USE A PREXISTING LIBRARY:
+you can skip all the previous steps if you have
+an existing library
 
-Now run the server:
+In this case just copy your folder wherever you want
+(like your home folder) (remember to leave
+your metadata.db file and to not delete it)
+and then directly run the server:
+
+
+Now RUN THE SERVER:
 
 calibre-server calibre-library
 
-if you want to load other library at once just type:
+if you want to load another library at the same time just type:
 
 calibre-server calibre-library library2
 
-and so on:
+and so on (if you want more than 2):
 
 calibre-server calibre-library library2 library3  ....
 
 
-You can access the library from a client. Open a browser and type:
+you can e.g. have two libraries one for fiction and one for science:
+
+calibre-server fiction science
+
+(you can add the '-library' suffix but is just to remember that they are
+calibre libraries but it is not mandatory)
+
+
+REMEMEBER! if you want to export a library from a calibre server
+to another (or from any calibre instance to a calibre server)
+you just have to copy the calibre library folders with all
+your books inside and check to copy and NOT DELETE
+the file 'metadata.db' where is stored all the metadata
+that allow to calibre server to use the folder as a
+calibre library.
+
+therefore if you want to export a library
+you just have to copy the folder as when will use the
+command:
+
+calibre-server fiction science
+
+calibre will recognize the libraries based on the
+preexisting metadata.db file.
+
+
+
+
+
+Now you can access the library from a client. Open a browser and type:
 
 IP:8080
 or
 hostname:8080
 
+
+
+
+Ok! done
+press ctrl+c to stop the process
+
+now let's create a service in order to run calibre-server
+in background
 
 
 CALIBRE SERVER IN BACKGROUND
@@ -84,8 +135,26 @@ ExecStart=/opt/calibre/calibre-server /home/UTENTE/calibre-library --enable-loca
 WantedBy=multi-user.target
 
 
-REMEMBER to correctly indicate the path (with the correct user) and the name of the folder
+REMEMBER to correctly indicate the path
+(with the correct user) and the name of the folder
 that will be loaded as a calibre library.
+
+REMEMBER! If you want to load more than one calibre library
+simply change the line:
+
+ExecStart=/opt/calibre/calibre-server /home/UTENTE/calibre-library --enable-local-write
+
+and add the other paths of your libraries like here:
+(in this case I will add another library called 'library2')
+
+ExecStart=/opt/calibre/calibre-server /home/UTENTE/calibre-library /home/UTENTE/library2 --enable-local-write
+
+(if you want to make this changes you have to stop
+the service with the usual command:
+sudo systemctl stop calibre-server)
+
+
+
 
 Save and close the file.
 Now enable the service and start it:
@@ -93,11 +162,19 @@ Now enable the service and start it:
 sudo systemctl enable calibre-server
 sudo systemctl start calibre-server
 
+you can use also this:
+
+sudo systemctl enable calibre-server && sudo systemctl start calibre-server
+
 Eventually reboot all the system
 sudo reboot
 
 
 
+
+
+
+ADD USERS:
 you can also add users:
 first stop the server:
 
