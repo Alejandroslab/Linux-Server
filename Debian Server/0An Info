@@ -30,3 +30,9 @@ Some useful packages are not installed as mentioned. You have to install them ma
 
 There will not be even the usual 'home' folder.
 You have to create it by yourself like the 'Documents, Photos, Downloads, Videos' folders if you need them.
+
+
+
+the user and password for live session are:
+
+he username/password is user/live. You have to log in as user/live and then execute sudo passwd root to create the root password.
