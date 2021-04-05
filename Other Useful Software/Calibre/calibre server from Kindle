@@ -23,3 +23,6 @@ the other limitation is that it will be possible to interact only with 25 items 
 
 anyways the search function will allow to search from all the calibre libraryr database and you will be able to download the book who you are looking for,
 even if it does not appear in the first 25 elements. (By the way it should be formatted in the formats supported like .mobi)
+
+Finally it supports more than one library 
+You can change library at the bottom of the page 

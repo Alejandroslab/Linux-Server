@@ -1,0 +1,44 @@
+A source package is usually comprised of three files, a .dsc, a .orig.tar.gz, and a .debian.tar.xz (or .diff.gz). They allow creation of binary packages (.deb files described above) from the source code files of the program,
+ which are written in a programming language.
+
+ The .dsc (Debian Source Control) file is a short text file containing an RFC 2822 header (just like the control file studied in Secțiune 5.2.1, „Description: the control File”) which describes the source package and indicates which other files are part thereof. It is signed by its maintainer, which guarantees authenticity. See Secțiune 6.6, „Checking Package Authenticity” for further details on this subject.
+ The .orig.tar.gz file is an archive containing the source code as provided by the original developer. Debian package maintainers are asked to not modify this archive in order to be able to easily check the origin and integrity of the file (by simple comparison with a checksum) and to respect the wishes of some authors.
+The .debian.tar.xz contains all of the modifications made by the Debian maintainer, especially the addition of a debian directory containing the instructions to execute to construct a Debian package.
+
+
+If you have a source package, you can use the dpkg-source command (from the dpkg-dev package) to decompress it:
+
+$ dpkg-source -x zim_0.68-1.dsc
+dpkg-source: info: extracting zim in zim-0.68
+dpkg-source: info: unpacking zim_0.68.orig.tar.gz
+dpkg-source: info: unpacking zim_0.68-1.debian.tar.xz
+
+You can also use apt to download a source package and unpack it right away. It requires that the appropriate deb-src lines be present in the /etc/apt/sources.list file, however (for further details, see Secțiune 6.1, „Filling in the sources.list File”). These are used to list the “sources” of source packages (meaning the servers on which a group of source packages are hosted).
+
+
+The source package is the foundation of everything in Debian. All Debian packages come from a source package, and each modification in a Debian package is the consequence of a modification made to the source package. The Debian maintainers work with the source package, knowing, however, the consequences of their actions on the binary packages. The fruits of their labors are thus found in the source packages available from Debian: you can easily go back to them and everything stems from them.
+When a new version of a package (source package and one or more binary packages) arrives on the Debian server, the source package is the most important. Indeed, it will then be used by a network of machines of different architectures for compilation on the various architectures supported by Debian. The fact that the developer also sends one or more binary packages for a given architecture (usually i386 or amd64) is relatively unimportant, since these could just as well have been automatically generated.
+
+
+INSTALL DEB PACKAGE
+
+dpkg is the base command for handling Debian packages on the system. If you have .deb packages, it is dpkg that allows installation or analysis of their contents. But this program only has a partial view of the Debian universe: it knows what is installed on the system, and whatever it is given on the command line, but knows nothing of the other available packages. As such, it will fail if a dependency is not met. Tools such as apt and aptitude, on the contrary, will create a list of dependencies to install everything as automatically as possible.
+dpkg should be seen as a system tool (backend), and apt as a tool closer to the user, which overcomes the limitations of the former. These tools work together, each one with its particularities, suited to specific tasks.
+
+
+dpkg is, above all, the tool for installing an already available Debian package (because it does not download anything). To do this, we use its -i or --install option.
+
+Exemplu 5.2. Installation of a package with dpkg
+
+# dpkg -i man-db_2.8.5-2_amd64.deb
+(Reading database ... 14913 files and directories currently installed.)
+Preparing to unpack .../man-db_2.8.5-2_amd64.deb ...
+Unpacking man-db (2.8.5-2) over (2.8.5-2) ...
+Setting up man-db (2.8.5-2) ...
+Updating database of manual pages ...
+Processing triggers for mime-support (3.62) ...
+
+
+REMOVE DEB PACKAGE
+
+Invoking dpkg with the -r or --remove option, followed by the name of a package, removes that package. This removal is, however, not complete: all of the configuration files, maintainer scripts, log files (system logs) and other user data handled by the package remain. That way disabling the program is easily done by uninstalling it, and it is still possible to quickly reinstall it with the same configuration. To completely remove everything associated with a package, use the -P or --purge option, followed by the package name.

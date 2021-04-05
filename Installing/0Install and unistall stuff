@@ -28,6 +28,9 @@ keep in mind that 'apt' and 'apt-get' are pretty much interchangeable where
 
 
 
+The install command on is used to copy files, and it does this by combining several commands into one to make them easy to use,
+i.e. cp, chown, chmod, and strip.
+
 to list available updates without install them:
 
 apt list --upgradable

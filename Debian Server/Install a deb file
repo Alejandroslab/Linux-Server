@@ -1,0 +1,6 @@
+just use the command dpkg and the option 'install'
+that is '-i'
+
+in this way:
+
+sudo dpkg -i atom-amd64.deb

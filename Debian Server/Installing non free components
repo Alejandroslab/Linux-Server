@@ -1,0 +1,33 @@
+in debian you may need to install non free components
+that basically are drivers fror some old propietary hardware
+like an external wifi adapter
+first thing to do: do not connect your hardware
+beacuse you need to install the non free components first.
+
+
+
+in order to install the non free copmonents you can do this
+updating the sources list
+opening:
+
+sudo nano /etc/apt/sources.list
+
+and adding
+
+deb http://http.debian.net/debian/ buster main contrib non-free
+
+where 'buster' is the version name of Debian 10
+(you will need to change this name accordingly to
+the Debian version like 'stretch' for Debian 9 or 'jessie' for Debian 8)
+
+then:
+
+sudo apt-get update
+
+and (from Debian 9 and next versions):
+
+sudo apt-get install firmware-misc-nonfree
+
+now you can connect your hardware (like
+an external wifi adapter)
+(this is the case for example for Dlink DWA 125 Wifi external adapter)
