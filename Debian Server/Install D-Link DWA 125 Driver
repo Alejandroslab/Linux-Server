@@ -13,11 +13,11 @@ deb http://http.debian.net/debian/ stretch main contrib non-free
 
 Update the list of available packages:
 
-# apt-get update
+# sudo apt-get update
 
 then from Debian 9 and the next versions:
 
-# apt-get install firmware-misc-nonfree
+# sudo apt-get install firmware-misc-nonfree
 
 Connect the device to your system. The rt2800usb kernel module is automatically loaded for supported devices.
 
