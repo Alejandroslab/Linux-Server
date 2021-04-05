@@ -1,0 +1,24 @@
+You have to download the correct component /package:
+
+https://wiki.debian.org/rt2800usb
+
+Add a "non-free" component to /etc/apt/sources.list, for example:
+
+# Debian 8 "Jessie"
+deb http://http.debian.net/debian/ jessie main contrib non-free
+
+# Debian 9 "Stretch"
+deb http://http.debian.net/debian/ stretch main contrib non-free
+
+
+Update the list of available packages:
+
+# apt-get update
+
+then from Debian 9 and the next versions:
+
+# apt-get install firmware-misc-nonfree
+
+Connect the device to your system. The rt2800usb kernel module is automatically loaded for supported devices.
+
+Configure your wireless interface as appropriate.

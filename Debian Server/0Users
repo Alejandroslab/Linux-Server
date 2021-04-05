@@ -1,5 +1,7 @@
+log as root with the command:
+
 su root
 
-Add user to sudo group
+Add user to sudo group (you have firts to log as root):
 
-usermod -aG sudo username
+sudo usermod -aG sudo username
