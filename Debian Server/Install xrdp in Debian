@@ -14,3 +14,6 @@ therefore we will add the xrdp user to the group:
 sudo adduser xrdp ssl-cert
 
 DONE!
+
+of course as in ubuntu you will need to LOGOUT
+to your current session in order to log with xrdp
