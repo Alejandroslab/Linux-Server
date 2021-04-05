@@ -36,3 +36,5 @@ You have to create it by yourself like the 'Documents, Photos, Downloads, Videos
 the user and password for live session are:
 
 he username/password is user/live. You have to log in as user/live and then execute sudo passwd root to create the root password.
+
+the password is: live
