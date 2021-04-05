@@ -40,6 +40,7 @@ if you need to copy or move a large folder
 you may want to see your progress (otherwise you will get
 only a stuck cursor)
 
+
 in order to see progresses just use the verbose option
 that is '-v'
 
@@ -48,3 +49,8 @@ cp -v -r folder1 \home\user1
 or
 
 mv -v -r folder1 \home\user1
+
+
+Alternatively you can merge option in one single option doing this 
+
+mv -vr folder1 \home\user1
