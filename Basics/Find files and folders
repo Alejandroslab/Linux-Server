@@ -8,3 +8,23 @@ find fol*
 
 with the * symbol that allow to search all the file and folders
 which names starts with 'fol'
+
+if you need to find some files with extension like .mobi
+
+find myfolder -name "*.mobi"
+
+where myfolder is the folder or the path that points to
+the folder that you are working with to look for all
+the .mobi files
+
+REMEMBER! find is always recursive.
+it will search in any subdirectory
+Hence there is no need to add an '-r' option.
+
+
+and if you need to count the result you can pipe it
+in this way:
+
+find General-Library/ -name "*.mobi" | wc -l
+
+where wc -l will count the lines of the finding resutls
