@@ -1,0 +1,65 @@
+SFTP, which stands for SSH File Transfer Protocol, or Secure File Transfer Protocol,
+
+SFTP uses the SSH protocol to authenticate
+
+if you have ssh you can connect with sftp
+
+sftp username@ipaddress_or_hostname
+
+
+if you work with another port than 22:
+
+sftp -oPort=your_port sammy@your_server_ip_or_remote_hostname
+
+where your_port is your port (different than 22)
+
+if you will successfully connect you will see:
+
+sftp>
+
+you can use then the commands
+
+
+bye                                Quit sftp
+cd path                            Change remote directory to 'path'
+chgrp grp path                     Change group of file 'path' to 'grp'
+chmod mode path                    Change permissions of file 'path' to 'mode'
+chown own path                     Change owner of file 'path' to 'own'
+df [-hi] [path]                    Display statistics for current directory or
+                                   filesystem containing 'path'
+exit                               Quit sftp
+get [-Ppr] remote [local]          Download file
+help                               Display this help text
+lcd path                           Change local directory to 'path'
+. . .
+
+remember! Now if you use 'pwd' (or 'ls') you will get the remote path (or list of files/folder)
+ (the path/files and folders of the server and not the local ones)
+
+if you want to use pwd in local machine (client) you will need to put the letter 'l' (of 'local')
+before any commands
+therefore:
+
+pwd will become 'lpwd', ls will become 'lls'
+
+
+
+
+------------
+
+TRANSFER FILES:
+if you want to transfer a file just use the 'get' command:
+
+get myfile
+
+with recursive option you can copy a folder and all its content
+
+get -r myfolder
+
+if you want to upload some files to your server you can use
+
+put mylocalfile
+
+
+with df -h you can check your space (no local variation (the 'l')for this command)
+you can use the symbol '!' to use your local
