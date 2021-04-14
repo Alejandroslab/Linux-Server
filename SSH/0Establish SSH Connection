@@ -90,6 +90,8 @@ then just:
 
 ssh username@IPserverOrHostname
 
+REMEMBER thta the IPserverOrHostname is NOT case sensitive
+
 it will then ask for your password and then you will connect to the server.
 
 _________________________
