@@ -60,6 +60,11 @@ if you want to upload some files to your server you can use
 
 put mylocalfile
 
+in windows you can also drag your files or folders inside powershell and it will paste the path of your files or folder
+
+the usual path in which sftp will upload your files will be '/home/USERNAME/''
+
+
 
 with df -h you can check your space (no local variation (the 'l')for this command)
 you can use the symbol '!' to use your local
