@@ -72,6 +72,15 @@ put -r mylocalfolder
 
 you can also upload from a newtork folder. it is not necessary to be a local folder (at least this is how it works on Windows)
 
+CAREFUL when you use
+
+put -r mylocalfolder
+
+ONLY THE CONTENT WILL BE COPIED!
+therefore be careful on where you want to store your data
+(first create a new folder otherwise all the content will be
+placed in home folder)
+
 
 with df -h you can check your space (no local variation (the 'l')for this command)
 you can use the symbol '!' to use your local
