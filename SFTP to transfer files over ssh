@@ -63,7 +63,14 @@ put mylocalfile
 in windows you can also drag your files or folders inside powershell and it will paste the path of your files or folder
 
 the usual path in which sftp will upload your files will be '/home/USERNAME/''
+in Powershell autocomplete will not work you have to manually navigate with 'cd'
 
+
+if you need to upload a folder use the recursive option:
+
+put -r mylocalfolder
+
+you can also upload from a newtork folder. it is not necessary to be a local folder (at least this is how it works on Windows)
 
 
 with df -h you can check your space (no local variation (the 'l')for this command)
