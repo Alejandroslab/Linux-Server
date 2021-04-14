@@ -15,3 +15,13 @@ rm -r myfolder
 
 REMEMBER! rm is irreversible
 be careful on what you delete!
+
+_______________
+
+to remove ALL files inside a directory:
+
+rm *
+
+if you want to remove all subdirectories + files inside a folder just use the recursive option
+
+rm -r *
