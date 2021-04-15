@@ -207,7 +207,7 @@ service but the program itself))
 sudo systemctl daemon-reload
 sudo systemctl start calibre-server
 
-
+_______________________
 in the case that you need to deaticvate the authentication:
 
 sudo systemctl stop calibre-server.service
