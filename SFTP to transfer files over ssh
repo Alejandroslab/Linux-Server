@@ -76,11 +76,28 @@ CAREFUL when you use
 
 put -r mylocalfolder
 
-ONLY THE CONTENT WILL BE COPIED!
-therefore be careful on where you want to store your data
-(first create a new folder otherwise all the content will be
-placed in home folder)
+IT COULD HAPPEN THAT ONLY THE CONTENT WILL BE COPIED IF YOU ARE NOT careful
 
+therefore be careful on where you want to store your data
+
+
+if you type:
+
+put -r //network/myfolder
+
+it will be copied the folder 'myfolder' with inside all its Content
+
+(in Powershell you will need to double quote the path " //network/myfolder")
+
+
+if you type:
+
+put -r //network/myfolder/
+
+then only the content will be copied
+
+
+__-
 
 with df -h you can check your space (no local variation (the 'l')for this command)
 you can use the symbol '!' to use your local
