@@ -45,6 +45,11 @@ Install Apache webserver
 
   remember that if you have already installed it will be skipped as you have already it in your system
 
+
+to check status of mysql run
+
+sudo systemctl status mysql
+
 next login to mysql
 
 mysql -u root -p
@@ -65,7 +70,13 @@ be careful with the quotes! leave it as you see it
 
 GRANT ALL ON nextclouddb.* TO 'nextcloud'@'localhost';
 
+6b) now flush
 
+FLUSH PRIVILEGES;
+
+6C) and exit
+
+EXIT
 
 7) Now donwload nextcloud
 
@@ -92,8 +103,26 @@ sudo chown -R www-data:www-data nextcloud
 
 sudo chmod -R 755 nextcloud
 
+12) now open in a broswer
 
+http://ipaddress_or_hostname/nextcloud
 
+Now just create the admin account inserting an username and a mypassword
+
+in 'Database User' 'Database password' and 'Database name' just put the ones
+typed before defining the SQL DATABASE
+therefore:
+
+user: nextcloud
+password: mypassword
+database name: nextclouddb
+
+now just wait some minutes and it will finally open!
+
+DONE!
+
+_____________
+WHERE MY DATA WILL BE STORE?
 your data will be stored here:
 
 /var/www/html/nextcloud/data
@@ -104,9 +133,25 @@ that allows to expand storage pointing to some external devices
 like another NAS
 
 
+
+
 _______________
 TROUBLESHOOTING
-
+PHP ERROR
 if you get the error in the webpage with 'No database drivers (sqlite, mysql, postgre)'
 then you can fix it installing the correct version of php
 and restarting apache webserver (see above in the point of php insstallation)
+
+ERROR WHILE TRYING TO CREATE ADMIN USER
+"Error while trying to create admin user: Failed to connect to the database: An exception occurred in the driver:
+SQLSTATE[HY000] [2054]
+The server requested authentication method unknown
+to the client"
+
+This is an error due to a change in the authetincation settings done by msql
+and appearing since mysql 8.0.2
+
+to fix this you basically have to change the authentication method wiht the mysql_native_password
+if you have already created the mysql user then change the password with this command:
+
+ALTER USER 'nextcloud'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
