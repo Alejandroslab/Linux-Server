@@ -1,0 +1,28 @@
+BECAREFUL when you delete with
+rm -r
+as recovering files in linux is not easy
+
+
+you have to use testdisk to recover files
+(but no idea if it can work with folders)
+
+sudo apt install testdisk
+
+now if your disk is formatted as fat32
+or ntfs you can use:
+
+
+testdisk
+
+if it does not work just run:
+
+sudo testdisk /dev/vda1
+
+where 'vda1' is the name of the disk
+in which linux is installed
+(it could also have other name)
+
+
+you have use PhotoRec (that also
+comes with the testdisk package installation) if your
+disk is formatted as ext2, ext4
