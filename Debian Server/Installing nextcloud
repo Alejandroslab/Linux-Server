@@ -137,12 +137,14 @@ like another NAS
 
 _______________
 TROUBLESHOOTING
-PHP ERROR
+1) PHP ERROR
 if you get the error in the webpage with 'No database drivers (sqlite, mysql, postgre)'
 then you can fix it installing the correct version of php
 and restarting apache webserver (see above in the point of php insstallation)
 
-ERROR WHILE TRYING TO CREATE ADMIN USER
+
+
+2) ERROR WHILE TRYING TO CREATE ADMIN USER
 "Error while trying to create admin user: Failed to connect to the database: An exception occurred in the driver:
 SQLSTATE[HY000] [2054]
 The server requested authentication method unknown
@@ -155,3 +157,28 @@ to fix this you basically have to change the authentication method wiht the mysq
 if you have already created the mysql user then change the password with this command:
 
 ALTER USER 'nextcloud'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+after altering, launch again:
+
+GRANT ALL ON nextclouddb.* TO 'nextcloud'@'localhost';
+
+and:
+
+FLUSH PRIVILEGES;
+
+
+
+maybe you have also to change your config file located in
+
+/etc/mysql/my.cnf
+
+and add these lines at the end:
+
+[mysqld]
+default_authentication_plugin= mysql_native_password
+
+
+to end this just restart mysql service
+
+sudo systemctl restart mysql
+
+now reload the webpage with nextcloud and should be work
