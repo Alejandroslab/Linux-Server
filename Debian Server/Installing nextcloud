@@ -1,0 +1,105 @@
+We will proceed without snapd repositories (I don't trust them)
+
+we will use the usual repos of debian
+The installation process is a bit easier than the installation on raspbian
+although is little more long than in Ubuntu
+
+1) first!
+
+Install Apache webserver
+
+ sudo apt update -y
+
+  sudo apt install apache2 libapache2-mod-php -y
+
+  After installation check the Apache status:
+
+  systemctl status apache2
+
+  2) second
+
+  Install php and some dependencies
+
+
+  sudo apt-get install -y php php-gd php-curl php-zip php-dom php-xml php-simplexml php-mbstring -y
+
+  verify the installation with:
+
+  php -V
+
+  IF YOU GET ERRORS WHILE TRYING TO ACCESS THE NEXTCLOUD
+  WEBPAGE THEN YOU NEED TO INSTALL THE CORRECT VERSION OF PHP
+  AND THEN RESTART THE APACHE SERVER THIS way:
+
+  sudo apt-get update
+  sudo apt-get install php7.3
+  sudo apt install php7.3-gd php7.3-json php7.3-mysql php7.3-curl php7.3-mbstring php7.3-intl php-imagick php7.3-xml php7.3-zip
+
+
+  sudo service apache2 restart
+
+
+  3) install mysql
+
+  sudo  apt install mysql-server php-mysql -y
+
+  remember that if you have already installed it will be skipped as you have already it in your system
+
+next login to mysql
+
+mysql -u root -p
+
+
+4) create a database in mysql:
+
+CREATE DATABASE nextclouddb;
+
+5) create a user :
+
+CREATE USER 'nextcloud'@'localhost' IDENTIFIED BY 'password';
+
+you must put a strong password instead of the word password (but leave the single quotes)
+be careful with the quotes! leave it as you see it
+
+6)Grant privileges to this user
+
+GRANT ALL ON nextclouddb.* TO 'nextcloud'@'localhost';
+
+
+
+7) Now donwload nextcloud
+
+cd /tmp
+
+wget https://download.nextcloud.com/server/releases/nextcloud-21.0.1.zip
+
+8) unzip
+
+ unzip nextcloud-21.0.1.zip
+
+ 9) move the unzipped to the web root:
+
+ sudo mv nextcloud /var/www/html
+
+
+10)Navigate to the document root folder  and change the file ownership to www-data .
+
+cd /var/www/html
+
+sudo chown -R www-data:www-data nextcloud
+
+11) Also, change the file permissions as shown
+
+sudo chmod -R 755 nextcloud
+
+
+
+
+
+
+_______________
+TROUBLESHOOTING
+
+if you get the error in the webpage with 'No database drivers (sqlite, mysql, postgre)'
+then you can fix it installing the correct version of php
+and restarting apache webserver (see above in the point of php insstallation)
