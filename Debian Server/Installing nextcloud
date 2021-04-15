@@ -94,7 +94,14 @@ sudo chmod -R 755 nextcloud
 
 
 
+your data will be stored here:
 
+/var/www/html/nextcloud/data
+
+you can also extend capacity within Nextcloud itself
+there is in fact an internal app
+that allows to expand storage pointing to some external devices
+like another NAS
 
 
 _______________
