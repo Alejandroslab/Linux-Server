@@ -29,7 +29,7 @@ find -maxdepth 1 -name 'Paul*'
 this command will look with all the files and folders whose name starts with 'Paul..'
 ONLY in the working directory
 
-with 1 that limits searching only in 1 level
+with 1 that limits searching only in the first level
 ____________________
 
 
