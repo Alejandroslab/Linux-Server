@@ -152,6 +152,9 @@ to the client"
 
 This is an error due to a change in the authetincation settings done by msql
 and appearing since mysql 8.0.2
+Starting with version 8.02, MySQL updated the default authentication method for client connections.
+To revert to the older authentication method you need 
+to explicitly specify the default authentication method.
 
 to fix this you basically have to change the authentication method wiht the mysql_native_password
 if you have already created the mysql user then change the password with this command:
