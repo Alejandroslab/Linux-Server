@@ -21,6 +21,17 @@ REMEMBER! find is always recursive.
 it will search in any subdirectory
 Hence there is no need to add an '-r' option.
 
+if you need to just find inside a particular folder without looking inside the subdirectories use
+the MaxDepth option:
+
+find -maxdepth 1 -name 'Paul*'
+
+this command will look with all the files and folders whose name starts with 'Paul..'
+ONLY in the working directory
+
+with 1 that limits searching only in the first level
+____________________
+
 
 and if you need to count the result you can pipe it
 in this way:
