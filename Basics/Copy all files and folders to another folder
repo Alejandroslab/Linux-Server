@@ -1,0 +1,56 @@
+use rysnc:
+
+rsync -av --progress sourcefolder destinationfolder
+
+you can exclude folders and files adding them (one by one (but you can also use a file))
+with the option
+
+--exclude folder
+
+therefore:
+
+rsync -av --progress sourcefolder destinationfolder --exclude folder_to_be_excluded
+
+you can exclude multiple folder adding other --exclude options
+
+rsync -av --progress sourcefolder destinationfolder --exclude folder_to_be_excluded --exclude folder2_to_exclude .....
+
+CAREFUL! by default rsyn will copy ALSO the HIDDEN files
+to exclude hidden files and folders just add
+
+--exclude=".*"
+
+if you only want to exclude hidden directories:
+
+--exclude=".*/"
+
+
+therefore: to copy all the content from source to destination excluding a folder and hidden files:
+
+rsync -av --progress sourcefolder destinationfolder --exclude folder_to_be_excluded --exclude=".*"
+
+
+
+you can also create a text (if you have multiple files and directories to exclude)
+and use:
+
+--exclude-from='myfile.txt'
+
+___________________
+CAREFUL when you set your source and destination folder be careful
+if you want to copy ONLY THE CONTENT of a source folder like
+
+/home/myuser
+
+the content of the 'myuser' home,
+you need to add the '\' at the end!
+
+therefore the command will be like:
+
+rsync -av --progress \home\myuser\ destinationfolder ....
+
+if you omit the '\' symbol you will copy THE FOLDER WITH INSIDE ITS content
+
+rsync -av --progress \home\myuser destinationfolder ....
+
+therefore be careful (this is important with really large transfers)
