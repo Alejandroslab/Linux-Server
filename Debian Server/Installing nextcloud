@@ -171,6 +171,8 @@ maybe you have also to change your config file located in
 
 /etc/mysql/my.cnf
 
+sudo nano /etc/mysql/my.cnf
+
 and add these lines at the end:
 
 [mysqld]
