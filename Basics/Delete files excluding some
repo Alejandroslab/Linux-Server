@@ -10,36 +10,4 @@ with the option
 
 --remove-source-files
 
-
-_________________________________________________________________
-other way to remove multiple files and or directory
-with similar names is to use
-find
-in this way:
-
-let's say we have multiple folder whose name starts with 'Anne..'
-
-if I want to delete all folder that starts with 'Anne..' and
-onlyy delete them in the current working directory (no recursively)
-run this:
-
- find -maxdepth 1 -name 'Anne*' -exec rm -r {} \;
-
--MaxDepth 1 will allow to remove the default recursive option for find command
-
--name indicates that the next word is the name of the file or folder
-
--exec rm -r .... is to delete the folders
-
-in this case the option '-r' is added because we need to delete folders that are not empty
-otherwise, in the case you need to delete just files you can remove the '-r ' option
-
-you can also safely delete all folder with the initial
-
-find -maxdepth 1 -name 'K*' -exec rm -r {} \;
-
-will delete all folders starting with capital 'K'
-This is safe to use it even in 'home' folder because will not remove any hidden files
-
-
-you can then build a script to run this for all the letters of the alphabet
+rsync -av --progress sourcefolder destinationfolder --exclude folder_to_be_excluded --exclude=".*"
