@@ -19,6 +19,7 @@ array (
   0 => '192.168.39.254',
   1 => 'sample.domain.com',
   2 => '192.168.1.190'
+  3 => 'hostname.local'
 ),
 
 save and exit
