@@ -48,7 +48,9 @@ pwd will become 'lpwd', ls will become 'lls'
 ------------
 
 TRANSFER FILES:
-if you want to transfer a file just use the 'get' command:
+
+DOWNLOAD FILES:
+if you want to download a file just use the 'get' command:
 
 get myfile
 
@@ -56,6 +58,16 @@ with recursive option you can copy a folder and all its content
 
 get -r myfolder
 
+REMEMBER: if you use get then the file or folder will be download in your
+local folder
+If you have logged in with sftp while in a different folder rather than home
+like
+
+/home/myuser/anotherfolder
+
+You will donwload your file in that location!
+
+UPLOAD FILES:
 if you want to upload some files to your server you can use
 
 put mylocalfile
