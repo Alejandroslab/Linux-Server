@@ -1,0 +1,4 @@
+you can also setup nextcloud and leave it local
+then setup a vpn with pivpn and some rules with iptables
+in order to limit the access of the clients just on some ip's
+among which there would be the nextcloud one...
