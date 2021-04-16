@@ -21,8 +21,14 @@ http://192.168.1.320/nextcloud
 
 
 in order to fix this you may want to change this in your
-config files
+config files:
 
+/etc/openvpn/server.conf
+Around line 18 you'll find a line like
+ push "dhcp-option DNS 8.8.8.8",
+ just change that and restart the openvpn service like this:
+
+sudo systemctl restart openvpn
 _______________
 
 this does not occur in MacOs
