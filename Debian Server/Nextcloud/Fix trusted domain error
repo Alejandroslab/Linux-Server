@@ -1,0 +1,29 @@
+just open the php apache config file
+
+sudo nano /var/www/html/nextcloud/config/config.php
+
+look for the part
+
+'trusted_domains'=>
+array (
+  0 => '192.168.39.254',
+  1 => 'sample.domain.com',
+
+),
+
+then add what you need
+e.g. if you need another ip add it:
+
+'trusted_domains'=>
+array (
+  0 => '192.168.39.254',
+  1 => 'sample.domain.com',
+  2 => '192.168.1.190'
+),
+
+save and exit
+now restart apache service with
+
+sudo systemctl restart apache2
+
+DONE! now it should work
