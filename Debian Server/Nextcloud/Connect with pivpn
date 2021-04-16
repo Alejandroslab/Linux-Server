@@ -1,0 +1,28 @@
+if you connect with Windows you may have some
+troubles as you have to manually change your dns
+in order to resolve the hostnames
+
+this means that in your broswer
+
+http://mylinuxserver/nextcloud
+
+will not work
+you will instead use the suffix provided by your router
+
+http://mylinuxserver.local/nextcloud
+
+or:
+
+http://mylinuxserver.local/nextcloud
+
+or it will work the ip:
+
+http://192.168.1.320/nextcloud
+
+
+in order to fix this you may want to change this in your
+config files
+
+_______________
+
+this does not occur in MacOs
