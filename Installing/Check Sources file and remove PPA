@@ -1,0 +1,9 @@
+sudo nano /etc/apt/sources.list
+
+
+to check ppa repositories
+you have to go to:
+
+cd /etc/apt/sources.list.d
+
+you will see there all your PPA
