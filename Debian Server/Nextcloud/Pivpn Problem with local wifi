@@ -1,6 +1,30 @@
 If you connect in another local wifi there may be some connectivity issues and conflicts
+this happens when the remote wifi network use the same ip addresses than your local network
+
+example:
+the VPN server is inside a network with
+
+192.168.1.0/24
+
+and the client that is trying to connect uses the same addresses in its network:
+
+192.168.1.0/24
+
+this will generate a conflict that will result in a 100% of data loss when pinging
+
+
 
 therefore it is suggested to connect to a mobile wifi (e.g. an hotspot)
 or to a public wifi
 
-there should be solution for this..
+but there should be solution for this..!
+actually there is of course!
+
+a workaround is setting up a NAT in order to hide the real local ip's
+of both the network
+this could be set up in both the newtork or just in one side
+anyways this means some probably hard work to do...
+
+therefore the easiest solution to this problem (called 'overlapping IPs' or 'overlapping networks during vpn')
+is to change the subnet of the server (as it will be more practical rather than asking the clients
+to change their subnets..)
