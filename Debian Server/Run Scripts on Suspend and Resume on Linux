@@ -1,0 +1,40 @@
+Debian users should replace all instances
+of usr/lib/systemd/system-sleep with  /lib/systemd/system-sleep/
+
+to create a script to run before suspending:
+
+nano /usr/lib/systemd/system-sleep/pre-suspend.sh
+
+type inside:
+
+#!/bin/bash/
+if [ "${1}" == "pre" ]; then
+sh /path/to/script/to/run.sh
+elif [ "${1}" == "post" ]; then
+# nothing goes here
+fi
+
+where /path/to/script/to/run.sh is a shell script
+that also start with
+
+#!/bin/bash/
+
+and that is made executable with:
+
+sudo chmod +x run.sh
+
+
+_____
+
+to create a script to run before resuming:
+#!bin/bash
+if [ "${1}" == "pre" ]; then
+# nothing goes here
+elif [ "${1}" == "post" ]; then
+sh /path/to/script/to/run.sh
+fi
+
+where
+/path/to/script/to/run.sh is the script to run
+
+done
