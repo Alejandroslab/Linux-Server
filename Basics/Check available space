@@ -1,0 +1,13 @@
+you can check your disks the used and the available space with:
+
+df -h
+you will get something like this:
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           385M   13M  373M   4% /run
+/dev/sda5       143G   14G  122G  11% /
+tmpfs           1.9G   88M  1.8G   5% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
+tmpfs           385M   20K  385M   1% /run/user/1000
