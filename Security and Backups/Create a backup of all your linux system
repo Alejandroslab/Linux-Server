@@ -1,0 +1,13 @@
+THE BACKUP PROCESS WILL TAKE A WHILE
+Be sure to have sufficient space:
+
+Now just go to root folder:
+
+cd /
+
+then type:
+
+tar cvpzf backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/backup.tgz --exclude=/mnt --exclude=/sys /
+
+where 'backup.tgz' is the name of the backup file
+the 'exlcude' options exclude unnecessary folders
