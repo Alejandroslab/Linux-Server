@@ -1,0 +1,60 @@
+cd /etc/systemd/system
+
+here you will see all your services:
+
+create a file rename like 'multitouch_gestures.service' and put inside:
+________________
+[Unit]
+Description=enable multitouch gestures on trackpad
+After=suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target
+
+[Service]
+#User=<user e.g. root>
+#Environment=DISPLAY=:0
+#WorkingDirectory=<directory_of_script e.g. /root>
+ExecStart=/home/user/gestures_startup.sh
+
+[Install]
+WantedBy=suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target
+
+_________________
+in this case the ExecStart will point to the script to run
+___________________________
+THE SCRIPT:S
+you have to create the script starting with:
+(place it wherever you want)
+_____
+
+#!\bin\bash
+...
+_____
+then make it executable
+with
+sudo chmod +x gestures_startup.sh
+
+_________________________________
+
+the 'After' and 'Install' will specify when to run the service
+
+in this case will be after suspending
+
+save and exit
+
+now reload the service files to include the new service:
+
+sudo systemctl daemon-reload
+
+
+now enable the service (on every reboot):
+
+sudo systemctl enable mulitouch_gestures.service
+
+done!
+
+if you see inside /etc/systemd/system there will be some other folders like
+
+suspend.target.wants
+inside you will see your service
+
+you can start your service without
+sudo systemctl start multitouch_gestures.service
