@@ -13,3 +13,12 @@ where 'backup.tgz' is the name of the backup file
 the 'exclude' options exclude unnecessary folders
 
 rememer that tar is always uncompressed!
+
+to look inside your tar:
+
+
+tar -tf backup.tgz
+
+or you can also pipe it to set a tree view:
+
+tar -tf filename.tar.gz | tree 
