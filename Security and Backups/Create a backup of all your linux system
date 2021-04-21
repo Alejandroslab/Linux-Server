@@ -7,7 +7,9 @@ cd /
 
 then type:
 
-tar cvpzf backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/backup.tgz --exclude=/mnt --exclude=/sys /
+sudo tar cvpzf backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/backup.tgz --exclude=/mnt --exclude=/sys /
 
 where 'backup.tgz' is the name of the backup file
 the 'exclude' options exclude unnecessary folders
+
+rememer that tar is always uncompressed!
