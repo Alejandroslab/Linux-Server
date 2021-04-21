@@ -1,0 +1,7 @@
+you can use && or ';'
+
+ls && ls -a
+
+or:
+
+ls ; ls -a
