@@ -1,0 +1,11 @@
+ls -s
+
+will get the size in k
+
+ls -l --block-size=M
+
+will retrieve the size of folder and files in megabyte
+
+ls -l --block-size=G
+
+will retrieve the size of folder and files in gigabyte
