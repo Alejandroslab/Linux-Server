@@ -1,0 +1,5 @@
+sometimes you can get some info by the terminal with a process like 801
+to know what is that process with that ID (also known as PID)
+just type:
+
+ps -p 801 -o comm=
