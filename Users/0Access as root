@@ -1,1 +1,4 @@
 sudo -i
+
+or
+su root
