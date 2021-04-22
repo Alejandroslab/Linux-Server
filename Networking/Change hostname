@@ -1,3 +1,5 @@
+(you have to follow the same process in Debian)
+
 change the hostname here:
 
 sudo nano /etc/hostname
@@ -6,3 +8,7 @@ sudo nano /etc/hosts
 then reboot
 
 sudo reboot
+
+DONE!
+
+Just do this
