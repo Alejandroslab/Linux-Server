@@ -1,0 +1,15 @@
+ifconfig is not installed by default
+
+just use the ip command
+
+in this case type:
+
+ip addr show
+
+to list all network interfaces. you will see there mac address after 'link/ether'
+
+or
+
+ip addr show eth0
+
+to list all the specifications of ethernet connection
