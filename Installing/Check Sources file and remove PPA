@@ -7,3 +7,5 @@ you have to go to:
 cd /etc/apt/sources.list.d
 
 you will see there all your PPA
+
+and then you can remove it
