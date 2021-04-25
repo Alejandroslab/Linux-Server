@@ -10,6 +10,9 @@ data with external people, but inside your server.
 qsync, myqnapcloud and so on..
 i prefer to use open source stuff)
 
+(You can also run Nextcloud on a hosting web server although not all the providers
+allows the installations on their servers..)
+
 first we have to run a VM in Ubuntu!
 
 _________________________________-
