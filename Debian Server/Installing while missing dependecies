@@ -1,0 +1,9 @@
+if you want to install a package and
+the terminal says that there are some missing dependencies
+(it will state the packages names) then just launch this afterwards:
+
+
+sudo apt --fix-broken install
+
+this command will automatically retrieve all missind dependencies
+and install all at once!
