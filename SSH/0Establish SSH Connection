@@ -102,7 +102,8 @@ therfore just type in your remote machine:
 
 ssh-keygen -l -f /etc/ssh/ssh_host_ecdsa_key.pub
 
-ECDSA it's a public key available in the folder /etc/ssh
+ECDSA it's a public key available in the folder /etc/ssh (but this will not be the same as
+the one obtained with the command)
 
 REMEMBER! that you can always check any public key (those with extension .pub)
 that are available in the folder going to:
