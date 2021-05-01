@@ -1,0 +1,2 @@
+try with:
+sudo netplan apply
