@@ -1,0 +1,11 @@
+To list all HD mounted and not mounted:
+
+lsblk
+
+to check the partition table of all your external hd
+
+just use:
+
+sudo fdisk /dev/sdb
+
+where /dev/sdb is the location of your external hd
