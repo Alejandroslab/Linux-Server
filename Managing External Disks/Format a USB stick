@@ -25,3 +25,11 @@ for ntfs file system
 sudo mkfs.ext4 /dev/sdc2
 
 for ext4 file system
+
+you can use the options -f (fast) or -Q (quick) to performa a quick format (otherwise it will take
+a long time as will perform zero filling (data will be overwritten with zeroes. Very secure way to format
+and hard drive))
+
+therefore e.g. for ntfs the command will be:
+
+sudo mkfs.ntfs -f /dev/sdc2
