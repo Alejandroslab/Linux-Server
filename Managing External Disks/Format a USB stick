@@ -1,0 +1,27 @@
+first check the location of your usb stick with
+
+df -h
+or
+
+lsblk
+
+then unmount it (as any devices attached to the linux system are automatically mounted)
+
+sudo umount /dev/sdc2
+
+where '/dev/sdc2' is the location of the usb stick as seen with the previous commnads
+WARNING is 'umount' without the 'n'
+
+now format with any file system you desire:
+
+sudo mkfs.vfat /dev/sdc2
+
+for vFat file system
+
+sudo mkfs.ntfs /dev/sdc2
+
+for ntfs file system
+
+sudo mkfs.ext4 /dev/sdc2
+
+for ext4 file system
