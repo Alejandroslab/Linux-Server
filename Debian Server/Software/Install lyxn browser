@@ -1,0 +1,4 @@
+lynx browser is a text browser that can run on Terminal
+
+just launch
+sudo apt-get install lynx
