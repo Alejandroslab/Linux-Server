@@ -1,0 +1,34 @@
+the best option is:
+
+  sudo apt install ./name.deb
+  (doing this it will try also to download an install all dependencies)
+
+or you can just use the command dpkg and the option 'install'
+that is '-i'
+
+in this way:
+
+sudo dpkg -i atom-amd64.deb
+
+When you use apt to install a package, under the hood it uses dpkg. When you install a package using apt, it first creates a list of all the dependencies and downloads it from the repository.
+
+Once the download is finished it calls dpkg to install all those files, satisfying all the dependencies.
+
+
+You can install a deb file with:
+
+    sudo dpkg -i /path/to/deb/file
+    sudo apt-get install -f
+
+  or:
+    sudo apt install ./name.deb
+
+    Or:
+
+    sudo apt install /path/to/package/name.deb
+
+    With old apt-get versions you must first move your deb file to /var/cache/apt/archives/ directory. For both, after executing this command, it will automatically download its dependencies.
+
+    First installing gdebi and then opening your .deb file using it (Right-click -> Open with). It will install your .deb package with all its dependencies.
+
+    Note: APT maintains the package index which is a database of available packages available in repo defined in /etc/apt/sources.list file and in the /etc/apt/sources.list.d directory. All these methods will fail to satisfy the software dependency if the dependencies required by the deb is not present in the package index.
