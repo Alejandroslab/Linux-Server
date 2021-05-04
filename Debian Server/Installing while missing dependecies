@@ -7,3 +7,6 @@ sudo apt --fix-broken install
 
 this command will automatically retrieve all missind dependencies
 and install all at once!
+
+if you have installed something with missing dependencies
+and run the command, that package will be removed
