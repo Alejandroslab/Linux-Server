@@ -1,0 +1,15 @@
+It could happen that you may mess with .bashrc file
+
+in order to restore it run this:
+
+cp /etc/skel/.bashrc ~/
+
+then run:
+
+source .bashrc
+
+DONE!
+
+the terminal colors should be restored now!
+The effect is immediate is not necessary any reboot as you will see
+colors after you runn 'source .bashrc'
