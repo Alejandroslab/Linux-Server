@@ -1,0 +1,15 @@
+just use
+
+tar -zxvf mypackage.tar.gz
+
+or if you want to extract in another folder just move with 'cd'
+
+like
+
+cd /home/me
+
+then launch
+
+tar -zxvf /media/me/mypackage.tar.gz
+
+if you have mounted a cd or usb or HD to your pc
