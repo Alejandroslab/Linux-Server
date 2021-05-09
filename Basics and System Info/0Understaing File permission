@@ -20,3 +20,6 @@ the second digit is assigned to the Group
 and the third digit is assigned to the Others.
 
 If a file has the  “777” permission, then everyone can read, write and execute the file.
+
+when permission are set as '777' then the terminal will highlight with green
+the file or folder!
