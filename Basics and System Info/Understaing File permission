@@ -1,0 +1,22 @@
+Read is equivalent to ‘4’. (in decimal form)
+Write is equivalent to ‘2’.
+Execute is equivalent to ‘1.’
+
+When we want to set permissions, we just add a number. For example, to set the permissions to “read and write,” we use “6” (4 + 2) for the permission. For read, write and execute, we’ll use “7” (4 + 2 + 1) for the permission.
+
+
+0 – no permission
+1 – execute
+2 – write
+3 – write and execute
+4 – read
+5 – read and execute
+6 – read and write
+7 – read, write, and execute
+
+What does this mean for ‘”777?”
+The first digit is assigned to the Owner,
+the second digit is assigned to the Group
+and the third digit is assigned to the Others.
+
+If a file has the  “777” permission, then everyone can read, write and execute the file.
