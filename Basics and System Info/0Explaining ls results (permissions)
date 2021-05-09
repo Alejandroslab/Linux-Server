@@ -29,7 +29,10 @@ in the example:
 drwxr-xr-x
 
 means that is a directory in which the OWNER has full permission (rwx)
-the GROUP has only 'xr' and OTHERS or the WORLD has only 'x' permission
+the GROUP has only 'r-x' and OTHERS or the WORLD has only 'r-x' permission
+
+there is no separation between them. the dash '-' indicates the permission not available
+in this case for GROUP it will not be possible to write as the position of the 'w' is covered by a dash '-'
 
 
 to change permissions you can change it with 'chmod'
