@@ -52,3 +52,7 @@ http://hostname:8787
 or
 
 http://IPaddress:8787
+
+Only 1 user can login at the same time.
+This means that if you are already connected from another device you will be disconnected
+from there when login in another device
