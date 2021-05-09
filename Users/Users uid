@@ -1,0 +1,6 @@
+every user has an ID in linux
+starting with '1000'
+
+you can check the owner of every file and folder with:
+
+ls -n
