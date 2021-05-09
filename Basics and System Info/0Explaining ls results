@@ -1,0 +1,50 @@
+when you run
+
+ls -l
+
+you will see something like:
+
+drwxr-xr-x 2 me   me   4096 Apr  5 17:18  Desktop
+drwxr-xr-x 3 me   me   4096 Apr 29 11:10  Documents
+....
+
+the first column indicates if the file is a directory (it will start
+with 'd') or not (it will start with a dash '-') for a file or with an 'l' for a symbolic link
+it will also specify the file permissions
+
+then you will have 9 characters that basically are a sequence of
+
+rwx = read, write, execute
+
+it is repeated threee times because it specifies permission for
+the owner, the group and the world (others).
+
+the first 3 characters are for the owner, the second 3 are for
+the group and the last 3 are for others
+
+this means that
+
+in the example:
+
+drwxr-xr-x
+
+means that is a directory in which the OWNER has full permission (rwx)
+the GROUP has only 'xr' and OTHERS or the WORLD has only 'x' permission
+
+
+to change permissions you can change it with 'chmod'
+where inly the owner or the superuser can change it.
+
+
+drwxr-xr-x
+
+the second column indicate the number of hard links
+
+the third column indicates the username of the directory or file's owner
+
+the fourth column indicates the group of the directory or file's owner
+
+the fifth column indicates the size in bytes!
+
+then you finally have date and time for the sixth and the seventh column
+and finally the name of the file or directory!
