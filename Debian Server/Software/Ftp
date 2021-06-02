@@ -1,0 +1,25 @@
+If you want to user ftp
+sudo apt-get install ftp
+
+then it will work as sftp
+
+In Windows remember to change your working directory BEFORE connecting
+
+cd  mypath/folder
+
+ftp myserveraddress
+
+the will ask for username and then password
+
+to download files:
+
+get myfile.txt
+
+if you have to dwonload multiple files :
+
+mget myfile.txt myfile2.txt
+
+
+to upload files from your local working directory:
+
+put myfile.txt
