@@ -1,0 +1,5 @@
+just run:
+
+sudo /sbin/dhclient eth0
+
+change 'eth0' with any other netwokr interface you have set up

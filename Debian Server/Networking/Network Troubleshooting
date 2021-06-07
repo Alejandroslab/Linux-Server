@@ -1,0 +1,18 @@
+First you have to know the name of your network interface
+
+to do that just
+
+cat /etc/network/interfaces
+
+this will display your network interfaces
+remember that the loopback is a testing network interfaces..
+you have to choose one of the other interfaces
+
+Let's say we choose the 'eth0'
+
+now we can restart the network interface running:
+
+sudo /sbin/dhclient eth0
+
+done!
+the interface will restart and your netwokr will be back to work! 
