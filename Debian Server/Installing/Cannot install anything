@@ -1,0 +1,28 @@
+If you cannot isntall anything like if you have the error:
+'Unable to locate package nameofpackage'
+
+and this happens for anything you want to install you have to check your sources
+
+to do that:
+
+sudo nano /etc/apt/sources.list
+
+The main Apt sources configuration file is at /etc/apt/sources.list. You can edit this files (as root) using your favorite text editor.
+
+To add custom sources, creating separate files under /etc/apt/sources.list.d/ is preferred.
+
+then you can check the content of the file if these line are missing:
+
+deb http://deb.debian.org/debian/ buster main
+deb-src http://deb.debian.org/debian/ buster main
+
+You have to add them then save and close
+
+If you don't add them, the system will only download the security updates..
+
+
+after adding them just run:
+
+sudo apt-get update -y && sudo apt-get updgrade -y
+
+then you will be able again to install packages.
