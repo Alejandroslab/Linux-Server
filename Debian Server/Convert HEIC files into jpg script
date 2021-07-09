@@ -1,0 +1,37 @@
+tested on rapserbby pi
+
+first:
+
+sudo apt-get install software-properties-common
+
+then:
+
+sudo add-apt-repository ppa:strukturag/libheif
+sudo apt-get install libheif-examples
+sudo apt-get update
+
+now the usual command is:
+
+heif-convert infile.heif outfile.jpg
+
+SCRIPT
+
+sudo nano convertHEIC.sh
+
+
+#!/bin/bash
+for f in *.HEIC
+do
+echo "Working on file $f"
+heif-convert $f $f.jpg
+done
+
+
+save exit and make executable
+
+
+sudo chmod +x convertHEIC.sh
+
+Finally, run the script. Keep in mind the script should be in the same directory as all of your HEIC files.
+
+./convert.sh

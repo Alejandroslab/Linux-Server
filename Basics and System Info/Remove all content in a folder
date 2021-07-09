@@ -1,0 +1,10 @@
+If I want to remove all the content just:
+
+rm Pictures/*
+
+in this case everyhting INSIDE the folder pictures will be deleted
+
+if there are subdirectories you can use the recursive option
+
+
+rm -r Pictures/*

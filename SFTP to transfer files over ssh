@@ -67,6 +67,13 @@ like
 
 You will donwload your file in that location!
 
+
+
+
+
+
+
+
 UPLOAD FILES:
 if you want to upload some files to your server you can use
 
@@ -83,6 +90,11 @@ if you need to upload a folder use the recursive option:
 put -r mylocalfolder
 
 you can also upload from a newtork folder. it is not necessary to be a local folder (at least this is how it works on Windows)
+
+In Windows you should create a network drive in order to assign a letter a work with the paths easily
+
+
+
 
 CAREFUL when you use
 
