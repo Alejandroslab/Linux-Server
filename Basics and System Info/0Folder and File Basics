@@ -83,6 +83,10 @@ to move to temporary
 cd..
 to go up to the parent directory
 
+you can also use
+
+cd --
+
 If we wanted to go straight from our home directory to the “etc” directory (which is directly inside the root of the file system), we could use this approach:
 
 cd ../../etc

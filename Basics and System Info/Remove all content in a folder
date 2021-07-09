@@ -8,3 +8,23 @@ if there are subdirectories you can use the recursive option
 
 
 rm -r Pictures/*
+
+you can also move to the folder and then remove all the content simply tiping;
+
+cd myfolder
+
+then:
+
+rm !()
+
+you can also use:
+rm -v !()
+
+
+you will get the verbose mode
+
+the '!' indicates an exception:
+
+if you want to remove all files except one:
+
+rm -v !("myfile.txt")
