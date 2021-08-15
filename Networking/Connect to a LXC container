@@ -11,9 +11,9 @@ Now follow this if you want to add ssh connection:
 
 in the container just follow the ssh instructions as usual
 
-then in the container settings youhave to set a port forwarding to your container
+then in the container settings you have to set a port forwarding to your container
 
-it will basically linka a port of the NAS to the port 22 in the container
+it will basically link a a port of the NAS to the port 22 in the container
 
 leave the network mode as NAT
 then in portforwarding set:
