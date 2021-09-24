@@ -1,0 +1,11 @@
+tar xzvf apache-cassandra-4.0.0-bin.tar.gz
+
+move to /bin directory then run
+
+./cassandra
+
+done!
+
+to check the status just run (in the same /bin directory)
+
+./nodetool status
