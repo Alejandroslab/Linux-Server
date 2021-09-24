@@ -1,4 +1,4 @@
-just use
+To extract just use:
 
 tar -zxvf mypackage.tar.gz
 
@@ -13,3 +13,14 @@ then launch
 tar -zxvf /media/me/mypackage.tar.gz
 
 if you have mounted a cd or usb or HD to your pc
+
+
+now to install you have to find the right package 
+
+for exampl for cassandra you have to run
+
+/bin/cassandra
+
+or you just move to the 'bin' directory and then run
+
+./cassandra
