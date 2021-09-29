@@ -1,2 +1,5 @@
 you can use systemctl:
 sudo systemctl stop mysql
+
+or
+sudo service stop mysql
