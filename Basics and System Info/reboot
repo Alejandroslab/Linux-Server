@@ -1,1 +1,5 @@
 sudo reboot
+
+to reboot immediately just reboot 'now':
+
+sudo reboot -n
