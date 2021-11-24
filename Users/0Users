@@ -2,17 +2,25 @@ To list users
 
 cut -d: -f1 /etc/passwd
 
+
+
 add a new user
 
 sudo adduser newuser2
+
+
 
 to remove a user
 
 sudo userdel newuser2
 
+
+
 to edit the name of a user:
 
 sudo usermod -l newuser3 newuser2
+
+
 
 to change the password for a user:
 
@@ -20,5 +28,5 @@ sudo passwd newuser2
 
 
 
-To modify the username of a user:
+To edit the username of a user:
 sudo usermod -l new_username old_username
