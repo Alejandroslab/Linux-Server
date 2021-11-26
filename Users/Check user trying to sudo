@@ -1,0 +1,16 @@
+When you have another user that has not admin privileges (sudo) then you can check how many
+he will try to do that.
+
+It will appear to him the message: "The user is not in the sudoers file. The incident will be reported."
+
+The incident is reporte here:
+
+/var/log/auth.log
+
+you can see it with cat:
+
+cat /var/log/auth.log
+
+As this file is really long you may want to see only the last 20 lines:
+
+tail -20 /var/log/auth.log
