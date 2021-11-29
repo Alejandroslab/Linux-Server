@@ -1,0 +1,3 @@
+check the Debian version
+
+cat /etc/debian_version
