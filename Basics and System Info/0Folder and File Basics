@@ -45,31 +45,6 @@ if the folder has a space in the name
 
 
 
-to list all the files in a directory
-
-ls
-
-ls means list
-
-to a more clean view:
-
-ls -ls
-
-or
-
-ls -l
-
-to save the list of files in a text:
-
-ls > listfile.txt
-
-to list all files (included hidden ones):
-
-ls -a
-
-
-
-
 
 to move between directories:
 

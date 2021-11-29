@@ -7,7 +7,7 @@ java -version
 Copy Link of the Binary file from Official Website
 then
 
-wget binarylink
+wget thebinarylink
 
 (you can then run the checksum downloading the corresponding checksum file)
 
@@ -23,7 +23,7 @@ retrieve your java path
 readlink -f /usr/bin/java | sed "s:bin/java::"
 
 
-open 
+open
 sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
 
 and insert this second line (will retrieve the folder dinamically)
@@ -36,11 +36,9 @@ save and close
 now you can run hadoop
 
     /usr/local/hadoop/bin/hadoop
-    
+
+
+
 You can test MapReduce with this code:
 mkdir ~/input
 cp /usr/local/hadoop/etc/hadoop/*.xml ~/input
-
-
-
-
