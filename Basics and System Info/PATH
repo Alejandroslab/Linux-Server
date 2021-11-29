@@ -1,6 +1,14 @@
 The PATH is the list of paths that the system will inspect to run applications.
 
-You can add whichever folder you wish to the path.
+To check this list of files:
+
+echo $PATH
+
+
+REMEMEBER! If you have messed up with your PATH and your new folders added to it are not persistent
+you may want to check the other files like: .profile or .bash_profile
+You will see there other programs that maybe you have previously added.
+_________
 
 
 sudo nano ~/.bash_profile
@@ -16,7 +24,9 @@ now refresh
 
 source ~/.bash_profile
 
+You can add whichever folder you wish to the path!
 
+_______________________________________
 
 In the worst case scenario in which you mess up with the PATH, just type:
 

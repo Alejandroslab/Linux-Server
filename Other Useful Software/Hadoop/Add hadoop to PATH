@@ -1,0 +1,30 @@
+ Edit .bashrc and add the following lines:
+
+export HADOOP_HOME=/usr/local/hadoop
+
+export PATH=${PATH}:${HADOOP_HOME}/bin:${HADOOP_HOME}/sbin
+
+
+
+The second line will add the binary directory to the PATH that is a file in which all folders with executable are indicated
+to check this PATH file:
+
+echo $PATH
+
+then you should run:
+
+source ~/.bashrc
+to make your changes persistant
+
+
+
+If you have messed up with your PATH you may want to check the other files like: .profile or .bash_profile
+You will see there other programs that maybe you have previously added.
+
+in .bash_profile you have to open and paste:
+
+export PATH="$PATH:/usr/local/hadoop/bin"
+
+save and exit then eventually run:
+
+source .bash_profile
