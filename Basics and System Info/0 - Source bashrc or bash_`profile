@@ -1,0 +1,14 @@
+
+bashrc or bash_profile are hidden files in your home directory
+that allow you to make some customizations
+from indicating the folders to be added to the PATH
+to change colors for the terminal etc..
+
+you can apply your changes making it persistent with:
+
+source .bashrc
+or
+source .bash_profile
+
+Remember that if bashrc does not seem to work then
+you source file must be .bash_profile or .profile!
