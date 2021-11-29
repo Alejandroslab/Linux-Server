@@ -1,0 +1,28 @@
+to list all the files in a directory
+
+ls
+
+ls means list
+
+to a more clean view:
+
+ls -ls
+
+or
+
+ls -l
+
+to save the list of files in a text:
+
+ls > listfile.txt
+
+to list all files (included hidden ones):
+
+ls -a
+
+
+if you are in antother folder you can always user list command for other paths like:
+
+ls /home/myuser
+
+and you will get the list of files without moving from you current folder
