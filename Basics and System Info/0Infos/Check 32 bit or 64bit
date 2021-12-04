@@ -1,0 +1,3 @@
+Run "uname -m" to confirm.
+
+If it says aarch64 then it is 64 bit. If it says armv7l then it is 32 bit.
