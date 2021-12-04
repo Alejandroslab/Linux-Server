@@ -1,7 +1,11 @@
-
-
 All software are programs, which are also called source packages.
-So all source packages need to be built first, to run on your system.
+
+The source package is also called the source code or simply the code.
+THis is the code of the developer who has written it.
+But first, all source packages need to be built, to run on your system.
+
+This is done by a compiler that is a program that read in block all the code and
+passes the instructions in the machine language(binary language 0111010101010... and so on)
 
 The binary packages (like the windows installers) are one that are already build from source
 by someone with general features and parameters provided in the software
@@ -36,3 +40,4 @@ There are lots of trusted sources from where you can get the binary
 of any new project, the only negative is the time.
 It may take some time for the binary of the updates or even a new project
 to appear in our trusted repositories.
+s
