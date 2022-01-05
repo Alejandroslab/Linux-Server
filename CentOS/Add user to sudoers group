@@ -1,0 +1,10 @@
+just switch to root :
+su root
+
+then type:
+
+usermod -aG wheel myuser
+
+where 'myuser'is the name of the user that we want to add to sudo group
+
+'wheel' is the sudo group in CentOS

@@ -1,0 +1,6 @@
+If you have performed the minimal installation you will not find any application
+beside the most essential ones.
+
+In this case you may neeed to install some useful package as nano the text editor:
+
+sudo yum install nano -y
