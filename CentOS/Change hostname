@@ -1,0 +1,49 @@
+to check the current hostname:
+
+hostnamectl
+
+or:
+
+hostname -I
+as in any other linux distro
+
+
+to set a new hostname:
+
+hostnamectl set-hostname mynewhostname
+
+where 'mynewhostname' is the new hostname you want to set
+
+after that you will need to change it in the /etc/hosts
+
+to do that:
+
+vi /etc/hosts
+
+if you do not have set your current user with sudo privileges you will need to
+switch user to 'root' otherwise you will not be able to save:
+
+su root
+
+type in the password and then again:
+
+vi /etc/hosts
+
+Inside this file you will see:
+
+127.0.0.1  localhost localhost.localdomain localhost 4 localhost4.localdomain4 old.hostname
+::1     ................
+
+the first line is the IPV4 set line and the second line is the IPV6
+
+'old.hostname' is the previous hostname that you need to change
+BUT! if you have not set it up correctly during the installation then you will not find any
+hostname 'old.hostname'
+In this case just type in your desired hostname at the end of the line (the first line is IPV4)
+
+
+then reboot the machine:
+
+reboot
+
+done!

@@ -1,3 +1,8 @@
 Just choose the Minimal installation ISO
 
-Then install it 
+Then install it
+
+It will not install the 'sudo' command as Default
+You will need to set it later
+
+Remember also to set correctly your hostname during the installation otherwise you will need to change it
