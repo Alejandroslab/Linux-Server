@@ -1,0 +1,5 @@
+You will need to use the default package manager: yum
+
+yum install myapp -y
+
+or use with sudo if you have been added to the sudo Group
