@@ -4,6 +4,10 @@ It is just for you to recognize it as a python file
 
 Inside the file just put your code!
 
+print("Hello")
+
+save it!
+
 To run simply type:
 
 python myfile
