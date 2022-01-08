@@ -1,0 +1,12 @@
+You can turn off directly the interface (it will work until next reboot)
+
+for wifi usually the interface is 'wlan0'
+
+sudo ifconfig wlan0 down
+
+to turn on:
+
+sudo ifconfig wlan0 up
+
+you can also turn off and on other interface as far as you know the name
+(like 'eth0' ,'tun0', etc) 
