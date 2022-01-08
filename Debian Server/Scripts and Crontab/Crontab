@@ -1,0 +1,5 @@
+To list rules:
+crontab -l
+
+to add or edit or delete a rule:
+crontab -e
