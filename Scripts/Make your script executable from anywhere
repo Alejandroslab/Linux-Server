@@ -1,0 +1,13 @@
+Create a folder with all your scripts
+
+you can also set an alias to make it easier to remember and type 
+
+    Make the scripts executable: chmod +x $HOME/scripts/*
+    This needs to be done only once.
+
+    Add the directory containing the scripts to the PATH variable: export PATH=$HOME/scrips/:$PATH
+    (Verify the result with echo $PATH.)
+
+    The export command needs to be run in every shell session.
+
+    For convenience, you want to add that command to the $HOME/.profile file so it is run automatically for you at log-in time.
