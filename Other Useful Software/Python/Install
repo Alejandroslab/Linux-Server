@@ -1,0 +1,7 @@
+It should come preinstalled anyways you can install
+
+sudo apt-get install python
+
+or
+
+python3

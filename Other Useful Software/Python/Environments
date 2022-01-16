@@ -1,0 +1,6 @@
+You can install 'virtualenv'
+
+sudo -H pip3 install --upgrade pip
+sudo -H pip3 install virtualenv
+
+to have multiple environments like in anaconda

@@ -1,0 +1,6 @@
+to activate:
+source mynewenv/bin/activate
+
+to deactivate just type
+
+deactivate
