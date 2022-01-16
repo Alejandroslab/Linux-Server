@@ -1,6 +1,13 @@
 Create a folder with all your scripts
 
-you can also set an alias to make it easier to remember and type 
+you can also set an alias to make it easier to remember and type
+
+$ alias mycoolscript="python /$HOME/scripts/script.py"
+The alias wont persist across shell sessions. If you want to add these permanently you can add the alias command to your .bashrc
+
+open $HOME/.bashrc with your favorite text editor and add the line to the bottom
+
+when you are done type
 
     Make the scripts executable: chmod +x $HOME/scripts/*
     This needs to be done only once.
