@@ -1,0 +1,33 @@
+After having connected successfully move to the folder in which you have installed the virtual environment
+activate the virtual environment and run jupyter notebook!
+
+with these 3 commands:
+
+cd ~/my_project_dir
+
+source my_project_env/bin/activate
+
+jupyter notebook
+
+
+_____
+Now the notebook will run. From now on we will call it the 'jupyter server'
+
+A log of the activities of the Jupyter Notebook will be printed to the terminal.
+And a url will be printed
+
+
+Copy the URL that will be printed.
+This url will have a token (a long string of characters) that will change anytime you close and open the jupyter server
+
+Paste it in a browser on your local machine and voila!
+
+REMEMBER!! Keep the server connection active otherwise you will not be able to work on your notebooks
+
+To close the connection simply close the process with ctrl+c
+
+done!
+
+
+Inside jupyter click on New>Python3
+and a new notebook will open!

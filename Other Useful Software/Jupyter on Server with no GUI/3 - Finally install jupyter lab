@@ -1,0 +1,20 @@
+Install Jupyter lab after having installed Jupyter notebook! Not before
+
+To install you have several ways
+I have used the conda installer without activating any environment
+
+conda install -c conda-forge jupyterlab
+
+
+DONE!
+
+Now repeat the process of the connection with the ssh tunneling
+
+and just run:
+
+jupyter lab
+
+(separated by a space)
+
+Another URL will be printed, paste it in your local browser and voila'
+You will se the Jupyter Notebook with Terminal, Console that is the Jupyter Lab!

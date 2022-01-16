@@ -1,0 +1,36 @@
+first update
+
+sudo apt-get update -y
+
+Then install pip and python3
+
+sudo apt install python3-pip python3-dev
+
+
+To manage the virtual environment (aside of conda) we install the virtuaenv package that will allow
+to manage virtual environments as Conda does.
+
+SO install virtuaenv:
+
+sudo -H pip3 install --upgrade pip
+sudo -H pip3 install virtualenv
+
+The -H flag ensures that the security policy sets the home environment variable to the home directory of the target user.
+
+After installing let's create a folder in which place the virtual environment and move into it
+
+mkdir ~/my_project_dir
+cd ~/my_project_dir
+
+Now let's create the virtual environment inside this folder
+
+virtualenv my_project_env
+
+Inside, it will install a local version of Python and a local version of pip. We can use this to install and configure an isolated Python environment for Jupyter.
+
+As for Conda we need to activate this virtual environment to isolate it correctly
+Therefore we run:
+
+source my_project_env/bin/activate
+
+The prompt will change starting with "(my_project_env).."

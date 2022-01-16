@@ -1,0 +1,16 @@
+There are 2 Jupyter currently:
+
+-Jupyter Notebook
+-Jupyter Lab
+
+The Notebook is the basic version that will allow you to have a simple notebook for python in which you
+will have markdown and you will be able to Code
+
+jupyter lab is an extension and as it is an improvement it can be installed as a second layer AFTER installing the notebook
+
+We will install jupyter on a server/instance locally (not on a live server. Therefore you will need vpn if you want to access it). The server has Ubuntu Server as OS
+
+Then we will have access from another machine (from a macos machine that will work as a client of the server)
+
+
+Jupyter will be also installed on a virtual environment inside the server

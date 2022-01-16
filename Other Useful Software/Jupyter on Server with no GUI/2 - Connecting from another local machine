@@ -1,0 +1,25 @@
+As we have installed Jupyter on a server with no GUI we need to connect from another machine
+
+To do this we need to connect with the SSH Tunneling as it seems to be the only way to connect to Jupyter
+
+From our local machine we will connect therfore with ssh with this command:
+
+
+ssh -L 8888:localhost:8888 server_user@the_ubuntu_server_hostname
+
+
+The port is usually 8888 but it can change. Anyways you can try on your server just running jupyter with the command 'jupyter notebook'
+
+anyways the ssh command opens an SSH connection;
+-L specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side (server).
+
+This means that whatever is running on the second port number (e.g. 8888) on the server will appear on the first port number (e.g. 8888) on your local computer (localhost)
+
+NOTE: the localhost cannot be changed otherwise you will not be able to connect!!
+This is the way on how Jupyter is supposed to be connected
+
+Running the command will ask you the server username password as in any other ssh connection and then
+you are connected to the server forwarding the 8888 server port to the 8888 local port of your client(in this case the macos machine)
+
+
+Optionally change port 8888 to one of your choosing to avoid using a port already in use by another process. 

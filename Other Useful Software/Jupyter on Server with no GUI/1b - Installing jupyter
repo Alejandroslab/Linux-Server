@@ -1,0 +1,10 @@
+Now after having activated the virtual environment we install Jupyter:
+
+pip install jupyter
+
+When finished just move to your local machine from which you want to connect.
+Leave the server
+If you are connected via ssh simpy close the connection
+
+(If you run now you will just see the address with a token (a long string of characters) but if you have a
+server with no gui you will not be able to access it)
