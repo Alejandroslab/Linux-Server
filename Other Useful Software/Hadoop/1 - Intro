@@ -1,0 +1,9 @@
+It allows to manage a group of machines as a an "army" with a "master" and the "workers"
+
+You can install an hadoop cluster on several machines even "commodity hardware" that means machines not
+too much powerful
+
+The master is the machine in charge that has the duty of coordinate all the work
+The workers are machines usually less powerful than the master that will perform the task
+
+Both the master and workers form the Hadoop cluster 
