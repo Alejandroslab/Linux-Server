@@ -1,6 +1,8 @@
 Firs install
 REMEMBER! In Debian you have to install 'openssh-server' as it is not installed by default
 
+These commands are also valid for Linux Mint
+
 sudo apt-get update
 
 sudo apt-get install openssh-server
@@ -26,7 +28,7 @@ If the lines are already there but start with # you should just delete the # sym
 
 Save and close nano (or other)
 
-
+________
 
 To check the status
 

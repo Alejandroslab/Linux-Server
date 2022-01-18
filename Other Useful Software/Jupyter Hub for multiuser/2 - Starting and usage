@@ -1,0 +1,16 @@
+To start just run:
+
+jupyterhub
+
+Now open a browser and run:
+
+http://localhost:8000
+
+Sign in with your system credentials (the same that you use for login )
+
+You calso probably have access with the ssh tunnelling feature.
+See the command used for jupyterlab
+
+To allow multiple users to sign in to the Hub server, you must start jupyterhub as a privileged user, such as root:
+
+sudo jupyterhub
