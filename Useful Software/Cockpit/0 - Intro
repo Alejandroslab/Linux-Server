@@ -1,0 +1,22 @@
+Cockpit is an open source web console that provides an easy interface
+to monitor your server (a web console)
+You will be able to control you server with this tool
+
+You can install it in Ubuntu, Debian, Linux Mint, RHEL, Centos
+
+E.g. in Linux Mint just run:
+
+sudo apt-get install cockpit
+
+after the installation finishes you will be able to access Cockpit on a web browser :
+
+https://ip-address-of-machine:9090
+
+done!
+
+If your browser (like Firefox) pops up a security risk advertising just click ok and continue to the page
+
+Then log in with your server system log credentials
+
+And done!
+You have cockpit 
