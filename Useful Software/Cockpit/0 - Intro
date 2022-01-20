@@ -4,7 +4,7 @@ You will be able to control you server with this tool
 
 You can install it in Ubuntu, Debian, Linux Mint, RHEL, Centos
 
-E.g. in Linux Mint just run:
+E.g. in Ubuntu or Linux Mint just run:
 
 sudo apt-get install cockpit
 
@@ -19,4 +19,4 @@ If your browser (like Firefox) pops up a security risk advertising just click ok
 Then log in with your server system log credentials
 
 And done!
-You have cockpit 
+You have cockpit
