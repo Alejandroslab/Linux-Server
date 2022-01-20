@@ -8,6 +8,10 @@ sudo apt-get update
 sudo apt-get install openssh-server
 
 
+In Debian it is usually only necesary only this last command and everything will work out!
+------
+
+
 then edit with nano or other text editor the config file
 
 sudo nano /etc/ssh/ssh_config
