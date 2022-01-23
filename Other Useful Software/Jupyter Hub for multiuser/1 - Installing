@@ -1,0 +1,30 @@
+We will perform the installation via pip and not conda!
+
+
+First install python3 and pip
+
+
+sudo apt install python3-pip
+
+then node js and npm:
+
+sudo apt install nodejs npm
+
+Then install jupyter hub:
+
+python3 -m pip install jupyterhub
+
+install the proxy:
+
+npm install -g configurable-http-proxy
+
+Finally:
+
+python3 -m pip install jupyterlab notebook
+
+# needed if running the notebook servers in the same environment
+
+ You can test your installation with the commands:
+
+ jupyterhub -h
+configurable-http-proxy -h
