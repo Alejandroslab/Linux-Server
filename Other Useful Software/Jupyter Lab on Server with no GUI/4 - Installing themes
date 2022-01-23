@@ -1,0 +1,2 @@
+You can install the beautiful solarized-dark theme:
+pip install jupyterlab_theme_solarized_dark
