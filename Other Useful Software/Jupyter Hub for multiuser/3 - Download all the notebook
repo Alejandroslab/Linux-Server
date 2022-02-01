@@ -1,0 +1,7 @@
+run in a jupyter terminal (or inside a cell):
+
+!tar chvfz notebook.tar.gz *
+
+or:
+
+!tar chvfz notebook.tar.gz *
