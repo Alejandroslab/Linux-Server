@@ -4,6 +4,8 @@ lsblk
 
 to check the partition table of all your external hd
 
+(you can also use lsblk -f for more details)
+
 just use:
 
 sudo fdisk /dev/sdb
