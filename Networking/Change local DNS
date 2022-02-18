@@ -1,0 +1,13 @@
+just change the file 
+
+sudo vi /etc/resolv.conf
+
+you will see something like:
+
+nameserver 192.168.1.1 
+
+..
+
+Change there with the DNS IP you like 
+
+Additional nameserver directives after the first are only used when the first or last used server is unavailable
