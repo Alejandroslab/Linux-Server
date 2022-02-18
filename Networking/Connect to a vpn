@@ -1,0 +1,11 @@
+Use sudo
+
+list all NM connections: 
+
+mcli con
+
+start connection (wifi, vpn, etc): nmcli con up id ConnectionName
+
+down connection: nmcli con down id ConnectionName
+
+This works also in arch
