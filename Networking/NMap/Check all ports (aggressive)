@@ -1,1 +1,3 @@
-nmap -sS -sU -PN 192.168.0.164
+needs sudo
+
+sudo nmap -sS -sU -PN 192.168.0.164
