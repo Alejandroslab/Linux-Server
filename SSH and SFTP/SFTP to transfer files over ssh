@@ -125,3 +125,6 @@ __-
 
 with df -h you can check your space (no local variation (the 'l')for this command)
 you can use the symbol '!' to use your local
+
+
+You cannot run any other particular command. You can run some commands only on your local device just placing '!' before the commnad itself
