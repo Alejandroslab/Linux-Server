@@ -1,0 +1,14 @@
+If you have trouble displaying the hostnames (even with nmap) a possible solution is to try with NETBIOS
+
+just invoke one of the scripts that come installed with nmap that is 'nbstat.nse'
+
+sudo nmap -sU --script nbstat.nse -p137 <host>
+
+in <host> you can also type in a range like
+192.168.1.0/24
+or 
+
+192.168.1.1/24
+
+This will list all NETBIOS names that usually are available for any device (especially windows device) and that usually coincide with the hostname 
+(unless something has not changed)
