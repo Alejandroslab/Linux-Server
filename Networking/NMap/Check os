@@ -1,0 +1,3 @@
+nmap -O 192.168.0.164
+
+to check the operating system
