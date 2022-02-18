@@ -1,1 +1,6 @@
 nmap -T4 -A 192.168.0.0/24
+
+add verbose for understand better what it does (-v)
+Basically it runs almost 155 scripts to scan the network
+
+It wil take some time 
