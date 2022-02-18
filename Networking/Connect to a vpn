@@ -4,6 +4,8 @@ list all NM connections:
 
 mcli con
 
+(colors will change for actives connection)
+
 start connection (wifi, vpn, etc): nmcli con up id ConnectionName
 
 down connection: nmcli con down id ConnectionName
