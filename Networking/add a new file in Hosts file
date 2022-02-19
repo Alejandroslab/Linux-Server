@@ -1,0 +1,3 @@
+just run this:
+
+ echo '104.20.186.5 www.myhost.com' | sudo tee -a /etc/hosts
