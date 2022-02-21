@@ -1,0 +1,9 @@
+Just use watch
+
+watch free -m
+
+will check the memory usage every 2 seconds
+
+watch -n 10 ping debian.net
+
+will run a ping every 10 seconds 
