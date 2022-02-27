@@ -1,0 +1,13 @@
+first run
+
+lsusb
+
+identify your webcam connected via usb
+
+then:
+
+ lsusb -s 001:002 -v | egrep "Width|Height"
+ 
+ where 001 is the 'Bus' and 002 is the 'Device' number 
+ 
+ This command will give you the list of all width per height available therefore all the resolutions of the webcam
