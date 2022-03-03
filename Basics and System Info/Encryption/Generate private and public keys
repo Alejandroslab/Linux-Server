@@ -1,0 +1,27 @@
+You have to generate first your private keys:
+
+openssl genrsa -out private_key.pem 1024
+
+from them you can generate the public keys
+
+openssl rsa -in private_key.pem -out public_key.pem -outform PEM -pubout
+
+
+now lets create a file with some content
+
+echo "Hello World!" > encrypted_content.txt
+
+Now we can encrypt using the public keys previously generated:
+
+openssl rsautl -encrypt -inkey public_key.pem -pubin -in   encrypted_content.txt   -out encrypted_content.dat
+
+the encrypted_content.txt will be encrypted in the file encrypted_content.dat
+
+
+
+
+
+To decrypt it you need the private key:
+
+
+openssl rsautl -decrypt -inkey private_key.pem -in encrypted_content.dat -out new_encrypted_content.txt 

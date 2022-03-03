@@ -1,0 +1,11 @@
+to encrypt
+
+
+
+tar cz myfolder | openssl enc -aes-256-cbc -out myfolder.tar.gz.dat
+
+
+to decrypt
+
+
+openssl enc -aes-256-cbc -d -in myfolder.tar.gz.dat | tar xz

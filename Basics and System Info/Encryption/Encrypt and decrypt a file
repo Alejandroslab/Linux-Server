@@ -4,6 +4,8 @@ openssl enc -aes-256-cbc    -in    test  -out    test.enc
 
 This command will ask you a password to encrypt your file 'test'
 
+
+
 to decrypt the file
 
 openssl enc -aes-256-cbc -d -in test.enc > test.txt
