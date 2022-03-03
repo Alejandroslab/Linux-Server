@@ -1,0 +1,11 @@
+to encrypt the file 'test' that will become the file 'test.enc':
+
+openssl enc -aes-256-cbc    -in    test  -out    test.enc
+
+This command will ask you a password to encrypt your file 'test'
+
+to decrypt the file
+
+openssl enc -aes-256-cbc -d -in test.enc > test.txt
+
+after inputting the password this command will print the output to a new file called 'test.txt' in order to not overwrite the original one
