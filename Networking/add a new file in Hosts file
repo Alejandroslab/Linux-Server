@@ -1,3 +1,7 @@
 just run this:
 
  echo '104.20.186.5 www.myhost.com' | sudo tee -a /etc/hosts
+
+ REMEMBER!
+ In hosts you can set the hostname with capital letters or not
+ the system will read the file but is not case sensitive
