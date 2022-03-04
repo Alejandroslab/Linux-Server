@@ -1,0 +1,11 @@
+now we can run indicating the list of hosts on which run the particular command that we want:
+
+pssh -i -h ~/.pssh_hosts_files  mycommand
+
+e.g. we can query the uptim with:
+
+pssh -i -h ~/.pssh_hosts_files  uptime
+
+the command will run the 'uptime' command on any host via ssh and will print the output
+
+There will be also a '[SUCCESS]' printed output if the command has successfully been executed 

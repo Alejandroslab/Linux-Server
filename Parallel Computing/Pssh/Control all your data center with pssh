@@ -1,0 +1,28 @@
+Pssh is a python package that allows to run commands via ssh to all your machines at once
+
+at the moment (pssh version 2.3.1 and Python 3.7.3) the package is broken and you need to do some small fixs to the code in order to make it work
+(or the other solution is to downgrade python)
+
+First install it via pip
+
+pip install pssh
+
+then you can type
+
+pssh --version
+
+if there is some error like 'Traceback no module Version' or something like that then you need to do the first change to the code
+
+first open the file that is indicated in the error
+
+/home/$USER/.local/lib/python3.7/site-packages/psshlib/cli.py
+
+then just change in the first lines
+
+import version
+
+to:
+
+from . import version
+
+save and exit

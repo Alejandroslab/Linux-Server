@@ -1,0 +1,16 @@
+Now for speed reasons you may want to create a file that will be recalled with pssh
+
+(you will have to type in any host if you do not do this step)
+
+You can create it as an hidden file:
+
+vim .pssh_hosts_files
+
+inside the file just type in the list of hosts in the 'ssh' way:
+
+myuser@myhost
+myuser@myhost2
+myuser@myhost3
+
+
+save and exit

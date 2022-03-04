@@ -1,0 +1,32 @@
+The other error that you may incurr is this one:
+
+/usr/bin/pssh -H 127.0.0.1 df -h
+Traceback (most recent call last):
+File "/usr/bin/pssh", line 118, in <module>
+do_pssh(hosts, cmdline, opts)
+File "/usr/bin/pssh", line 71, in do_pssh
+manager = Manager(opts)
+File "/usr/lib/python3.5/site-packages/psshlib/manager.py", line 42, in __init__
+self.iomap = IOMap()
+File "/usr/lib/python3.5/site-packages/psshlib/manager.py", line 215, in __init__
+signal.set_wakeup_fd(wakeup_writefd)
+ValueError: the fd 4 must be in non-blocking mode
+
+
+to fix this you have to open the file indicated that is:
+
+ /usr/lib/python3.5/site-packages/psshlib/manager.py
+
+ (if you have installed via pip this file will be located under 'local'. Anyways the path will be very similar)
+
+ then first on the import section of the code add:
+
+import fcntl
+
+ Then go to line 213 (use vim) and add this line:
+
+ fcntl.fcntl(wakeup_writefd, fcntl.F_SETFL, os.O_NONBLOCK)
+
+ save and exit
+
+ now pssh should work 

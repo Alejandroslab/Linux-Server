@@ -1,0 +1,19 @@
+POSSIBILIBITES NOW ARE up to you
+
+UPDATE SYSTEMS
+
+you can update all your systems via
+
+sudo apt-get -y update
+
+this will become:
+
+pssh -i -h ~/.pssh_hosts_files -- sudo apt-get -y update
+
+
+COPY FROM MAIN SERVER TO REMOTE HOSTS
+you can copy a file from your main machine to all your remote servers!
+
+  pssh -i -h ~/.pssh_hosts_files   $HOME/myfile.txt /$HOME/fileonservers.txt
+
+  
