@@ -1,0 +1,16 @@
+This error happens when connectign from a mac and you want to run a command like
+
+spd-say "hi"
+
+the error will be
+
+setlocale not set
+
+or something similar
+
+to fix that temporarily:
+
+just type
+
+export LC_ALL="en_US.UTF-8"
+
