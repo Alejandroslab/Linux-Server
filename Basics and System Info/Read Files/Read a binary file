@@ -12,3 +12,7 @@ for bin
 and for hex:
 
 xxd file
+
+you can also read the first lines with:
+
+xxd -b myfile | head
