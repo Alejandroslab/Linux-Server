@@ -1,0 +1,13 @@
+when running 
+
+systemctl 
+
+it may happen that the service called 'networking' has failed (careful: just the 'networking' one and not the 'network manager')
+
+to fix it:
+
+sudo mv /etc/network/interfaces.d/setup ~
+
+then reboot 
+
+after the reboot it will automaticalluy fix it
