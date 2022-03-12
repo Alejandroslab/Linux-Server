@@ -1,0 +1,8 @@
+just run:
+
+systemctl 
+
+or to list all loaded but active services, both running and those that have exited, you can add the --state option with a value of active, as follows:
+
+
+systemctl list-units --type=service --state=active
