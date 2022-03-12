@@ -1,0 +1,14 @@
+If you want to read a .bin file that is a compiled file you need a way to see it as 0 and 1 
+in linux you can use 
+
+hexdump -C myfile
+
+or:
+
+xxd -b myfile
+
+for bin
+
+and for hex:
+
+xxd file
