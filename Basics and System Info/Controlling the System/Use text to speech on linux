@@ -1,0 +1,7 @@
+Use spd-say to text to speech:
+
+spd-say "hello"
+
+you can also set a language:
+
+spd-say -l "it" "ciao, come stai?"
