@@ -1,0 +1,88 @@
+Apache on Ubuntu has one server block enabled by default that is configured to serve documents from the /var/www/html directory. 
+While this works well for a single site, it can become unwieldy if you are hosting multiple sites. 
+
+Instead of modifying /var/www/html, 
+
+create a directory structure within /var/www for a your_domain site, 
+
+leaving /var/www/html in place as the default directory to be served if a client request doesn’t match any other sites.
+
+
+
+create the directory for your domain:
+sudo mkdir /var/www/your_domain
+
+then set permissions:
+
+sudo chmod -R 755 /var/www/your_domain
+
+
+create a file:
+vim /var/www/your_domain/index.html
+
+and type:
+
+<html>
+    <head>
+        <title>Welcome to Your_domain!</title>
+    </head>
+    <body>
+        <h1>Success!  The your_domain virtual host is working!</h1>
+    </body>
+</html>
+
+
+
+Now create a new directive:
+
+sudo nano /etc/apache2/sites-available/your_domain.conf
+
+and type in:
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName your_domain
+    ServerAlias www.your_domain
+    DocumentRoot /var/www/your_domain
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+
+change just the 'your_domain' with your domain (at the fourth line leave 'www.' at the beginning
+
+save and exit
+
+now enable this directive with:
+
+sudo a2ensite your_domain.conf
+
+and disale the old ones with:
+
+sudo a2dissite 000-default.conf
+
+
+now test for config errros:
+
+sudo apache2ctl configtest
+
+You should see:
+Output
+Syntax OK
+
+restart the service to make changes 
+sudo systemctl restart apache2
+
+now if you go to 'http://your_domain' you will get the message 
+
+'Success!  The your_domain virtual host is working!'
+
+'your_domain' in this case is the hostname of your server 
+this may differ from the 'your_domain' that you set up inside apache files ! (I have made a test placing 'your_domain' like 'test' in any config file)
+
+
+
+
+
+
+
