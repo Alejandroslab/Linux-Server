@@ -1,0 +1,5 @@
+To install just 
+
+sudo apt-get install apache2
+
+then check your firewall eventually 
