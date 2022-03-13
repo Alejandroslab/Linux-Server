@@ -1,0 +1,69 @@
+I wanted to expose via apache all my home directories and files
+
+of course this will be local only 
+
+
+We know that apache will look for the 'index.html' inside your folder /var/www/html or /var/www/your_domain
+
+When you delete it, Apache will show by default the content folder that you have set up listing all directories and files.
+Delete the index.html file inside your_domain or html folder
+
+Nowe just have to change the content folder!
+
+
+to do go to
+
+sudo vim /etc/apache2/sites-available/your_domain.conf
+
+or 
+
+sudo nano /etc/apache2/sites-available/000-default.conf
+
+if you have not set up a virtual host
+
+then
+
+change the folder in:
+
+DocumentRoot /var/www/html
+
+to
+
+DocumentRoot /home/myuser/
+
+
+save and exit 
+
+
+
+now we should change the same content folder in:
+
+sudo vim /etc/apache2/apache2.conf
+
+find this block:
+
+<Directory /var/www/html/>
+   Options Indexes FollowSymLinks
+   AllowOverride None
+   Require all granted
+</Directory>
+
+
+and change it:
+
+<Directory /home/myuser/>
+   Options Indexes FollowSymLinks
+   AllowOverride None
+   Require all granted
+</Directory>
+
+save and exit
+
+now reload apache
+
+sudo systemctl reload apache2
+
+DONE!
+now if you connect via any browser (even via phone) to http://your_domain' or 'http://your_hostname' you will get 
+the browsable list of all directories and files of your system!
+
