@@ -1,0 +1,18 @@
+sudo systemctl start apache2
+
+error:
+
+Starting web server apache2 (98)Address already in use: AH00072: make_sock: could not bind to address [::]:8585 (98)Address already in use: 
+AH00072: make_sock: could not bind to address 0.0.0.0:8000 no listening sockets available, shutting down 
+AH00015: Unable to open logs Action 'start' failed. The Apache error log may have more information.
+
+to fix this check:
+
+grep -ri listen /etc/apache2
+
+and kill the process that is using the port
+
+sudo kill 30010
+
+where 30010 is the PID that is printed after the grep command
+
