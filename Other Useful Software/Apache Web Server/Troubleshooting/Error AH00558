@@ -1,0 +1,29 @@
+sudo systemctl status apache2.service -l --no-pager
+
+Error AH00558: Could not reliably determine the server's fully qualified domain name
+
+
+just add at the end of this file:
+
+sudo vim /etc/apache2/apache2.conf
+
+this line:
+
+ServerName 127.0.0.1 
+
+now test it with:
+
+sudo apachectl configtest
+
+You should get:
+
+Output
+Syntax OK
+
+finally reload apache
+
+sudo systemctl reload apache2.service
+
+
+
+
