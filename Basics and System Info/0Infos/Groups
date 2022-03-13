@@ -1,0 +1,17 @@
+have a look here for groups:
+
+/etc/passwd 
+
+or use the command:
+
+groups
+
+
+to inspect to which group an user belongs:
+
+groups myuser
+
+or:
+
+id myuser
+
