@@ -1,0 +1,9 @@
+echo myfile
+
+gobbling is accepted:
+
+echo myfile*
+
+will search any file that starts with myfile...
+
+for just one characte use ? instead of *
