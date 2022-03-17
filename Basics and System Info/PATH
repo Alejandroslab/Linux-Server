@@ -19,6 +19,9 @@ export PATH="$PATH:/home/user1/FolderforPath"
 
 alwyas remember that the syntax $PATH is mandatory. If you delete it any command will work.
 
+(you can also do: PATH=$PATH:/path/to/folder  but is not recommended as your path into PATH will be considerend only in your current bash session
+(if you open another one you will not able to have that path included) and without " " spaces inside names will not be considered) 
+
 
 now refresh
 
