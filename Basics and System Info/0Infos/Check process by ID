@@ -3,3 +3,7 @@ to know what is that process with that ID (also known as PID)
 just type:
 
 ps -p 801 -o comm=
+
+to check the current pid :
+
+echo $$
