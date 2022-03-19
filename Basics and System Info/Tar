@@ -1,0 +1,11 @@
+to create a new archive:
+
+
+tar -cvf myarchive.tar *
+
+
+myarchive.tar is the name of the tar file and '*' indicate to include in the archive all the files present in the current directory
+
+-cvf will create verbosely a new tar file
+
+
