@@ -1,0 +1,4 @@
+You can use gparted
+
+tip: do not resize a partition, create a new partition, move it and then extend it
+this is true for large disks as this will take hours to perform in gparted (while in windows is pretty fast)
