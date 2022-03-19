@@ -1,1 +1,5 @@
 tar -xJf myarchive.tar.xz 
+
+you can check other ooptions with
+
+man tar
