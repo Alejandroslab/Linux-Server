@@ -9,3 +9,15 @@ myarchive.tar is the name of the tar file and '*' indicate to include in the arc
 -cvf will create verbosely a new tar file
 
 
+
+
+to list the content of a tar file:
+
+tar -tf myarchive.tar
+
+
+to create a compressed file:
+
+tar -cjf myarchive.tar.bz2 *
+
+there is no need to add the bz2 extension but is useful when you need to recognize the type of file
