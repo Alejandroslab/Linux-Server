@@ -21,3 +21,13 @@ to create a compressed file:
 tar -cjf myarchive.tar.bz2 *
 
 there is no need to add the bz2 extension but is useful when you need to recognize the type of file
+
+(anyways you can check the file type with 'file myarchive')
+
+
+
+
+
+another well known compressed file type is xz
+
+tar -cJf myarchive.tar.xz *
