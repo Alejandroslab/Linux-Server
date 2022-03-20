@@ -1,0 +1,11 @@
+you can use tar 
+
+or you can use gzip
+
+gzip myfile
+
+gzip will replace the file if exists
+
+to unzip it:
+
+gunzip myfile
