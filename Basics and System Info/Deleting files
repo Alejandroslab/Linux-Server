@@ -25,3 +25,8 @@ rm *
 if you want to remove all subdirectories + files inside a folder just use the recursive option
 
 rm -r *
+
+
+remove all with .sh extension
+
+rm *.sh
