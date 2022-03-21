@@ -1,3 +1,13 @@
 cat file.txt | uniq | wc -l
 
 display the counting of unique lines in the file.txt
+
+
+another example
+
+cat myfile | grep "myterm" | sort 
+
+
+to save this search on a file:
+
+cat myfile | grep "myterm" | sort > myfile2
