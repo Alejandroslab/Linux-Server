@@ -9,3 +9,22 @@ gzip will replace the file if exists
 to unzip it:
 
 gunzip myfile
+
+you can zip all the files within the current directory with:
+
+gzip *
+
+to extract
+
+gunzip *
+
+
+or:
+
+zip archivio.zip *
+
+unzip archivio.zip *
+
+will perform the same operations
+
+unzip
