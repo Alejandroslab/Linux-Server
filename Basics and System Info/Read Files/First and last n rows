@@ -1,0 +1,12 @@
+head myfile
+
+tail myfile
+
+head myfile -n 4
+
+tail myfile -n 4
+
+
+to show the first or las 4 rows 
+
+
