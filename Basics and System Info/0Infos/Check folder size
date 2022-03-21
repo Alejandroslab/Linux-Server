@@ -3,3 +3,8 @@ to check a folder size just type:
 du -hs /path/to/directory
 
 where /path/to/directory is the path of your chosen folder
+
+
+you can sort by size with:
+
+du -hs /path/to/directory | sort -n
