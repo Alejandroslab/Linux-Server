@@ -1,14 +1,22 @@
-Firs install
+Secure Shell, sometimes referred to as Secure Socket Shell, is a protocol which allows you 
+to connect securely to a remote computer or a server by using a text-based interface.
+
+When a secure SSH connection is established, a shell session will be started, 
+and you will be able to manipulate the server by typing commands within the client on your local computer.
+
+System and network administrators use this protocol the most, as well as anyone who needs to manage a computer remotely in a highly secure manner.
+
+First install it
 REMEMBER! In Debian you have to install 'openssh-server' as it is not installed by default
 
-These commands are also valid for Linux Mint
+(These commands are also valid for Linux Mint)
 
 sudo apt-get update
 
 sudo apt-get install openssh-server
 
 
-In Debian it is usually only necesary only this last command and everything will work out!
+In Debian it is usually only necessary this last command and everything will work out!
 ------
 
 
