@@ -11,10 +11,12 @@ If the provided credentials are correct, SSH creates a new session for the appro
 
 The version is the version 2.
 
-On the client side if the client is installed, you will receive a response that looks like this:
+On the client side if the client is installed, you will receive a response that looks like this after you type 'ssh' on any terminal:
 
 ssh usage [...]
 
+To check if you have installed openssh server just type:
+ssh localhost
 
 
 
