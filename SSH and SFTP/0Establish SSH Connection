@@ -6,6 +6,9 @@ and you will be able to manipulate the server by typing commands within the clie
 
 System and network administrators use this protocol the most, as well as anyone who needs to manage a computer remotely in a highly secure manner.
 
+On the server’s side, there is a component called an SSH daemon that is constantly listening to a specific TCP/IP port for possible client connection requests. Once a client initiates a connection, the SSH daemon will respond with the software and the protocol versions it supports and the two will exchange their identification data. 
+If the provided credentials are correct, SSH creates a new session for the appropriate environment.
+
 First install it
 REMEMBER! In Debian you have to install 'openssh-server' as it is not installed by default
 
