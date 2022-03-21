@@ -1,0 +1,7 @@
+ssh ipaddress_or_hostname
+
+if your user matches the server user
+
+otherwise:
+
+ssh user@ipaddress_or_hostname
