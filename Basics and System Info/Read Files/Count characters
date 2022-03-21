@@ -1,0 +1,3 @@
+This will count characters with spaces:
+
+wc -c myfile
