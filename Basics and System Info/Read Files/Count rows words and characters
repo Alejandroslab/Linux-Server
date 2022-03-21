@@ -1,0 +1,3 @@
+wc myfile
+
+will display in order: rows, words and characters
