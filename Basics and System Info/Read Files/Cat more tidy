@@ -3,3 +3,11 @@ use:
 cat myfile | less
 
 this is valid if you have a very long file like a syslog
+
+you can look for words like in vim:
+
+use 
+
+/mywordtosearch
+
+
