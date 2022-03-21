@@ -18,9 +18,13 @@ ssh usage [...]
 To check if you have installed openssh server just type:
 ssh localhost
 
+You will see something like:
 
 
-First install it
+'The authenticity of host 'localhost (127.0.0.1)' can't be established....'
+
+
+Then install it
 REMEMBER! In Debian you have to install 'openssh-server' as it is not installed by default
 
 (These commands are also valid for Linux Mint)
@@ -54,6 +58,7 @@ If the lines are already there but start with # you should just delete the # sym
 
 Save and close nano (or other)
 
+After changing something just reload the service
 ________
 
 To check the status
