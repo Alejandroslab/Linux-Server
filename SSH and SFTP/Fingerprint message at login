@@ -1,0 +1,23 @@
+The fingerprint is based on the host's public key, usually based on the /etc/ssh/ssh_host_rsa_key.pub file.  
+
+Generally it's for easy identification/verification of the host you are connecting to.
+
+If the fingerprint changes, 
+the machine you are connecting to has changed their public key. This may not be a bad thing (happens from re-installing ssh), 
+
+but it could also indicate that you are connecting to a different machine at the same domain/IP 
+(happens when you are connecting through something like a load balancer) 
+
+or that you are being targeted with a man-in-the-middle attack, where the attacker is somehow intercepting/rerouting 
+
+your ssh connection to connect to a different host which could be snooping your username/password.
+
+
+Bottom line: if you get warned of a changed fingerprint, 
+be cautious and double check that you're actually connecting to the correct host over a secure connection. 
+Though most of the time this is harmless, it can be an indication of a potential issue.
+
+
+
+
+You should ask to your server sysadmin the fingerprint of the server! (Mostly because of man in the middle attack)
