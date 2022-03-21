@@ -1,3 +1,5 @@
 wc myfile
 
 will display in order: rows, words and characters
+
+words are set of characters between spaces
