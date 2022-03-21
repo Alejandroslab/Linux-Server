@@ -1,0 +1,15 @@
+cat myfile | sort
+
+will sort in alphabetical order
+
+or for the reverse order:
+
+cat myfile | sort -r
+
+you can also use directly
+
+sort myfile
+
+or
+
+sort myfile -r
