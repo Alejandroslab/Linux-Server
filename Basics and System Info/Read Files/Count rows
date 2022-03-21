@@ -1,0 +1,6 @@
+you can count rows with 'wc -l'
+
+
+cat /etc/passwd | cut -d':' -f1 | wc -l 
+
+will retrieve the number of users on a system
