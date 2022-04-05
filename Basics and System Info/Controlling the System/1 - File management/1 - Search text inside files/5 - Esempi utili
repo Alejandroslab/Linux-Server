@@ -1,0 +1,5 @@
+ip addr show | grep -A5 "3: ens"
+
+this will look for the text "3: ens" inside the command ip addr show and will print the next 5 lines after having found the resutl
+
+In this case will print just the connection called "3: ens"
