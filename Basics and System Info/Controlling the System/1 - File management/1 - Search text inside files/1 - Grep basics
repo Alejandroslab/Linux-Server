@@ -1,0 +1,20 @@
+grep 'my words to search' \my\path\
+
+if the path is the same in which you are working just put the dot:
+
+grep 'my words to search' .
+
+You can also omit the quotes (if the search term/s have not spaces):
+
+grep myfile .
+
+
+
+Search any line that contains the word in filename on Linux:
+grep 'word' filename
+Perform a case-insensitive search for the word ‘bar’ in Linux and Unix:
+grep -i 'bar' file1
+Look for all files in the current directory and in all of its subdirectories in Linux for the word ‘httpd’:
+grep -R 'httpd' .
+Search and display the total number of times that the string ‘nixcraft’ appears in a file named frontpage.md:
+grep -c 'nixcraft' frontpage.md

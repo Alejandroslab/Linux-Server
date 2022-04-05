@@ -1,0 +1,14 @@
+grep -R --exclude-dir=dir1 'some pattern' /path/to/search
+
+where dir1 is an internal directory in your current working folder ($pwd)
+
+
+
+
+you can also indicate mutliple folders with curly brackets:
+
+grep -R --exclude-dir={dir1,dir2,dir3} 'some pattern' /path/to/search
+
+If you are in your current directory:
+
+grep -R --exclude-dir={dir1,dir2,dir3} 'some pattern' .

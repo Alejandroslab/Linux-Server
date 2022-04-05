@@ -1,0 +1,3 @@
+Will allow to search in all the subdirectories
+
+grep -R 'some pattern' /path/to/search

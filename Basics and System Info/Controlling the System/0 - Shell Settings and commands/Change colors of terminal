@@ -1,3 +1,5 @@
+Update: this still holds for bash but for zsh (used in macos) you can have ohmyzsh! way easier to manage
+
 To change your directory colors,
 open up your ~/.bashrc OR ~/.bash_profile file
 with your editor and add as last line:

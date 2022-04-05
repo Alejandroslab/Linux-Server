@@ -1,0 +1,5 @@
+You can get advance functionalities with piping
+
+like in the 'lscpu' command you can retrieve just the CPU part with:
+
+lscpu | grep CPU 
