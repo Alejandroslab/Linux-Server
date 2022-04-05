@@ -1,1 +1,4 @@
-Grep
+Grep is a command that retrieves text
+
+It can search for a word or term inside files
+But with piping you can extend its functionality

@@ -1,3 +1,6 @@
+Piping will allow you to plug the ouput of a command and set it as the input of the following command (the command after the pip)
+
+
 cat file.txt | uniq | wc -l
 
 display the counting of unique lines in the file.txt
@@ -5,7 +8,7 @@ display the counting of unique lines in the file.txt
 
 another example
 
-cat myfile | grep "myterm" | sort 
+cat myfile | grep "myterm" | sort
 
 
 to save this search on a file:
