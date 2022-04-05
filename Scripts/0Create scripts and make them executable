@@ -2,7 +2,7 @@ To make a bash script executable
 
 First create the script with extention '.sh'
 
-nano myscript.sh
+vim myscript.sh
 
 
 then make it exectuable with:
