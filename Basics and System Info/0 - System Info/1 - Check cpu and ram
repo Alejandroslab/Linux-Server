@@ -1,0 +1,11 @@
+
+Check cpu
+
+lscpu
+
+Check ram:
+
+free -m
+
+
+you can also download neofetch or screenfetch

@@ -11,3 +11,15 @@ tmpfs           1.9G   88M  1.8G   5% /dev/shm
 tmpfs           5.0M  4.0K  5.0M   1% /run/lock
 tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
 tmpfs           385M   20K  385M   1% /run/user/1000
+
+
+Display Free disk space
+
+df
+
+
+Disk space in a directory
+
+du
+
+nproc

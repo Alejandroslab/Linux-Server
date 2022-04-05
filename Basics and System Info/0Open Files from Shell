@@ -1,5 +1,0 @@
-It will not work the command 'Open' as in Mac.
-In this case you have to type:
-e.g.
-
-xdg-open file.pdf
