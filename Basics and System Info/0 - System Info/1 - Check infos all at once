@@ -1,0 +1,5 @@
+sudo apt-get install neofetch
+
+or:
+
+sudo apt-get install screenfetch

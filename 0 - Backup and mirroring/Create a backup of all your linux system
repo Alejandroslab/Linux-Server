@@ -21,4 +21,4 @@ tar -tf backup.tgz
 
 or you can also pipe it to set a tree view:
 
-tar -tf filename.tar.gz | tree 
+tar -tf filename.tar.gz | tree
