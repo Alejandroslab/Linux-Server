@@ -1,3 +1,16 @@
+The UNIX philosophy is to have small tools. One tool is doing exactly one thing, but this especially well.
+
+The tar tool is just combining several files into a single file without any compression.
+
+The gzip tool is just compressing a single file.
+
+If you want to have both, you just combine both tools resulting in a .tar.gz file.
+
+The zip tool is a completely different thing. It takes a bunch of files and combines them into a single compressed file. With totally different algorithms.
+
+
+
+
 to create a new archive:
 
 
