@@ -4,7 +4,7 @@ cp file folder
 
 example
 
-cp test.txt \home\user1\destionationfolder
+cp test.txt /home/user1/destioationfolder
 
 
 
@@ -12,18 +12,28 @@ BUT!
 when you have to copy a folder you have to add -r option (recursive. that
 means that will copy all the files of the folder)
 
-cp -r myfolder \home\user1
+cp -r myfolder /home/user1
+
+
+in order to see progresses just use the verbose option
+that is '-v'
+
+cp -v -r folder1 /home/user1
+
+you can also join option and type them at the end of the command:
+
+cp  folder1 /home/user1 -vr
 
 
 
 
 if you need 2 files or folder just:
 
-cp file1 file2 \home\user1\destionationfolder
+cp file1 file2 /home/user1/destinationfolder
 
 for folders:
 
-cp -r folder1 folder 2 \home\user1
+cp -r folder1 folder 2 /home/user1
 
 
 to move:
@@ -34,7 +44,7 @@ mv file folder
 to move more than 1 item:
 
 
-cp file file2 destionation_folder
+cp file file2 destination_folder
 
 if you need to copy or move a large folder
 you may want to see your progress (otherwise you will get
@@ -42,15 +52,10 @@ only a stuck cursor)
 
 
 in order to see progresses just use the verbose option
-that is '-v'
 
-cp -v -r folder1 \home\user1
-
-or
-
-mv -v -r folder1 \home\user1
+mv -v -r folder1 /home/user1
 
 
-Alternatively you can merge option in one single option doing this 
+Alternatively you can merge option in one single option doing this
 
-mv -vr folder1 \home\user1
+mv -vr folder1 /home/user1

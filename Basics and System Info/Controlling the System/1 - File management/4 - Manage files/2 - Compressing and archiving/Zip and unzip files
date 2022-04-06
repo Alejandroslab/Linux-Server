@@ -1,0 +1,5 @@
+you cannot use tar as it is not compatible
+
+just use unzip
+
+unzip myziparchive.zip
