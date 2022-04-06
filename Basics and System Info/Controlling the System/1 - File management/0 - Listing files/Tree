@@ -1,0 +1,20 @@
+You can also use
+
+tree
+
+(you may need to install)
+
+tree -p
+
+will print all the protections
+
+tree -i
+
+will print tree without the lines arrows
+
+tree -pDi
+
+D will print the last date time in which the file has been edited
+is the equivalent of
+
+ls -l

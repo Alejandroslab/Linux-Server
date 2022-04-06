@@ -5,10 +5,13 @@ where dir1 is an internal directory in your current working folder ($pwd)
 
 
 
-you can also indicate mutliple folders with curly brackets:
+you can also indicate multiple folders with curly brackets:
 
 grep -R --exclude-dir={dir1,dir2,dir3} 'some pattern' /path/to/search
 
 If you are in your current directory:
 
 grep -R --exclude-dir={dir1,dir2,dir3} 'some pattern' .
+
+
+REMEMBER YOU CANNOT USE CURLY BRACKETS WITH JUST 1 FOLDER, YOU HAVE TO USE AT LEAST 2
