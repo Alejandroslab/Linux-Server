@@ -1,5 +1,9 @@
 you cannot use tar as it is not compatible
 
+to zip:
+
+zip –d filename.zip file.txt
+
 just use unzip
 
 unzip myziparchive.zip
