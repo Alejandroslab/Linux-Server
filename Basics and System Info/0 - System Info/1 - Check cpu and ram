@@ -9,3 +9,23 @@ free -m
 
 
 you can also download neofetch or screenfetch
+
+
+free -m command will output these folders:
+
+    buffers
+
+    Memory used by kernel buffers (Buffers in /proc/meminfo)
+
+    cache
+
+    Memory used by the page cache and slabs (Cached and SReclaimable in /proc/meminfo)
+
+    buff/cache
+
+    Sum of buffers and cache
+
+    available
+
+    Estimation of how much memory is available for starting new applications, without swapping. Unlike the data provided by the cache or free fields, this field takes into account page cache and also that not all reclaimable memory slabs will be reclaimed due to items being in use (MemAvailable in /proc/meminfo, available on kernels 3.14, emulated on kernels 2.6.27+, otherwise the same as free)
+
