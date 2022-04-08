@@ -1,0 +1,6 @@
+lastlog command is used to find the details of a recent login of all users or of a given user
+
+lastlog
+
+
+lastlog -u myuser 	
