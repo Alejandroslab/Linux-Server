@@ -1,0 +1,15 @@
+sudo yum check-update
+
+It will list all available updates
+
+You can update only one or more packages with:
+
+sudo yum update mypackage
+
+you can also update a package group:
+
+sudo yum update "Development Tools"
+
+To upate all the packages:
+
+sudo yum update
