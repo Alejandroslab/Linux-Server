@@ -1,4 +1,5 @@
 To write to standard output and a file
+
 use tee after a pipe and specify the file or files to write to.
 
 echo 'foo' | tee foo.txt

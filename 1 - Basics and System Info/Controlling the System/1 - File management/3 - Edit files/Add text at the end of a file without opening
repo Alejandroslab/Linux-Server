@@ -1,0 +1,19 @@
+this command will append a line of text in a file without opening
+
+echo "the text that I will append" >> myfile
+
+
+
+
+You may wonder if you can use it to quickly edit your hosts file but you cannot do that (at least not in macos)
+
+as it will complain that you have not the permissions
+
+
+
+you have to use 'tee' and piping:
+
+
+echo "the text that I will append" | sudo tee -a /etc/hosts
+
+then will work
