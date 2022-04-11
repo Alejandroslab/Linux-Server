@@ -1,0 +1,9 @@
+if ! grep -q 'my word/s' myfile.txt ; then
+    echo Not found.
+fi
+
+
+or:
+
+
+grep -q 'my word/s' myfile.txt && echo 'string found' || echo 'string not found'

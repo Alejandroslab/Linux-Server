@@ -1,0 +1,22 @@
+To add a user to the sudo group:
+
+sudo adduser newuser2 sudo
+
+It works also in Debian. Rememeber that Debian will not ad your user in the sudo
+group. You will have to do that changing to root and giving privilege to your
+user:
+
+su root
+
+sudo adduser myuser sudo
+
+and then
+
+su myuser
+
+Users will be located inside home folder
+
+on Ubuntu root user exists and it does not have a password as it is blocked by the system
+root has no password
+
+Debian is different. It allows to log as root unlike Ubuntu server system.
