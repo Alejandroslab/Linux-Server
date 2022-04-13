@@ -7,3 +7,11 @@ zip –d filename.zip file.txt
 just use unzip
 
 unzip myziparchive.zip
+
+
+
+ZIP A FOLDER AND ALL THE SUBFOLDERS
+
+zip -r mynewarchive.zip myfolder
+
+where myfolder is the folder
