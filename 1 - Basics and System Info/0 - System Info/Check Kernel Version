@@ -1,1 +1,5 @@
 uname -r
+
+check kernel name:
+
+uname -a
