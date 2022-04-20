@@ -1,0 +1,29 @@
+This is called edit in place and you can perform it with the '-i' option:
+
+this command will delete the last line of the file 'test.txt'
+
+
+sed -i '$d' test.txt
+
+
+
+This will also automtically save it 
+
+
+
+
+
+CAREFUL. In macOS this command will not work as macos requires a backup of the file.
+
+
+sed -i '.bak' '$d' test.txt
+
+This command will create a file 'test.txt.bak' that will be the backup file of 'test.txt'
+
+
+
+
+If you do not want to save a backup just run sed with an empty '':
+
+
+sed -i '' '$d' test.txt
