@@ -1,0 +1,13 @@
+In Debian and Ubuntu, it is found in /etc/ssh/sshd_config.
+
+Find the line that says:
+
+#PrintLastLog yes
+And change it to:
+
+PrintLastLog no
+(Or add it if not existing.)
+
+Finally restart your ssh daemon:
+
+sudo service ssh restart
