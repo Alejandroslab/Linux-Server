@@ -8,6 +8,14 @@ And change it to:
 PrintLastLog no
 (Or add it if not existing.)
 
-Finally restart your ssh daemon:
+Finally restart your ssh daemon (mandatory):
 
 sudo service ssh restart
+
+You can restart it even when you are logged in
+
+In RHEL you must use:
+
+sudo systemctl restart sshd
+
+you cannot use 'service'
