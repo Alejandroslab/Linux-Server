@@ -1,0 +1,9 @@
+With
+
+ip addr
+
+I will get all the ips of the machine but if I want to check just the Ip of one network interface then:
+
+ip addr show dev ens4
+
+if I suppose my network interface is called 'ens4'

@@ -1,0 +1,66 @@
+From Ubuntu 17 to manage network interfaces 'netplan' is used
+
+netplan uses a YAML configuration file that we can setup
+
+first check the network interfaces with the command:
+
+ip link
+
+then you can check and open the config file :
+
+/etc/netplan directory
+
+Usually, the file is named either 01-netcfg.yaml, 50-cloud-init.yaml, or NN_interfaceName.yaml, but in your system it may be different.
+
+Now remember that indentation is important here
+You will get something similar to this:
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens3:
+      dhcp4: yes
+
+
+If I have for example the ethernet called 'ens4' and I want to assign it with dhcp then I will have to add it to this file in this order:
+
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens3:
+      dhcp4: yes
+    ens4:
+      dhcp4: yes
+
+I suppose that dhcp4 stands for IPV4
+
+Then I can also add another one (a static IP) with name 'ens5'
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens3:
+      dhcp4: yes
+    ens4:
+      dhcp4: yes
+    ens5:
+      dhcp4: no
+      addresses:
+        - 192.168.121.221/24
+      gateway4: 192.168.121.1
+      nameservers:
+          addresses: [8.8.8.8, 1.1.1.1]
+
+Save and exit then run:ù
+
+sudo netplan apply
+
+REMEMBER tha this changes are persistent. This means that they will persistent even after a reboot (contrarily to what happens with the ifconfig command)
+
+To check that it worked you can check a network interface in this way:
+
+ip addr show dev ens4
