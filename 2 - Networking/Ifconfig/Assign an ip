@@ -10,6 +10,9 @@ then run:
 
 sudo ifconfig 192.168.1.2 netmask 255.255.255.0 broadcast 192.168.1.255
 
+(the broadcast address usually ends with '255' when the netmask is the common 255.255.255.0
+if the netmask is different then the  broadcast address will be different as well )
+
 you must indicate the netmask and the broadcast address alongside the ip
 
 
@@ -17,3 +20,4 @@ with this command you will assign statically the ip 192.168.1.2 to the machine
 
 
 CAREFUL this will not mean that your machine will automatically connect to the same hosts
+You mmay need to make it persistent
