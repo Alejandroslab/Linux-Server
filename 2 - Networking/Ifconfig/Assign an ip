@@ -1,0 +1,19 @@
+to assign an IP to a machine
+first you need to check that the adapter is up
+
+to do that just run
+
+ifconfig
+
+then run:
+
+
+sudo ifconfig 192.168.1.2 netmask 255.255.255.0 broadcast 192.168.1.255
+
+you must indicate the netmask and the broadcast address alongside the ip
+
+
+with this command you will assign statically the ip 192.168.1.2 to the machine
+
+
+CAREFUL this will not mean that your machine will automatically connect to the same hosts

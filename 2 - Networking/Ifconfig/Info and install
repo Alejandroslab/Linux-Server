@@ -1,0 +1,2 @@
+sudo apt-get install ifconfig
+to install the ifconfig package
