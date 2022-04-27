@@ -1,3 +1,12 @@
+You must use:
+
+ip addr
+
+(as this is the new standard )
+
+But you can also check the IP with other commands:
+
+
 hostname -I
 
 hostname without 'I' will provide just the hostname of the machine

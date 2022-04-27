@@ -1,0 +1,3 @@
+sudo netstat -tulpn | grep LISTEN
+
+in the third column you will get the IP and the correspondent port 
