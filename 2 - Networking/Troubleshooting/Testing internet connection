@@ -1,0 +1,15 @@
+just run
+
+curl -I https://www.startpage.com
+
+if you get
+
+HTTP 200
+
+then you're ok!
+
+but you may want to check internet connection at lower level then use 'ping'
+
+just use ping with 3 packets:
+
+ping -c 3 startpage.com

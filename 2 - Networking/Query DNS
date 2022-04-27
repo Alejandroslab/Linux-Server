@@ -1,0 +1,9 @@
+resolvectl query startpage.com
+
+this will query your dns
+
+you can also use 'dig'
+
+dig @192.168.1.1 startpage.com
+
+where the ip following the ip address is the gateway (or router ip)
