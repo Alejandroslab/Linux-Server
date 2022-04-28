@@ -1,1 +1,10 @@
 You have to create previously the folder in which you want to mount anywthing
+
+You can mount the same device multiple times in different locations
+
+to check disks and partitions:
+
+lsblk
+
+remember that disk will be labelled as: 'sda', 'sd-b', 'sd-c', 'sdd', 'sde', 'sdf', and so on
+
