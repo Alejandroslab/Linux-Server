@@ -1,0 +1,90 @@
+# cat /proc/mdstat
+Personalities : [raid1] 
+read_ahead 1024 sectors
+md2 : active raid1 hda3[1] hdb3[0]
+      262016 blocks [2/2] [UU]
+      
+md1 : active raid1 hda2[1] hdb2[0]
+      119684160 blocks [2/2] [UU]
+      
+md0 : active raid1 hda1[1] hdb1[0]
+      102208 blocks [2/2] [UU]
+      
+unused devices:
+
+ 
+
+In case a drive has failed, the output would look like this:
+
+Personalities : [raid1]
+read_ahead 1024 sectors
+md0 : active raid1  hda1[1]
+      102208 blocks [2/1] [_U]
+
+md2 : active raid1 hda3[1]
+      262016 blocks [2/1] [_U]
+
+md1 : active raid1 hda2[1]
+      119684160 blocks [2/1] [_U]
+unused devices: 
+
+Note that it doesn't list the failed drive parts, and that an underscore appears beside each U (_U or U_). This shows that only one drive is active in these arrays - There is no mirror.
+
+Another command that will show us the state of the raid drives is mdadm where /dev/md1 is our device ID:
+
+# mdadm -D /dev/md1
+/dev/md0:
+        Version : 00.90.00
+  Creation Time : Thu Aug 21 12:22:43 2003
+     Raid Level : raid1
+     Array Size : 102208 (99.81 MiB 104.66 MB)
+    Device Size : 102208 (99.81 MiB 104.66 MB)
+   Raid Devices : 2
+  Total Devices : 1
+Preferred Minor : 0
+    Persistence : Superblock is persistent
+
+    Update Time : Fri Oct 15 06:25:45 2004
+          State : dirty, no-errors
+ Active Devices : 1
+Working Devices : 1
+ Failed Devices : 0
+  Spare Devices : 0
+
+
+    Number   Major   Minor   RaidDevice State
+       0       0        0        0      faulty removed
+       1       3        1        1      active sync   /dev/hda1
+           UUID : f9401842:995dc86c:b4102b57:f2996278
+
+This output shows that we have presently only one drive in the array. A working array would display state: clean.
+
+To get information about the status of the RAID array use the mdadm -misc command:
+
+mdadm --misc --detail /dev/md2 
+/dev/md1:
+Version : 00.90.00
+Creation Time : Tue Nov 7 22:01:16 2006
+Raid Level : raid1
+Array Size : 3068288 (2.93 GiB 3.14 GB)
+Device Size : 3068288 (2.93 GiB 3.14 GB)
+Raid Devices : 2
+Total Devices : 1
+Preferred Minor : 1
+Persistence : Superblock is persistent
+
+Update Time : Wed Nov 8 15:42:35 2006
+State : active, degraded
+Active Devices : 1
+Working Devices : 1
+Failed Devices : 0
+Spare Devices : 0
+
+UUID : 4a9a446d:af55e24b:b311aa61:8dc74ed4
+Events : 0.12
+
+Number Major Minor RaidDevice? State
+0 8 1 0 active sync /dev/sda1
+1 0 0 1 removed
+
+ 
