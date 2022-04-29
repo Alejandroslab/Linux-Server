@@ -1,0 +1,24 @@
+Commands may slightly differ according to your OS (Ubuntu, manjaro)
+It may be seen as tricky at first but then you will see that commands make sense if you have some experience
+
+Anyways it is better to stick with a common OS like Ubuntu for this kind of task
+
+First thing to do is to check your disks with:
+
+lsblk
+
+whenever you plug your external hd with RAID (or single disk) the system may mount it automatically.
+This happens for Manjaro but will not happen for Ubuntu.
+
+The process, if system will not automatically mount the partition is the following.
+
+
+You have to use 'mdadm' package to accomplish this (run with sudo -i)
+
+mdadm --assemble --run /dev/md0 /dev/sdc1
+
+this will mount sdc1 partition on md0. md0 is virtual partition that you will need in order to access to your hd
+
+Anyways it is not mandatory to use md0 you can use any number, md1, md2, md345, etc.
+
+
