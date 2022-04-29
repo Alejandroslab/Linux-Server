@@ -1,0 +1,17 @@
+sudo mdadm -Db /dev/md0
+
+or:
+
+sudo mdadm -Q /dev/md0
+
+You can also query directly the component device:
+
+sudo mdadm -Q /dev/sdc
+
+or with:
+
+sudo mdadm -E /dev/sdc
+
+'-E' can also be replace with '--examine'
+
+To get detailed information about each of the assembled arrays on your server, check the /proc/mdstat file. This is often the best way to find the current status of the active arrays on your system
