@@ -1,0 +1,13 @@
+to stop an array first you must unmount it (if you have mounted it of course) 
+
+sudo umount /mnt/md0
+
+
+
+to stop ALL the active arrays:
+
+sudo mdadm --stop --scan
+
+to stop just one:
+
+sudo mdadm --stop /dev/md0
