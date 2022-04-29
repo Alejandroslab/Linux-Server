@@ -1,0 +1,15 @@
+just run:
+sudo -i 
+
+The default inactivity timeout is usually 5 minutes before Linux will prompt for your sudo password again. You can extend this timeout by editing the sudoers file. The visudo command opens an editor and points it to the sudoers file (Ubuntu defaults to nano, other systems use Vi)
+
+sudo visudo
+
+Look for the line Defaults env_reset
+
+Add to the end of it ,timestamp_timeout=60  (where 60 is the amount of minutes).
+/etc/sudoers.tmp
+
+Defaults env_reset,timestamp_timeout=60
+
+Save changes and close (In nano, press CTRL + X and then press y and ENTER)
