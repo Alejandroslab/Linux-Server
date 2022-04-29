@@ -1,0 +1,4 @@
+mdadm --examine --scan >> /etc/mdadm/mdadm.conf
+
+remember that  /etc/mdadm/mdadm.conf in modern OSes may become /etc/mdadm.conf
+just check it
