@@ -1,0 +1,27 @@
+First, unmount the filesystem:
+
+sudo umount /mnt/md0
+
+sudo mdadm --stop /dev/md0
+
+sudo mdadm --stop /dev/md0
+
+Once the array itself is removed, you should use mdadm --zero-superblock on each of the component devices. This will erase the md superblock, a header used by mdadm to assemble and manage the component devices as part of an array. If this is still present, it may cause problems when trying to reuse the disk for other purposes.
+
+You can see that the superblock is still present in the array by checking out the FSTYPE column in the lsblk --fs output
+
+If the disk have FSTYPE 'linux_raid_member' then you can remove the label with:
+
+sudo mdadm --zero-superblock /dev/sda /dev/sdb /dev/sdc
+
+supposing that sda,sdb,sdc are flagged with 'linux_raid_member'
+
+You may want also to remove any reference to the 
+
+/etc/fstab  and in /etc/mdadm.conf
+
+Finally if you are on a system you may want to remove the device from the early boot environment
+
+do that with:
+
+sudo update-initramfs -u
