@@ -36,7 +36,7 @@ where /mnt/test is a folder that you must create before the mount command (/mnt 
 This is the normal process to do this.
 Unfortunately most of the time you will incurr in some hiccups that will not allow you to proceed further (at least this is what happened to me)
 
-First thing:
+1. First thing:
 
 the 'mdadm --assemble' command does not work and states 'partition busy' or something similar (mdadm: /dev/sdb1 is busy - skipping message)
 
@@ -46,6 +46,16 @@ then the command is not needed
 You can anyways whenever you want to 'stop' the link between the origiinal partition and the virtual partition (md0,etc)
 
 mdadm --stop /dev/md0
+
+2. Second possible issue:
+
+mount: /dev/md0: can't read superblock
+
+I have fixed this rebooting the system and plugging and unplugging the HD.
+You may also want to stop the md0 with the '--stop' command
+
+
+
 
 
 ANOTHER WAY TO DO THINGS (NOT TESTED. TO BE TESTED NEXT,,)
