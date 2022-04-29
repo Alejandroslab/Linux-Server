@@ -12,13 +12,39 @@ This happens for Manjaro but will not happen for Ubuntu.
 
 The process, if system will not automatically mount the partition is the following.
 
+First with 'lsblk' check what is the partition you need as more than one may exist.
 
-You have to use 'mdadm' package to accomplish this (run with sudo -i)
+Then you have to use 'mdadm' package to accomplish this (run with sudo -i)
 
 mdadm --assemble --run /dev/md0 /dev/sdc1
 
 this will mount sdc1 partition on md0. md0 is virtual partition that you will need in order to access to your hd
 
 Anyways it is not mandatory to use md0 you can use any number, md1, md2, md345, etc.
+
+After this process finishes you can mount the virtual partition with:
+
+mount /dev/md0 /mnt/test
+
+where /mnt/test is a folder that you must create before the mount command (/mnt usually exists maybe used because directly has permissions)
+
+
+
+
+This is the normal process to do this.
+Unfortunately most of the time you will incurr in some hiccups that will not allow you to proceed further (at least this is what happened to me)
+
+First thing:
+
+the 'mdadm --assemble' command does not work and states 'partition busy' or something similar (mdadm: /dev/sdb1 is busy - skipping message)
+
+This may occur when the partition is already mounted. Check it with 'lsblk' or also withc cat /proc/mdstat. If you see /dev/md0 or other mounted 
+then the command is not needed
+
+You can anyways whenever you want to 'stop' the link between the origiinal partition and the virtual partition (md0,etc)
+
+mdadm --stop /dev/md0
+
+
 
 
