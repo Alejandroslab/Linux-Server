@@ -10,6 +10,8 @@ lsblk
 whenever you plug your external hd with RAID (or single disk) the system may mount it automatically.
 This happens for Manjaro but will not happen for Ubuntu.
 
+
+
 The process, if system will not automatically mount the partition is the following.
 
 First with 'lsblk' check what is the partition you need as more than one may exist.
@@ -46,5 +48,31 @@ You can anyways whenever you want to 'stop' the link between the origiinal parti
 mdadm --stop /dev/md0
 
 
+ANOTHER WAY TO DO THINGS (NOT TESTED. TO BE TESTED NEXT,,)
 
+You may want to mount every array without any hassle. You can do that with:
+
+sudo mdadm --assemble --scan
+
+Now, to do for just one:
+
+sudo mdadm --assemble /dev/md0
+
+(note that in this command the --run option is missing and the partition is not indicated)
+
+This works if the array is defined in the configuration file. (/etc/mdadm.conf)
+
+
+If it is missing from config file, you must pass all the component devices (component that 'compose' the RAID array)
+
+sudo mdadm --assemble /dev/md0 /dev/sda /dev/sdb /dev/sdc /dev/sdd
+
+this will assemble all disks inside the md0 disk. 
+Note that in this case we have 'sda','sdb','sdc', etc
+this means that these are different phisycal disks. 
+This is useful (maybe) for RAID with multiple disks
+
+finally mount the md0 disk, that is the assembled disk with:
+
+sudo mount /dev/md0 /mnt/mydisk
 
