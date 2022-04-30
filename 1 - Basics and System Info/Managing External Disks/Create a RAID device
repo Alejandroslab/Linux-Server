@@ -1,0 +1,8 @@
+# mdadm --create /dev/md0 --level=mirror --raid-devices=2 /dev/sd[b-c]1
+
+to put a filesystem like ext4:
+
+mkfs.ext4 /dev/md0 
+
+
+
