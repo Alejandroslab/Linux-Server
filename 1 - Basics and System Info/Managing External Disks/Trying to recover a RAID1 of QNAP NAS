@@ -1,0 +1,33 @@
+QNAP has introcuded a proprietary way to assemble and manage a RAID.
+
+As a test I have plugged in an HD into a bay, create a new storage pool and a new volume
+where I created a shared folder called 'Test' with inside another folder and a txt file.
+
+Then I have unplugged it and tried to boot it first with Manjaro and then with an image of Ubuntu (live cd)
+Anyways results are pretty similar.
+
+lsblk 
+
+linux raid member partitioon are present.
+
+Then assemble the raid as usual with 'mdadm  --assemble ....' command
+
+It could happen that after assembling the raid and tried to mount this error appears:
+
+mount: unknown filesystem type 'drbd'.
+
+
+It seems that they don't use
+simple RAID1 based on mdadm in QNAP NAS. They use DRBD (Distributed
+Replicated Block Device) atop of it
+
+To mount this disk you'd need to add DRBD on your Debian host.
+Installing drbd-utils (and configuring it properly) should be
+sufficient.
+
+The RAID array does not contain a filesystem but is used by DRBD (distributed replicated block device)
+
+Like layers such as RAID or LVM, 
+you have to "activate" the block device(s) with whatever admin command
+is designed for the task (drbdadm, drbdsetup, drdbmeta ?). Then, if it
+contains a filesystem, you can mount it.
