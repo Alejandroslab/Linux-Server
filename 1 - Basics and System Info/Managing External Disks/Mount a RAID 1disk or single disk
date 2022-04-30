@@ -24,14 +24,21 @@ this will mount sdc1 partition on md0. md0 is virtual partition that you will ne
 
 Anyways it is not mandatory to use md0 you can use any number, md1, md2, md345, etc.
 
+
+
+
 After this process finishes you can mount the virtual partition with:
 
 mount /dev/md0 /mnt/test
 
 where /mnt/test is a folder that you must create before the mount command (/mnt usually exists maybe used because directly has permissions)
 
+Rememeber that you may need to specifiy the filesystem name:
+
+mount -t <name of filesystem here> /dev/md0 /mnt/test
 
 
+filesystem may be: ext3, ext4, etc..
 
 This is the normal process to do this.
 Unfortunately most of the time you will incurr in some hiccups that will not allow you to proceed further (at least this is what happened to me)
