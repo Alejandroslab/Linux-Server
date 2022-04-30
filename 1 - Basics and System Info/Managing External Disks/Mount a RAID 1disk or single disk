@@ -54,7 +54,12 @@ mount: /dev/md0: can't read superblock
 I have fixed this rebooting the system and plugging and unplugging the HD.
 You may also want to stop the md0 with the '--stop' command
 
+3. Third issue:
+mount: /mnt: unknown filesystem type 'linux_raid_member'.
 
+This is easy: you are mounting a partition that is part of RAID
+
+You maybe forgot to assemble the RAID with the command 'mdadm --assemble...'
 
 
 
