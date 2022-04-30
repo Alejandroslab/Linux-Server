@@ -1,8 +1,13 @@
 # mdadm --create /dev/md0 --level=mirror --raid-devices=2 /dev/sd[b-c]1
 
-to put a filesystem like ext4:
+After creating the RAID you need to put a filesystem like ext4:
 
 mkfs.ext4 /dev/md0 
+
+finally you can mount it:
+
+
+sudo mount /dev/md0 /home/myuser/mnt/
 
 
 
