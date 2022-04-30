@@ -17,3 +17,11 @@ If you unmount a volume, you can immediately mount it back, because the underlyi
 By ejecting the device, you effectively disable any further access to the device. Only a reset of the USB subsystem (e.g. a reboot) will reload the device. Otherwise, you must physically disconnect the USB device and reconnect it in order to access it again.
 Before ejecting, this command will unmount all volumes on the device that were mounted.
 If volumes are in use, this command will fail as with unmount, except that some volumes might be unmounted and some volumes might remain mounted.
+
+You can unmount with:
+
+sudo umount <device|directory>
+
+and you can also force it:
+
+sudo umount --force <device|directory>
