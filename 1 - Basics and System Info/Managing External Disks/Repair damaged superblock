@@ -1,0 +1,37 @@
+Unmount your disk
+
+then check the filesystem with:
+
+sudo fsck.ext4 -v /dev/xxx
+
+If the superblock is damaged something similar will pop up:
+
+fsck /dev/sda5
+fsck 1.41.4 (27-Jan-2009)
+e2fsck 1.41.4 (27-Jan-2009)
+fsck.ext4: Group descriptors look bad... trying backup blocks...
+fsck.ext4: Bad magic number in super-block while trying to open /dev/sda5
+ 
+The superblock could not be read or does not describe a correct ext4
+filesystem.  If the device is valid and it really contains an ext4
+filesystem (and not swap or ufs or something else), then the superblock
+is corrupt, and you might try running e2fsck with an alternate superblock:
+e2fsck -b 8193 <device>
+
+
+Let's check in which sector are the superblock backups with:
+
+sudo mke2fs -n /dev/xxx
+
+You will get something like:
+
+Superblock backups stored on blocks:
+32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208
+
+To recover the superblock:
+
+sudo e2fsck -b block_number /dev/xxx
+
+Then reboot!
+
+If it still damaged try again with another block!
