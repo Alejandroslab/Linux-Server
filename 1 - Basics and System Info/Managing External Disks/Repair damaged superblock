@@ -4,7 +4,13 @@ then check the filesystem with:
 
 sudo fsck.ext4 -v /dev/xxx
 
-If the superblock is damaged something similar will pop up:
+Now 2 things could occurr. The command will try to repair the superblock automatically
+
+If everything goes well the superblock will be repaired and you finally can mount your device:
+
+ mount /dev/xxx
+
+Conversely, if the superblock is damaged something similar will pop up:
 
 fsck /dev/sda5
 fsck 1.41.4 (27-Jan-2009)
@@ -17,6 +23,7 @@ filesystem.  If the device is valid and it really contains an ext4
 filesystem (and not swap or ufs or something else), then the superblock
 is corrupt, and you might try running e2fsck with an alternate superblock:
 e2fsck -b 8193 <device>
+
 
 
 Let's check in which sector are the superblock backups with:
