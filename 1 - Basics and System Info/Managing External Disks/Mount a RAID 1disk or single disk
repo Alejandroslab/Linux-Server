@@ -16,7 +16,9 @@ The process, if system will not automatically mount the partition is the followi
 
 First with 'lsblk' check what is the partition you need as more than one may exist.
 
-Then you have to use 'mdadm' package to accomplish this (run with sudo -i) )(in Ubuntu you have to install it first. In Manjaro it comes preinstalled)
+Then you have to use 'mdadm' package to accomplish this (run with sudo -i) )(in Ubuntu you have to install it first. You must also install 'lvm2'. Then load the device mapper kernel module with
+modprobe dm-mod
+In Manjaro everything comes preinstalled)
 
 mdadm --assemble --run /dev/md0 /dev/sdc1
 
