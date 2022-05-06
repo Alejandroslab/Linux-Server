@@ -12,3 +12,12 @@ You must run it with sudo
 To find with case UNsensitve:
 
 find $HOME -type d -iname "Documents"
+
+
+You can also use the 'locate' command:
+
+ locate -b '\folder2'
+
+ or
+
+ locate Downloads
