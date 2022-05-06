@@ -1,0 +1,14 @@
+find /search/path/ type -d -name folder-name-here
+
+Or you can use the double qoutes:
+find /search/path/ type -d -name "folder-name-here"
+
+If you want to look on the root folder:
+
+sudo find / type -d -name folder-name-here
+
+You must run it with sudo
+
+To find with case UNsensitve:
+
+find $HOME -type d -iname "Documents"
