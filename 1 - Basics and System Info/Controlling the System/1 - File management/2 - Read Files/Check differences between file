@@ -1,0 +1,12 @@
+diff file1 file2
+
+will check the differences between file1 and file2
+
+it will print
+
+0a1
+-new line
+
+when the second file (that is file2) has some other words more than the first file (file1)
+the words that are in excess are printed after. In this case are:
+"new line"

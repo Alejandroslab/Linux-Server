@@ -1,0 +1,20 @@
+Most of the lynx.cfg usual locations are /etc/lynx/lynx.cfg or /etc/lynx.cfg as of time of writting this post in Debian Squeeze GNU / Linux the lynx.cfg is located in /etc/lynx-cur/lynx.cfg, whether for FreeBSD / NetBSD / OpenBSD users the file is located in /usr/local/etc/lynx.cfg
+
+What I did to allow all cookies is open lynx.cfg in vim edit and change the following lines:
+
+a)
+
+#FORCE_SSL_COOKIES_SECURE:FALSE
+with
+
+FORCE_SSL_COOKIES_SECURE:TRUE
+b)
+
+#SET_COOKIES:TRUE
+uncomment it to:
+
+SET_COOKIES:TRUE
+c) next, change
+
+ACCEPT_ALL_COOKIES:FALSE
+ACCEPT_ALL_COOKIES:TRUE
