@@ -1,3 +1,14 @@
+If I enter in a folder
+
+cd myfolder
+
+and want to delete everything then just type:
+
+rm *
+
+This will delete everything inside this folder
+
+
 If I want to remove all the content just:
 
 rm Pictures/*
