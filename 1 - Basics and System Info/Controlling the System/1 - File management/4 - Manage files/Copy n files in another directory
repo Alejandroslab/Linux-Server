@@ -1,0 +1,9 @@
+find . -maxdepth 1 -not -path '*/.*' -type f |head -10 | xargs cp -t mytests
+
+
+
+this will find all files inside the current '.' directory and copy the first 10 ones in a folder called 'mytests'
+
+then the max depth will be just 1 folder (it will not look inside suboflders)
+
+hidden files will be excluded (-not -path predicate)
