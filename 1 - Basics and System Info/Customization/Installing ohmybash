@@ -1,0 +1,7 @@
+to customize your bash with zsh you have ohmyzsh
+
+Fortunately there is ohmybash that allows the use of theming as ohmyzsh
+
+to install:
+
+bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"

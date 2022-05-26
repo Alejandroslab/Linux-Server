@@ -1,4 +1,0 @@
-cat /etc/passwd | cut -d':' -f1
-
--d will cut for the ':' separatore 
--f1 will retrieve the first field (field n.1)
