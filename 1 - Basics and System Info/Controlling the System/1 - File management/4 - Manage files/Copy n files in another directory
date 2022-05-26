@@ -1,3 +1,8 @@
+REMEMEBR if your destination folder does not exist then you need to
+create it first!
+
+mkdir mytests
+
 find . -maxdepth 1 -not -path '*/.*' -type f |head -10 | xargs cp -t mytests
 
 
