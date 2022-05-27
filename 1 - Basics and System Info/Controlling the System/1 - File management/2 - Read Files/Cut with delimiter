@@ -1,0 +1,4 @@
+cut -d ' ' -f 1
+
+this will cut the string with delimiter space and retrieve the
+first field until the first space

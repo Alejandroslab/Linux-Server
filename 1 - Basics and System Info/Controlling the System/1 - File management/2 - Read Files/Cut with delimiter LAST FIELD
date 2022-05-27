@@ -1,0 +1,9 @@
+You acn use 'rev' and pipe it with the cut -d ' ' -f1
+in this way:
+
+
+echo "hello my name is andrew" | rev | cut -d ' ' -f 1 | rev
+
+this will retrieve 'andrew'
+
+you can play with it and find it more 

@@ -1,0 +1,3 @@
+ just use Find
+ 
+ find <path> -name '*log'

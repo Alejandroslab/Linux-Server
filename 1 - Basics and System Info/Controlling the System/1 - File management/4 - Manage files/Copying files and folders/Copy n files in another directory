@@ -12,3 +12,12 @@ this will find all files inside the current '.' directory and copy the first 10 
 then the max depth will be just 1 folder (it will not look inside suboflders)
 
 hidden files will be excluded (-not -path predicate)
+
+REMEMBER: if you run multiple times this command the files copied will be just overwritten
+
+REMEMEBER: If you copy  a file then the 'Last modified' date will be updated
+
+you need to add the '-p' option to preserver the last modified date
+(you need to add it at the end of the cp command not 'cp -tp' will not work)
+
+find . -maxdepth 1 -not -path '*/.*' -type f |head -10 | xargs cp -t mytests -p

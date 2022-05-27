@@ -1,0 +1,6 @@
+just use tail-n+2
+
+
+ls | tail -n+2
+
+will retriev all the ls output except for the FIRST line 

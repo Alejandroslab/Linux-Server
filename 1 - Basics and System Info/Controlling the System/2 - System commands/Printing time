@@ -1,0 +1,9 @@
+date
+
+date +%s will print seconds since 01/01/1970
+This date is called 'UNIX epoch'
+It is useful when you want to compute the time that a script neeeds to run
+
+date +%S will print the current seconds
+
+date +%N will print the nanoseconds

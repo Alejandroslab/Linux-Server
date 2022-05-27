@@ -1,0 +1,9 @@
+just use cut
+
+who | cut -c 1-8
+
+cut will retrive the character between 1-8 of the output of command 'who'
+
+You can also use multiple lines:
+
+who | cut -c 1-8, 18-
