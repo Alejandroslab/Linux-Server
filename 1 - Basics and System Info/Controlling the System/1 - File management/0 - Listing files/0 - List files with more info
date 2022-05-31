@@ -1,0 +1,14 @@
+ls --full-time
+
+will retrieve also the 'Last modified' date
+
+This option like 'ls -lah' or other
+will also retrieve the total size in the first lines
+
+you may want to remove it with:
+
+ls --full-time *
+
+or just piping with tail:
+
+ls --full-time | tail -n+2

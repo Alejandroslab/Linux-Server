@@ -1,3 +1,22 @@
  just use Find
- 
+
  find <path> -name '*log'
+
+
+You can also use:
+
+printf '%s \n' *pdf
+
+will retrieve all files in the current directory that ends with 'pdf'
+
+
+you can also use echo
+ echo myfile
+
+ gobbling is accepted:
+
+ echo myfile*
+
+ will search any file that starts with myfile...
+
+ for just one characte use ? instead of *
