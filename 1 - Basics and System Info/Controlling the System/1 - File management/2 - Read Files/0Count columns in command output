@@ -1,0 +1,12 @@
+Let's say we want to count the columsn (divided by a space) in a command like ls:
+
+ls -lah
+
+just add this:
+
+ls -lah | awk '{print NF}' | sort -nu | tail -n 1
+
+the awk will retrieve all the columns and print the number of columns for any row
+sort -nu will operate a distinct like operation
+
+tail -n 1 will retrieve the second row
