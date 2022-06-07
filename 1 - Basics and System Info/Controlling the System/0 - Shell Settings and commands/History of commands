@@ -1,0 +1,15 @@
+just run:
+
+history
+
+to see also timestamps run:
+
+HISTTIMEFORMAT="%d/%m/%y %T "
+
+and then again 'history'
+
+or:
+
+history ; HISTTIMEFORMAT="%d/%m/%y %T "
+
+this is temporary. To make it permanent you need to 'export' in your .bashrc file 
