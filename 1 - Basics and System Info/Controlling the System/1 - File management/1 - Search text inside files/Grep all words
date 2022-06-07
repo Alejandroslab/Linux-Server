@@ -1,0 +1,5 @@
+grep "." mydocument
+
+will find any word inside the file "mydocument"
+
+This is the equivalent of the asterisk '*' to indicate all the elements
