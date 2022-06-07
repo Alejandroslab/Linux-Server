@@ -1,0 +1,57 @@
+To print the last n rows of a file use tail
+
+To print the first n rows of a file use head
+
+tail -n 4 /etc/group
+
+We can even open multiple files using tail command with out need to execute multiple tail commands to view multiple files. Suppose if you want to see first two lines of a
+
+tail -n <number of lines> <file1> <file2> <file3>
+
+
+Unlike the default behaviour which is to end after printing certain number of lines,
+the -f option “which stands for follow” will keep the stream going.
+It will start printing extra lines on to console added to the file after it is opened.
+
+This command will keep the file open to display updated changes to console until the user breaks the command.
+
+tail -f /path/to/file
+
+
+service crond start ; tail -f /var/log/cron
+
+
+The same tail -f command can be replicated using less command well. Once you open a file with less
+
+less /path/to/filename
+
+Once you open file, then press shift+f
+
+Example:
+
+Mar 21 08:25:01 sanne-taggle CRON[5553]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)Mar 21 08:27:24 sanne-taggle wpa_supplicant[807]: wlan0: WPA: Group rekeying completed with da:3c:69:04:b1:21 [GTK=CCMP]Mar 21 08:35:01 sanne-taggle CRON[5982]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)Waiting for data... (interrupt to abort)
+In order to come out from update mode in less, you have to press ctrl+c and then press q for quit.
+
+
+
+
+We have other option -s  which should always be used with -f” will determine the sleep interval, whereas tail -f will keep watching the file, the refresh rate is each 1 second, if you wish to control this, then you will have to use the -s option “sleep” and specify the sleep interval
+
+tail -f -s <sleep interval in seconds> /path/to/file
+
+
+
+As we seen in example 3, We can open more files using tail command. Even we can view 2 files at the same time growing using -f option as well. It will also print a header viewing which file is showing this output. the header line will be beginning with “==>”
+
+tail /path/to/file1 /path/to/file2
+
+
+Now what if I have a very huge /var/log/messages and I am only interested in the last certain number of bytes of data, the -c option can do this easily. observe the below example where I want to view only the last 500 bytes of data from /var/log/messages
+
+tail -c <number of bytes> /path/to/file
+
+
+
+HEAD:
+
+Head command will obviously on the contrary to tail, it will print the first 10 lines of the file.

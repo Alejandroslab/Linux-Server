@@ -1,0 +1,23 @@
+
+Unlike the default behaviour which is to end after printing certain number of lines,
+the -f option “which stands for follow” will keep the stream going.
+It will start printing extra lines on to console added to the file after it is opened.
+
+This command will keep the file open to display updated changes to console until the user breaks the command.
+
+tail -f /path/to/file
+
+
+service crond start ; tail -f /var/log/cron
+
+
+The same tail -f command can be replicated using less command well. Once you open a file with less
+
+less /path/to/filename
+
+Once you open file, then press shift+f
+
+Example:
+
+Mar 21 08:25:01 sanne-taggle CRON[5553]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)Mar 21 08:27:24 sanne-taggle wpa_supplicant[807]: wlan0: WPA: Group rekeying completed with da:3c:69:04:b1:21 [GTK=CCMP]Mar 21 08:35:01 sanne-taggle CRON[5982]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)Waiting for data... (interrupt to abort)
+In order to come out from update mode in less, you have to press ctrl+c and then press q for quit.
