@@ -1,3 +1,7 @@
 sudo netstat -tulpn | grep LISTEN
 
-in the third column you will get the IP and the correspondent port 
+in the third column you will get the IP and the correspondent port
+
+or to check just one port:
+
+netstat -na | grep "8080"

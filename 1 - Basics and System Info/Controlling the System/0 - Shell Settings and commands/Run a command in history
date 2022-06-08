@@ -1,0 +1,15 @@
+if you run history
+you get a list of the commands with an index
+
+1 ls
+2 pwd
+3 cat myfile.txt
+...
+
+
+if you want to run any of these comamnds just use '!' and the number
+
+
+!2
+
+will run 'pwd'
