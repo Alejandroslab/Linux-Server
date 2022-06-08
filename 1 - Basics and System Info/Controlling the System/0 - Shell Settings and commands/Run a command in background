@@ -1,0 +1,46 @@
+ping debian.net
+
+if you press ctrl+c command will stop
+if you press ctrl +z command will continue in background (job control signal)
+
+you can have a look to commands in background with
+
+jobs
+
+or:
+
+ps -T
+
+(-T stands for Stopped by a job control signal)
+
+to bring back the process:
+
+bg
+
+or
+
+fg
+
+
+
+to kill a process you can list al the current jobs:
+jobs
+
+then kill the process with:
+
+kill %n
+
+where n is the number of the process
+
+kill %1
+
+will kill the process n.1
+
+
+
+If you have a process that continues to run like 'ping debian.net'
+(when like you run ctrl+c accidentally) then you can type
+
+kill %1
+
+even if your terminal is not responding. just continue typing and run the command 
