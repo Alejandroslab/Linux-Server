@@ -1,0 +1,13 @@
+To change your IP address, enter ifconfig followed by the interface you want to reassign
+and the new IP address you want assigned to that interface.
+
+For example, to assign the
+IP address 192.168.181.115 to interface eth0 , you would enter the following:
+
+
+ifconfig eth0 192.168.181.115
+
+
+with the same logic you can also change your netmask and your broadcast address
+
+ifconfig eth0 192.168.181.115 netmask 255.255.0.0 broadcast 192.168.1.255

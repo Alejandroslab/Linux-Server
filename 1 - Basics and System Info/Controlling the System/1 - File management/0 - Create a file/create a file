@@ -1,0 +1,22 @@
+you can use touch
+
+touch myfile
+
+or cat
+
+
+cat > myfile
+
+When you press ENTER , Linux will go into interactive mode and wait for you to start
+entering content for the file.
+
+This can be puzzling because the prompt disappears, but if
+you simply begin typing, whatever you enter will go into the file
+
+To exit and return to the prompt, I press CTRL ­D.
+
+to append something
+
+cat >> myfile
+
+type your text and press ctrl + d
