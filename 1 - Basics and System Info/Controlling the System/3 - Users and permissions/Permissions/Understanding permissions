@@ -1,0 +1,14 @@
+ls -l
+
+There are three sets of three
+characters, made of some combination of read ( r ), write ( w ), and execute ( x ), in that
+order.
+
+The first set represents the permissions of the owner;
+the second, those of the group;
+and the last, those of all other users.
+
+
+If any r , w , or x is replaced with a
+dash ( - ), then the respective permission hasn’t been given. Note that users can have
+permission to execute only either binaries or scripts.

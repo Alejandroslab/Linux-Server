@@ -1,0 +1,6 @@
+Updating isn’t the same as
+upgrading: updating simply updates the list of packages available for download from
+the repository, whereas upgrading will upgrade the package to the latest version in the
+repository
+
+Upgrade will change your package in your OS

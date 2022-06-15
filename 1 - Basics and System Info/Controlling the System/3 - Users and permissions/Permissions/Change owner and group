@@ -2,6 +2,12 @@ you can check file ownership with:
 
 ls -n
 
+
+to change ownership of a file:
+
+chown myuser /tmp/myfile
+
+
 to change owner let's say from root (which ID is always '0' to the first non-root user which ID is always '1000'):
 
 sudo chown 1000 myfile.txt

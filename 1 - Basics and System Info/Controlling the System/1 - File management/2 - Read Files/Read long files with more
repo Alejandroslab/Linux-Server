@@ -1,0 +1,23 @@
+more myfile
+
+Notice that more displays only the first page and then stops, and it tells us in the lower­left
+corner how much of the file is shown (2 percent in this case). To see additional lines or pages,
+press ENTER . To exit more , enter q (for quit).
+
+or you can use:
+
+less myfile
+
+that is an enhanced more:
+
+The less command is very similar to more , but with additional functionality—hence, the
+common Linux aficionado quip, “Less is more.” With less , you can not only scroll through a
+file at your leisure, but you can also filter it for terms. As in Listing 2­8, open snort.conf with
+le
+ss
+
+Notice in the bottom left of the screen that less has highlighted the path to the file. If you
+press the forward slash ( / ) key, less will let you search for terms in the file. For instance, when
+you first set up Snort, you need to determine how and where you want to send your intrusion
+alert output. To find that section of the configuration file, you could simply search for output,
+like so:

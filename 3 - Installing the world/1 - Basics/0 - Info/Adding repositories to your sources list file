@@ -1,0 +1,22 @@
+vim /etc/apt/sources.list
+
+Many Linux distributions divide repositories into separate categories. For instance,
+Ubuntu breaks out its repository categories as follows:
+main Contains supported open source software
+universe Contains community­maintained open source software
+multiverse Contains software restricted by copyright or other legal issues
+restricted Contains proprietary device drivers
+backports Contains packages from later releases
+
+
+To add a repository, just edit the sources.list file by adding the name of the repository
+to the list and then save the file. Say, for example, you want to install Oracle Java 8 on
+Kali. No apt package for Oracle Java 8 is available as part of the default Kali sources,
+but a quick search online shows that the fine folk at WebUpd8 have created one. If you
+add their repository to the sources, you can then install Oracle Java 8 with the apt-get
+install oracle-java8-installer command.
+
+At the time of writing, you would need to add
+the following repository locations to sources.list in order to add the necessary
+repositories:deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main
+deb­src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main
