@@ -1,0 +1,19 @@
+you can use scp
+
+to donwload from a remote hosts just run:
+
+scp myuser@hostname:~/myfile.txt ~/Documents
+
+no need to access via ssh before
+
+this will download the myfile.txt from the remote host (from home: ~/) to the local path: ~/Documents
+
+
+
+To upload to another machine:
+
+scp ~/myfile.txt myuser@hostname:~/
+
+this will send myfile.txt to the home directory of the remote host
+
+password will be asked 
