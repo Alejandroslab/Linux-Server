@@ -1,0 +1,13 @@
+To request an IP address from DHCP, simply call the DHCP server with the command
+dhclient followed by the interface you want the address assigned to. Different Linux
+distributions use different DHCP clients, but Kali is built on Debian, which uses
+dhclient. Therefore, you can assign a new address like this:
+
+dhclient eth0
+
+
+The dhclient command sends a DHCPDISCOVER request from the network interface specified
+(here, eth0 ). It then receives an offer ( DHCPOFFER ) from the DHCP server (192.168.181.131
+in this case) and confirms the IP assignment to the DHCP server with a dhcp request.
+Now when you enter ifconfig , you should see that the DHCP server has assigned a new
+IP address, a new broadcast address, and new netmask to your network interface eth0 .

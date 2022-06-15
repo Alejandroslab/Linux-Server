@@ -1,13 +1,26 @@
-just change the file 
+just change the file
 
 sudo vi /etc/resolv.conf
 
 you will see something like:
 
-nameserver 192.168.1.1 
+nameserver 192.168.1.1
 
 ..
 
-Change there with the DNS IP you like 
+Change there with the DNS IP you like
+
+you can use:
+
+192.168.1.1
+nameserver 8.8.8.8
+
+if you specify nameserver the IP will be recognized as external. Without 'nameserver' your IP will be local
+
+to quickly append
+
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+
 
 Additional nameserver directives after the first are only used when the first or last used server is unavailable
