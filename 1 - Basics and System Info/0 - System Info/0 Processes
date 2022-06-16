@@ -2,7 +2,11 @@ Check processes
 
 ps
 
+this is valid for just the current logged in user
 
+if you want all the user process:
+
+ps aux 
 
 processes:
 top

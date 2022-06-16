@@ -1,0 +1,13 @@
+sudo chmod 777 myfile.txt
+
+will change the permission to 7 (that stands for 'rwx') to every set (owner, group and other user)
+
+you can use also the UGO method (where UGO stands for User (or owner), Group and Other users)
+
+to grant execution permission to User and Other user:
+
+chmod u+x, o+x myfile.txt
+
+to remove write permission to User
+
+chmod u-w myfile.txt

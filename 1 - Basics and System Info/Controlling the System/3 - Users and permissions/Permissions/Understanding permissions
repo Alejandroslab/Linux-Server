@@ -12,3 +12,8 @@ and the last, those of all other users.
 If any r , w , or x is replaced with a
 dash ( - ), then the respective permission hasn’t been given. Note that users can have
 permission to execute only either binaries or scripts.
+
+
+binary: 111 is equal to octal '7' and to 'rwx'
+this pattern will repeat fort the 3 sets: owner, group and other Users
+therefore 777 will mean grant permision 'rwx' or '7' to all the 3 sets: owner, group and other users 
