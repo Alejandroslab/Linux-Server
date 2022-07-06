@@ -1,0 +1,3 @@
+cat myfile | sort | uniq
+
+will list all unique values in your file 'myfile'
