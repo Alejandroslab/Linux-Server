@@ -1,0 +1,31 @@
+You can change the console or tty font 
+
+to check it you can temporary change your tty pressing ctrl+alt+f2 or f3 
+
+
+
+on Arch linux just go to 
+
+cd /usr/share/kbd/consolefonts
+
+then list all the fonts and choose one
+
+Usually on Manjaro the Terminus font comes available 
+
+(or you can install with sudo pacman -Syu terminus-font) 
+
+therefore we can change the font with:
+
+setfont ter-232b.psf.gz 
+
+(or just use sudo)
+
+Remember that this is a temporary solution.
+
+To make it permanent just create a new config file:
+
+sudo vim /etc/vconsole.conf
+
+and type:
+
+FONT=ter-232b.psf.gz 
