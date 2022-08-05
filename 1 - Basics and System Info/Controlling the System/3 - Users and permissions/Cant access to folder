@@ -1,0 +1,9 @@
+When you want to cd to some folder like:
+
+cd /etc/kibana
+
+then you must change to the superuser
+
+su root
+
+and then you can change it
