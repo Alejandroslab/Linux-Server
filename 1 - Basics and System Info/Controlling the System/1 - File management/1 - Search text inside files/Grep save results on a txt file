@@ -1,0 +1,3 @@
+grep "my words" > myfile.txt
+
+an error like 'input file 'myfile.txt' is also the output' may appear but anyways the code run well
