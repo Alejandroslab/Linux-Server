@@ -1,0 +1,14 @@
+just add -t option or -r for reverse order
+
+ls -t will order by 'time last modified' (descending)
+
+
+if you add an -r you will get the ascending order:
+
+ls -tr
+
+you can also use it with full-time option
+
+ls --full-time -t *
+
+this will retrieve all the files ordered in descending order (the asterisk will delete the first row that displays the total size of files )

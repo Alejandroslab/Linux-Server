@@ -1,0 +1,8 @@
+With grep you will use the dot as an asterisk
+let's suppose we want to search 'Alan Ducasse.txt' but also 'Alex Ducasse.txt' files
+
+we can just type:
+
+grep '.Ducasse.txt'
+
+this will retrieve both files as both end with 'Ducasse.txt'
