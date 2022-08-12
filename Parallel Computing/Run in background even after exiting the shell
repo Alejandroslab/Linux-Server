@@ -1,0 +1,3 @@
+just use nohup
+
+nohup myscript.sh
