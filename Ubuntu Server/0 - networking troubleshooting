@@ -1,0 +1,6 @@
+check always your ethernet connections
+
+ip addr
+
+
+and then change  it with netplan accordingly as you will find in other instructions
