@@ -1,6 +1,8 @@
 you can check your disks the used and the available space with:
 
 df -h
+
+
 you will get something like this:
 
 Filesystem      Size  Used Avail Use% Mounted on
