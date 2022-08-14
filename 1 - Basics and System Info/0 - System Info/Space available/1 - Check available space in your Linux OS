@@ -19,9 +19,6 @@ Display Free disk space
 
 df
 
+if you have multiple device you can run this:
 
-Disk space in a directory
-
-du
-
-nproc
+df -h | grep /dev | head -n 3
