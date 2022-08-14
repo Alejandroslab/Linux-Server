@@ -1,0 +1,6 @@
+sudo apt install fdupes
+
+
+fdupes -r /home/myuser
+
+will find recursively in any directory of your path duplicates 
