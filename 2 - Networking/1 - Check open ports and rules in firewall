@@ -1,9 +1,12 @@
 
 You can check rules with:
 
-sudo firewall-cmd --list-all
+sudo firewall-cmd --list-all-
 
 with firewalld (in RHEL and derivatives):
+
+to add a new rule:
+
 
 sudo firewall-cmd --permanent --add-port=3389/tcp
 sudo firewall-cmd --reload
