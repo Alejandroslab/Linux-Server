@@ -1,0 +1,33 @@
+sudo apt update
+sudo apt install samba
+
+Now that Samba is installed, we need to create a directory for it to share:
+
+mkdir /home/<username>/sambashare/
+
+
+The configuration file for Samba is located at /etc/samba/smb.conf. To add the new directory as a share, we edit the file by running:
+
+sudo nano /etc/samba/smb.conf
+
+
+At the bottom of the file, add the following lines:
+
+[sambashare]
+    comment = Samba on Ubuntu
+    path = /home/username/sambashare
+    read only = no
+    browsable = yes
+
+
+done!
+    Now:
+sudo service smbd restart
+sudo ufw allow samba
+
+Since Samba doesn’t use the system account password, we need to set up a Samba password for our user account:
+
+sudo smbpasswd -a username
+
+
+now you can connect !
