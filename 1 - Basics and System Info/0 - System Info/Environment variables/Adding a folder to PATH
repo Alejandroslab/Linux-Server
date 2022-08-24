@@ -1,0 +1,20 @@
+PATH=$PATH:/home/myuser/myscripts
+
+this will append the path after the ':' to the current PATH list of directories
+
+doing so will giver you the possibilty to run your scripts inside the folder 'myscripts'
+
+
+to show all the paths of the PATH variable just run:
+
+echo $PATH
+every path will be separated by a ':'
+
+to run it with every path on a newline just run:
+echo "${PATH//:/$'\n'}"
+
+or:
+echo "${PATH//:/\n}"
+
+
+DO NOT ADD TO MUCH DIRECTORIES TO YOUR PATH as it will slow down the system 

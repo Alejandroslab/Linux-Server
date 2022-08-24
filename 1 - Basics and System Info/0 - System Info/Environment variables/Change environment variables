@@ -1,0 +1,29 @@
+just run the command on shell:
+
+HISTSIZE=0
+
+this will set your history file at 0. this means that the shell will not record any command you run
+
+thisis temporarily if you want to make it permanent just use 'export'
+
+export HISTSIZE in this case
+
+
+this means run:
+
+HISTSIZE=0
+export HISTSIZE
+
+you can also make some backup running
+
+echo $HISTSIZE > mybackuphistsize.txt
+
+or also all the environment variables with:
+
+set > mybackupenvironmentvariable.txt
+
+
+anyways you can come back to the default values (that in this case is 1000) running again:
+
+HISTSIZE=1000
+export HISTSIZE

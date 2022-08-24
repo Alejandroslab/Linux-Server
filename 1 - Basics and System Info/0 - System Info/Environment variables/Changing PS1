@@ -1,0 +1,19 @@
+another importnatn variable is ps1
+this displays the shell prompt
+
+to change it just run:
+
+PS1="This is my command line: #"
+
+
+to make it permanent after running the command use 'export'
+
+export PS1
+
+
+placeholders are:
+
+\u name of the current user
+\h the hostname
+
+\w the base name of the current working directoru

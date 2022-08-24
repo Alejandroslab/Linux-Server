@@ -1,0 +1,12 @@
+Just declare it:
+
+MYVAR="This is my variable"
+
+and run it
+
+echo $MYVAR
+
+
+to delete a variable:
+
+unset MYVARIABLE

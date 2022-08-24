@@ -1,0 +1,3 @@
+unset MYVAR
+
+you can also delete system variable but BE CAREFUL! 

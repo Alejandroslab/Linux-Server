@@ -1,0 +1,21 @@
+Check environment variables
+
+env
+
+
+to view all environment variables just use 'set' with 'more' or 'less' to get a tidy list:
+
+set | more
+
+
+If we know the name of a variable we can just print it with:
+
+echo $MYVARIABLE
+
+like:
+
+echo $HISTSIZE
+
+or print $HISTSIZE
+
+will print the history size
