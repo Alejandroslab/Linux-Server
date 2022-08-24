@@ -2,7 +2,7 @@ Just use dig
 
 we can check the server and its ip with
 
-dig mwebsite.com ns
+dig mywebsite.com ns
 
 
 You can also use the dig command to get information on email servers connected to a

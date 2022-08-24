@@ -1,0 +1,15 @@
+use nice (you can only use with sudo or root)
+
+nice -n -10 myprocess
+
+will give higher priorty
+WHILE
+
+nice -n 10 myprocess
+
+will give lower priority
+
+
+the valyes range from -20 to +19 with zero as default value
+
+a high nice value is equal to low priority and viceversa

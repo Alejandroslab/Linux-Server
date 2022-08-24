@@ -1,0 +1,16 @@
+you can use 'at'
+
+at 3:30pm
+
+or
+
+at now + 20 minutes
+
+or
+
+at now + 2 hours
+
+
+after you run the 'at' command you will have an interactive shell
+
+you can then run the command you want to run at that time 

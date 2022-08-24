@@ -1,0 +1,9 @@
+use renice (only sudo or root)
+
+you also need the PID
+
+renice 10 21402
+
+will set lower priority to the process 21402
+
+you can also use the top utility (press R and then supply the PID and the nice value )

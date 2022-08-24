@@ -1,0 +1,9 @@
+you can use different types of kill command
+
+like
+
+kill -1 20402
+
+will kill with option -1 that corresponds to SIGHUP. This will stop the process 20402 and then restarts it with the same PID
+
+if you want to just kill it use the -9 option (the SIGKILL option )

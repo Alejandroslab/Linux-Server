@@ -1,0 +1,3 @@
+fg 43
+
+where 43 is the PID (use the ps command to know which pid you have )
