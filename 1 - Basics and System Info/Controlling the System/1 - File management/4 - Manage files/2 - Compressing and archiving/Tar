@@ -2,6 +2,8 @@ The UNIX philosophy is to have small tools. One tool is doing exactly one thing,
 
 The tar tool is just combining several files into a single file without any compression.
 
+TAR means: tape archive
+
 The gzip tool is just compressing a single file.
 
 If you want to have both, you just combine both tools resulting in a .tar.gz file.
@@ -20,7 +22,7 @@ tar -cvf myarchive.tar *
 myarchive.tar is the name of the tar file and '*' indicate to include in the archive all the files present in the current directory
 
 -cvf will create verbosely a new tar file
-
+(-c stands for 'create' 'v' for 'verbosely' and 'f' for 'the following files')
 
 
 

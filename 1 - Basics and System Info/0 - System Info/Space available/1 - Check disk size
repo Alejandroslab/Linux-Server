@@ -1,3 +1,25 @@
 just run:
 
 lsblk
+
+or:
+
+fdisk -l
+
+you can also list your devices:
+
+ls /dev
+
+
+
+remember
+
+sda corresponds to first SATA drive
+sdb to second SATA drive
+sdc to third
+sdd to fourth and so on..
+
+usually drives are splitted in partitions
+so you will have
+
+sda1, sda2 as the first and the second partition of the first SATA drive

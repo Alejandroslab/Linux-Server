@@ -1,0 +1,33 @@
+In debian:
+
+/etc/rsyslog.conf
+
+here you will find all the system rules for logging 
+
+messages have "priority" that can be '*', 'debug', 'emerg',...'crit'...
+
+structure will be something like:
+
+mail.* /var/log/mail
+This example will log mail events of all ( * ) priorities to /var/log/mail.
+
+
+kern.crit /var/log/kernel
+This example will log kernel events of critical ( crit ) priority or higher to
+/var/log/kernel.
+
+*.emerg *
+This last example will log all events of the emergency ( emerg ) priority to all logged­on
+users.
+
+
+You can configure the logrotate utility to choose the regularity of your log
+rotation with the /etc/logrotate.conf text file
+/etc/logrotate.conf
+
+you will see there "weekly" or "daily" and then a number that corresponds to the number of weeks or days 
+
+
+At the end of each rotation period, the log files are renamed and pushed toward the end
+of the chain of logs as a new log file is created, replacing the current log file. For
+instance, /var/log.auth will become /var/log.auth.1, then /var/log.auth.2, and so on.

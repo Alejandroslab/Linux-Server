@@ -1,0 +1,18 @@
+dd is a bit-by-bit copy utility. this will create a physical copy of the hard drive with deleted files.
+even deleted files are copied. 
+deleted files will not be copied with most logical
+copying utilities, such as cp .
+
+dd if=inputfile of=outputfile
+
+dd if=/dev/sda1 of=/dev/sdb1
+
+will copy sda1 to sdb1 
+
+
+usually you will also set block size and the no error option
+
+dd if=/dev/sda1 of=/dev/sdb1 bs=4096 conv:noerror
+
+noerror will allow you to continue even with errors
+bs=4096 will change the block size and speed up the process. Usualyy dd is slow.

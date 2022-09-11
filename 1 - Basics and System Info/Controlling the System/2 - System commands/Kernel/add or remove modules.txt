@@ -1,0 +1,12 @@
+to add a module:
+
+modprobe -a [modulename]
+
+to remove a module:
+
+modprobe -r  [modulename]
+
+to test if a module has been added use:
+
+dmesg | grep [modulename]
+

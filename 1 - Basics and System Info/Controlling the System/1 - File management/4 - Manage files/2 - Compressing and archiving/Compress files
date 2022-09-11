@@ -28,3 +28,17 @@ unzip archivio.zip *
 will perform the same operations
 
 unzip
+
+
+you can also use:
+
+gzip myfile.*
+
+this will add files that start with "myfile.."
+
+
+other ways are:
+
+bzip2 myfile
+to decompress
+uncompress myfile 

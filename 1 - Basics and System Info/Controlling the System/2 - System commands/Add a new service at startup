@@ -1,0 +1,7 @@
+You can add services for the rc.d script to run at startup using the update-rc.d command.
+This command enables you to add or remove services from the rc.d script.
+
+update-rc.d < name of the script or service>< remove | defaults |disable | enable >
+
+
+you can also use rcconf

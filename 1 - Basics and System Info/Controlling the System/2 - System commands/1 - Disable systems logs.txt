@@ -1,0 +1,5 @@
+just stop the logging daemon 
+
+in debian 
+
+sudo service rsyslog stop

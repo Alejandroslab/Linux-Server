@@ -1,0 +1,17 @@
+use proxychains to scan a site with nmap anonymously, you would enter the following:
+
+
+proxychains nmap -sT - Pn < IP address >
+
+This would send the nmap –sS stealth scan command to the given IP address through a
+proxy. The tool then builds the chain of proxies itself, so you don’t have to worry about
+it.
+
+you will find config file here:
+
+/etc/proxychains.conf
+
+under [ProxyLists]
+
+You can find free proxies by
+googling “free proxies” or using the site http://www.hidemy.name (just for educationsl purposes)

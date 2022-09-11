@@ -1,0 +1,11 @@
+iwconfig
+
+or 
+
+iwlist wlan0 scan 
+
+
+or 
+
+nmcli dev wifi 
+

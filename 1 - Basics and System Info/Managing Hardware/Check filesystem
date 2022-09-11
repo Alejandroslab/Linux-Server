@@ -1,1 +1,8 @@
 sudo parted -l
+
+
+or you can use:
+
+fsck -p /dev/sdb1
+
+where -p will automatically fix any problem with the device

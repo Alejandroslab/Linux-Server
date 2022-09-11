@@ -1,3 +1,10 @@
+Mounting corresponds to the process that will link phisically and then logically an hard drive to your os 
+
+when you phisically connect and hard drive it may not be logically connected therefore you may not see it in your os.
+
+
+
+
 You have to create previously the folder in which you want to mount anywthing
 
 You can mount the same device multiple times in different locations
@@ -8,3 +15,7 @@ lsblk
 
 remember that disk will be labelled as: 'sda', 'sd-b', 'sd-c', 'sdd', 'sde', 'sdf', and so on
 
+
+Usuallyy in linux mount points are:
+
+/mnt  and /media even if any directory can be used!

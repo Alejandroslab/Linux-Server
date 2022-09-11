@@ -1,1 +1,10 @@
 to install mysql see the mysql repository!
+
+
+remember you can connect to any mysql instance even remotely with:
+
+To access a remote database, then, we need to provide the
+hostname or IP address of the system that is hosting the MySQL database. Here’s an example:
+
+
+mysql -u root -p 192.168.1.101

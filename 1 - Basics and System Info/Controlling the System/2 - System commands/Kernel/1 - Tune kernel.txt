@@ -1,0 +1,14 @@
+use sysctl 
+
+sysctl -a | less
+
+
+To enable IP forwarding, change the 0 to a 1 by entering the following:
+
+sysctl -w net.ipv4.ip_forward=1
+
+Remember that that sysctl changes take place at runtime but are lost when the system is
+rebooted. To make permanent changes to sysctl , you need to edit configuration file
+/etc/sysctl.conf.
+
+In that config file just uncomment the "net.ipv4.ip_forward" line

@@ -1,0 +1,25 @@
+apt-get install bluez 
+
+then use the command hciconfig
+
+you will find something like hci0
+
+hciconfig hci0 up 
+
+we can scan with:
+
+hcitool scan 
+
+or
+
+hcitool inq 
+
+
+we can also use:
+
+sdptool browse macaddress
+
+
+we can also use l2ping to ping macaddresses:
+
+l2ping macaddress

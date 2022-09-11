@@ -1,0 +1,5 @@
+lsmod
+
+if you want more info about a module:
+
+modinfo [modulename]

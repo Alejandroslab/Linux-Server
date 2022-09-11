@@ -1,0 +1,7 @@
+proxychains firefox www.google.com
+
+will open firefox via a proxy that you can define in the file /etc/proxychains under [ProxyLists]
+
+if you add more than one proxy your packet will travel through different proxies.
+
+remember to uncomment the 'dynamic_chain' line otherwise if a proxy is down your packet will stop surfing 

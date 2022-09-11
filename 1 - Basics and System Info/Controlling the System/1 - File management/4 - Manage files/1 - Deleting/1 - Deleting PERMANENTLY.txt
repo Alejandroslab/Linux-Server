@@ -1,0 +1,18 @@
+This command will delete and overwrite multiple times the file 
+
+shred myfile 
+
+On its own, shred will delete the file and overwrite it several times—by default, shred
+overwrites four times. 
+
+The more times the file is overwritten, the harder it is
+to recover, but keep in mind that each overwrite takes time, so for very large files,
+shredding may become time­consuming.
+
+shred -f -n 10 myfile 
+
+-f will force it. this means will change the permissions if needed 
+-n 10 option sets the times that the file will be overwritten 
+
+
+you can also add -z option for zero fill 
