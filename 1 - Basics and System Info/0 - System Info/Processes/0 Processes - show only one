@@ -1,0 +1,8 @@
+first check the PID of the process you need with 
+
+top
+
+
+then 
+
+top -p [PID]
