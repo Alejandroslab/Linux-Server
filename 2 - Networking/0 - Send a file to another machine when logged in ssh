@@ -1,3 +1,9 @@
 You can use scp
 
 scp myfile.txt remoteuser@remoteserver:/home/myremoteuser/
+
+this will login to the remote machine and then automatically logout. 
+
+this is not like sftp. with sftp you need to log in and then logout manually
+
+with the scp command you do not need to do that 
