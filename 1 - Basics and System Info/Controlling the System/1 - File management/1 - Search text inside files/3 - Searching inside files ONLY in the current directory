@@ -1,0 +1,12 @@
+In Bash, a glob will not expand into hidden files, so if you want to search all the files in a directory, you need to specify hidden files .* and non-hidden *
+
+
+grep -s "string" * .*
+
+If you are searching files in another dir:
+
+grep -s "string" /path/to/dir/{*,.*}
+
+(if you want to find files by their file name inside the current directory just use find)
+
+find myfile 

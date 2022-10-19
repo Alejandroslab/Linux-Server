@@ -1,4 +1,5 @@
-With grep you will use the dot as an asterisk
+With grep you will use the dot as an asterisk as wildcard
+
 let's suppose we want to search 'Alan Ducasse.txt' but also 'Alex Ducasse.txt' files
 
 we can just type:

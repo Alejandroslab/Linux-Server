@@ -1,32 +1,37 @@
-grep 'my words to search' \my\path\
+Grep is a command that retrieves text INSIDE FILES 
 
-if the path is the same in which you are working just put the dot:
-
-grep 'my words to search' .
-
-You can also omit the quotes (if the search term/s have not spaces):
-
-grep myfile .
+It can search for a word or term inside files
+But with piping you can broadly extend its functionality
 
 
 
-grep will search the word/s in all the file or output
+grep "myword" myfile
 
-You do not need to specify the position with wildcards like *
-
-Grep also does not support wildcards but RegEx
+You can use single quote '' or double quotes alternatively "" (it's the same)
 
 
-Search any line that contains the word in filename on Linux:
-grep 'word' filename
+You can also omit the quotes (if the searched term/s have not spaces):
+
+grep myword myfile
 
 
+REMEMBER THAT THE WORDS YOU ARE SEARCHING ARE CASE SENSITIVE
 
-Perform a case-insensitive search for the word ‘bar’ in Linux and Unix:
+To perform a case-insensitive (ignore-case) search for the word ‘bar’ inside the file called 'file1':
+
 grep -i 'bar' file1
 
-Look for all files in the current directory and in all of its subdirectories in Linux for the word ‘httpd’:
-grep -R 'httpd' .
+THE OPTION CAN ALSO BE PLACED AT THE END OF THE COMMAND like:
 
-Search and display the total number of times that the string ‘nixcraft’ appears in a file named frontpage.md:
-grep -c 'nixcraft' frontpage.md
+grep 'bar' file1 -i 
+
+
+
+Grep also DOES NOT SUPPORT wildcards but RegEx
+
+You do not need to specify the position with wildcards like *. Grep will perform that automatically
+
+
+
+
+

@@ -1,3 +1,30 @@
-Will allow to search in all the subdirectories
+Will allow to search in all the subdirectories:
 
 grep -R 'some pattern' /path/to/search
+
+(REMEMBER you cannot specify the path if you do not add the -R option)
+
+if the path is the same in which you are working just put the dot:
+
+
+grep -R 'my words to search' .
+
+
+
+Look for all files in the current directory and in all of its subdirectories in Linux for the word ‘httpd’:
+
+
+grep -R 'httpd' .
+
+
+grep -irnw '/home/user/myfolder' -e "mywords" 
+
+-i ignore case
+-r recursive
+-n show line numbers 
+-w word-regexp
+-e set the pattern 
+
+finally you can pipe it to a new file:
+
+grep -irnw '/home/user/myfolder' -e "mywords"  > myoutput.csv
