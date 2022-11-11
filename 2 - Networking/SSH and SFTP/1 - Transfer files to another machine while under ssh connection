@@ -1,0 +1,28 @@
+just use scp. specify the file and then the machine
+
+scp myfile.txt user@myremotemachine:\home\myuser\myfolder
+
+if you to transfer right to home folder you can omit all the path and just leave the ':'
+
+scp myfile.txt user@myremotemachine:
+
+
+where the double dots ':' are necessary 
+without the ':' NO transfer will be made 
+
+
+after you run the command you will be asked for the remote machhine password and then a line with the total transfer time and speed will appear
+
+done!
+
+
+
+
+
+Copy all files from local to remote using scp.
+
+scp * remoteuser@remoteserver:/remote/folder/
+
+Copy all files and folders recursively from local to remote using scp.
+
+scp -r * remoteuser@remoteserver:/remote/folder/
