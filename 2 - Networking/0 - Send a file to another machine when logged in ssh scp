@@ -1,0 +1,16 @@
+You can use scp
+
+scp myfile.txt remoteuser@remoteserver:/home/myremoteuser/
+
+this will login to the remote machine and then automatically logout. 
+
+this is not like sftp. with sftp you need to log in and then logout manually
+
+with the scp command you do not need to do that 
+_______________________-
+REMEMBER!
+
+you must add the part ":/home/myremoteuser/"
+
+generally you must see the line wirh transfer speed
+if you do not see anything. anything happened in this case
