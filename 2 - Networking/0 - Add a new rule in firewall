@@ -1,0 +1,26 @@
+
+
+to add a new rule:
+
+
+sudo firewall-cmd --permanent --add-port=3389/tcp
+then reload the firewall service:
+
+sudo firewall-cmd --reload
+
+
+
+you must indicate the protocol 'tcp' or 'udp'
+
+to remove :
+
+sudo firewall-cmd --permanent --remove-port=22/tcp
+
+
+remember that there are zones that you can use with --zone=public inside the command 
+___
+with ufw just run:
+
+sudo ufw allow 3389
+
+

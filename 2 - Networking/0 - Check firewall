@@ -1,0 +1,10 @@
+the firewall is usually firewalld in rhel, fedora, centos, opensuse
+
+
+sudo systemctl status firewalld
+
+you can stop it with:
+sudo systemctl stop firewalld
+
+
+it is also used ufw but  more in Ubuntu 

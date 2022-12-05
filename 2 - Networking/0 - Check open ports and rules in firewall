@@ -1,0 +1,32 @@
+firewall-d divides the firewall rules with 'zones' where the default one is 'public'
+
+You can check all the rules of your default zone (usually public) with:
+
+sudo firewall-cmd --list-all
+
+under 'ports'  you will see the opened ports 
+
+
+
+you can check the zones with:
+
+sudo firewall-cmd --list-all-zones
+
+
+#ADD A NEW RULE
+to add a new rule permanetly:
+
+
+sudo firewall-cmd --permanent --add-port=3389/tcp
+to remove: 
+sudo firewall-cmd --permanent --remove-port=22/tcp
+
+finally remember to reload:
+sudo firewall-cmd --reload
+
+you must indicate the protocol 'tcp' or 'udp'
+
+
+with ufw just run:
+
+sudo ufw allow 3389
