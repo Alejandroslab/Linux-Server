@@ -1,0 +1,36 @@
+Firewalld works wiht different set of rules (protocols, services and ports)
+A single set of rules is grouped in zones 
+
+Every zone is different. There are some default that come preinstalled.
+to see the available zones:
+
+
+ sudo firewall-cmd --get-zones
+ 
+ You can enable one or more zones. They are called 'active'. 
+ To see the active zones:
+ 
+  sudo firewall-cmd --get-active-zones
+ You will see the names of the zones along with the interfaces that are connected.
+ 
+You can also see the main one that is called 'default':
+
+sudo firewall-cmd --get-default-zone
+
+Usually the default zone is the one called 'public'.
+
+You can change the default one with:
+
+sudo firewall-cmd --set-default-zone=home
+
+with this you will change the zone to 'home'. 'Home' zone has enabled the SSH protocol: 
+
+Remember also to reload firewalld:
+
+sudo firewall-cmd --reload
+
+check the default zone again with:
+
+sudo firewall-cmd --get-default-zone
+
+Be careful to not be locked out. 'Home' zone has enabled by default the SSH protocol and therefore the connection will not drop but other zones may not have it enabled.

@@ -1,0 +1,28 @@
+sometimes you may want an host to be ping-able that means that you can ping it or recall withouth knowing the ip
+
+some OS'es have firewalld zones enable that does not allow that.
+
+So the easiset solution is to turn uff (disable) firewalld.
+
+The more elegant solution is to change the firewalld setting in order to be discoverable in the local network.
+
+
+
+
+Usually the default zone is the one called 'public'.
+
+You can change the default one with 'home' zone that allows to be discoverable (and also leave the SSH protocol enabled)
+
+sudo firewall-cmd --set-default-zone=home
+
+with this you will change the zone to 'home'. 
+
+Finally remember also to reload firewalld:
+
+sudo firewall-cmd --reload
+
+check the default zone again with:
+
+sudo firewall-cmd --get-default-zone
+
+Be careful to not be locked out. 'Home' zone has enabled by default the SSH protocol and therefore the connection will not drop but other zones may not have it enabled.
