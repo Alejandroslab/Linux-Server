@@ -1,0 +1,6 @@
+sudo ethtool eth0 | grep Speed
+
+or 
+
+cat /sys/class/net/<interface>/speed
+

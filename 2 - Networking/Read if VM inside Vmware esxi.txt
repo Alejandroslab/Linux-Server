@@ -1,0 +1,6 @@
+If you have troubles with networking inside a vm in VMware ESXi 
+Remember that you are inside an Hypervisor!
+
+Check the adapters assigned in VMware for that particular machines
+
+(for example if you want 10gbps connection you cannot select the virutal E1000 adapter but you must select the VMXNET3 adapter...)

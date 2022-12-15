@@ -34,3 +34,17 @@ check the default zone again with:
 sudo firewall-cmd --get-default-zone
 
 Be careful to not be locked out. 'Home' zone has enabled by default the SSH protocol and therefore the connection will not drop but other zones may not have it enabled.
+
+
+firewalld has several built in zones:
+
+zone	example use
+drop	drop incoming connections without reply - only outgoing packets are allowed
+block	incoming connections are rejected with an icmp-host-prohibited message for IPv4 and icmp6-adm-prohibited for IPv6
+public	all incoming connections are allowed
+external	for use on external networks with masquerading enabled
+dmz	for computers on your demilitarized zone that are publicly-accessible with limited access to your internal network
+work	for computers in work areas (nope, I don't get this one either)
+home	for use in home areas (nope, I don't get this one either)
+internal	for your internal network device access
+trusted	all network connections are accepted

@@ -1,0 +1,1 @@
+sudo ethtool eth0 -i
