@@ -18,6 +18,7 @@ you must indicate the netmask and the broadcast address alongside the ip
 where DEV is the name of your device and can be like: 'eth0' or 'en0', 'en1', 'wlo1' and so on
 
 
+
 with this command you will assign statically the ip 192.168.1.2 to the machine
 
 
