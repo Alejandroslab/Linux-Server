@@ -2,7 +2,7 @@ add a new user
 
 sudo adduser newuser2
 
-
+remember you can also use an user with a dot inside like: 'mark.spencer'
 
 to remove a user
 

@@ -26,8 +26,10 @@ sudo service smbd restart
 sudo ufw allow samba
 
 Since Samba doesn’t use the system account password, we need to set up a Samba password for our user account:
+(if you skip this step it will be assumed that you are a Guest user and you will enter without password)
 
 sudo smbpasswd -a username
 
+Username used must belong to a system account, else it won’t save.
 
 now you can connect !
