@@ -1,0 +1,17 @@
+sudo apt install nodejs npm
+
+then
+
+sudo npm install wikit -g
+
+Using wikit is simple, just type "wikit" followed by your query. Quotes are not required for multi-word queries. For example:
+
+ 
+wikit eiffel tower
+
+ You can change the line length of the output with the --line flag.
+
+ 
+wikit eiffel tower --line 72
+ 
+ 
