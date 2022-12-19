@@ -1,3 +1,12 @@
-su -username2
+su username2
 
 will allow to logout from current session and login as username2
+
+in terminal will ask the password and then log in the session
+
+to change directory to the home of the user:
+
+cd ~ 
+
+to do the symbol ~ in the italian language you need a complete keyboard and press alt+126 
+where the numbers must be pressed in the numeric keyboard on the right side 

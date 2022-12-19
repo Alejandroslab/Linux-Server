@@ -1,0 +1,30 @@
+add a new user
+
+sudo adduser newuser2
+
+remember you can also use an user with a dot inside like: 'mark.spencer' but you cannot use '@' symbol 
+(in some systems you cannot use the dot)
+
+by default the newuser is not in the sudoers group that means does not have any priviliges 
+it is just a normal user 
+
+########
+to remove a user
+
+sudo userdel newuser2
+
+
+###############
+To edit the username of a user:
+
+sudo usermod -l new_username old_username
+
+
+################
+to change the password for a user:
+
+sudo passwd newuser2
+
+
+
+

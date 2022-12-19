@@ -8,7 +8,7 @@ mkdir /home/<username>/sambashare/
 
 The configuration file for Samba is located at /etc/samba/smb.conf. To add the new directory as a share, we edit the file by running:
 
-sudo nano /etc/samba/smb.conf
+sudo vim  /etc/samba/smb.conf
 
 
 At the bottom of the file, add the following lines:
@@ -21,15 +21,20 @@ At the bottom of the file, add the following lines:
 
 
 done!
-    Now:
+
+
+Now:
+
 sudo service smbd restart
 sudo ufw allow samba
 
-Since Samba doesn’t use the system account password, we need to set up a Samba password for our user account:
+Finally! Since Samba doesn’t use the system account password, we need to set up a Samba password for our user account:
+
 (if you skip this step it will be assumed that you are a Guest user and you will enter without password)
 
 sudo smbpasswd -a username
 
-Username used must belong to a system account, else it won’t save.
+USERNAME USED MUST BELONG TO A SYSTEM ACCOUNT, ELSE IT WON’T SAVE.
+This means if the user does not exist you must first create a system user and then set the samba password with the upper command (that can be the same password of the login)
 
 now you can connect !
