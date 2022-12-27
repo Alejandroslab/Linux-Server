@@ -4,3 +4,13 @@ or
 
 cat /sys/class/net/<interface>/speed
 
+
+or
+
+
+To get the link speed of your interface, use the ip command followed by grep as:
+
+sudo ip a | grep qlen
+
+
+In the above command, we grep for qlen, which shows the transmit queue length of the network interface in packets.
