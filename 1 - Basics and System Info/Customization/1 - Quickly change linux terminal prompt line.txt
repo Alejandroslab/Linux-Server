@@ -1,0 +1,89 @@
+In bash (this will work also in arch )
+
+first create a backup copy
+cp ~/.bashrc ~/.bashrc.bak
+
+then open the file
+
+sudo vim .bashrc
+
+finally change the last line:
+
+PS1='[\u@\H \W]\$ '
+
+
+Use the –H option to display a a full hostname:
+
+or -h to short hostname
+
+Some of these commands may not work on all versions of Linux.
+
+    \a – A bell character
+    \d – Date (day/month/date)
+    \D{format} – Use this to call the system to respond with the current time
+    \e – Escape character
+    \h – Hostname (short)
+    \H – Full hostname (domain name)
+    \j – Number of jobs being managed by the shell
+    \l – The basename of the shells terminal device
+    \n – New line
+    \r – Carriage return
+    \s – The name of the shell
+    \t – Time (hour:minute:second)
+    \@ – Time, 12-hour AM/PM
+    \A – Time, 24-hour, without seconds
+    \u – Current username
+    \v – BASH version
+    \V – Extra information about the BASH version
+    \w – Current working directory ($HOME is represented by ~)
+    \W – The basename of the working directory ($HOME is represented by ~)
+    \! – Lists this command’s number in the history
+    \# – This command’s command number
+    \$ – Specifies whether the user is root (#) or otherwise ($)
+    \\– Backslash
+    \[ – Start a sequence of non-displayed characters (useful if you want to add a command or instruction set to the prompt)
+    \] – Close or end a sequence of non-displayed characters
+
+
+remember finally to save it and logout and login again to make it permanent 
+
+alternatively you can just use them temporarily with:
+
+export PS1="\W &gt; "
+
+you can also change colors with:
+
+
+export PS1="\e[0;32m[\u@\h \W]\$ \e[0m"
+
+
+Your prompt should have the same text as normal but be colored green.
+
+Here’s a breakdown of the commands:
+
+• \e[ – Begin color changes
+• 0;32m – Specify the color code
+• [\u@\h \W]\$ – This is the code for your normal BASH prompt (username@hostname Workingdirectory $)
+• \e[0m – Exit color-change mode
+
+The first number in the color code specifies the typeface:
+
+• 0 – Normal
+• 1 – Bold (bright)
+• 2 – Dim
+• 4 – Underlined
+
+The second number indicates the color you want:
+
+• 30 – Black
+• 31 – Red
+• 32 – Green
+• 33 – Brown
+• 34 – Blue
+• 35 – Purple
+• 36 – Cyan
+• 37 – Light gray
+
+to revert the changes when you have changed the bashrc file just use your backup
+
+sudo cp ~/.bashrc.bak ~/.bashrc
