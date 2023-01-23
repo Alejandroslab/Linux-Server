@@ -1,0 +1,19 @@
+is called spotdl
+
+it is a python app that needs youtube music  it pairs the spotify songs with youtube songs 
+
+to install use pip
+
+spotDL can be installed by running pip install spotdl.
+On some systems you might have to change pip to pip3.
+
+you may want to use sudo even if it is not recommended
+you may also be prompted to install additional packages. install them 
+
+finally to run it use spotdl 
+
+if it does not work you may want to use sudo
+
+sudo spotdl http://spotifysongorplaylist_link
+
+you can also process entire playlist instead of one single song 
