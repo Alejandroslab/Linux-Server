@@ -1,0 +1,11 @@
+Restarting networking on a desktop machine will cause dbus and a bunch of service to stop and never be started again, usually leading to the whole system being unusable.
+
+As Ubuntu does event based network bring up, there quite simply isn't a way to undo it all and redo it all, so a restart just isn't plain possible. The recommended way instead is to use ifdown and ifup on the interfaces you actually want to reconfigure:
+
+sudo ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
+
+
+Or you could try
+
+ifconfig eth0 down && ifconfig eth0 up
+(or whatever your network interface is called) to restart the network.  

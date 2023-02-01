@@ -1,0 +1,22 @@
+sudo apt install vnstat
+
+sudo systemctl enable --now vnstat
+
+run vnstat
+
+vnstat 
+
+for daily usage:
+
+vnstat -d -i eth0
+
+for hourly usage:
+
+vnstat -h -i eth0
+
+change eth0 to the interface you need 
+
+
+you can also use the 5 minutes monitor to get the average rate:
+
+vnstat -5 -i eth0
