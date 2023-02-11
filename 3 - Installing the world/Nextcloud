@@ -84,7 +84,7 @@ the domains.
 to do that just launch:
 
 sudo nextcloud.occ config:system:set trusted_domains 1 --value=192.168.1.*
-sudo nexcloud.occ config:system:set trusted_domains 2 --value=myubuntuserver.local
+sudo nextcloud.occ config:system:set trusted_domains 2 --value=myubuntuserver.local
 
 (remember to leave the numbers 1,2 as they indicate the order to be listed in
 the config file. if you want to authorize another domain just insert '3' and so on)

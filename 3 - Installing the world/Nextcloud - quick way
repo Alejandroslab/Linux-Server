@@ -1,0 +1,40 @@
+sudo snap install nextcloud
+
+to check installation
+
+snap changes nextcloud
+
+finally just go to your browser and type in the hostname or ip without indicating any port
+
+from there you can finalize the installation it will prompt to create a new administrative user and a password
+
+
+done!
+
+then you can create users within the web interface
+
+
+finally if you are under a vpn you may not be able to ping '.local'
+
+you may want to use the ip of the machine to get there
+
+to get the list of ip and domains of your nextcloud server:
+sudo nextcloud.occ config:system:get trusted_domains
+
+if you machine has ip like : 192.168.1.10
+
+then you can add it with this command:
+
+sudo nextcloud.occ config:system:set trusted_domains 2 --value=192.168.1.10
+
+the '2' indicates that this will be placed in second row of the file 
+usually the first row is the 'hostname.local' domain 
+
+use '2' because if you use '1' you will overwrite the first line 
+
+to delete e rule:
+
+sudo nextcloud.occ config:system:delete trusted_domains 2 
+
+
+the changes have immediately effect
