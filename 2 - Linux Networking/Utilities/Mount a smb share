@@ -1,0 +1,29 @@
+Step 1: Install the CIFS Utils pkg
+
+sudo apt-get install cifs-utils
+
+Step 2: Create a mount point
+
+sudo mkdir /mnt/local_share
+
+Step 3: Mount the volume
+
+sudo mount -t cifs -o user=<myuser> //<ip_address>/<export_share> /mnt/<local_share>
+
+if your smb share has spaces in its path just use the " " like
+
+"//my_ip/my shared folder"
+
+
+if your user has password you will be asked for the password 
+
+
+ Mounting at boot
+
+to automatically mount at boot you need to add a line to your fstab file
+
+
+
+add to /etc/fstab file:
+
+    //<ip_address>/<export_share>  /mnt/<local_share> cifs user=<user on VPSA>,pass=<passwd on VPSA> 0 0

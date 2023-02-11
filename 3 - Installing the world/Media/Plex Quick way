@@ -1,0 +1,14 @@
+install with snap:
+
+
+sudo snap install plexmediaserver
+
+
+done
+
+manage with:
+
+http://localhost:32400/manage
+do not omit 'manage'
+
+done!
