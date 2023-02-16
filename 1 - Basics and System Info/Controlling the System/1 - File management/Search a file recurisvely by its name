@@ -1,0 +1,3 @@
+just move to the folder in which you want to search and then
+
+find * -name my_file_name
