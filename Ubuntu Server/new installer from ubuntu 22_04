@@ -1,0 +1,7 @@
+from ubutnu 22.04
+you will get a new installer with the possibility to install software
+
+software will be installed via snap
+
+after install you can check your apps via
+sudo snap list

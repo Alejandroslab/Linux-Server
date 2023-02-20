@@ -1,0 +1,12 @@
+You can fix this error by setting a shell for the desired user. You can do this via “chsh” command or by editing /etc/passwd file.
+
+When using “chsh” command you should do something like this (you should run this as root or via sudo!):
+
+[root@foo1 ~]# chsh -s /bin/bash geekpeek
+[root@foo1 ~]# chsh -s /bin/bash geekpeeknet
+ 
+
+After this /etc/passwd user line should look something like this:
+
+geekpeek:x:500:500::/home/geekpeek:/bin/bash
+geekpeeknet:x:501:501::/home/geekpeeknet:/sbin/bash

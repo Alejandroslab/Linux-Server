@@ -1,0 +1,8 @@
+list snaps with
+
+sudo snap list
+rememebr like docker will not be seen by systemctl but only with snap
+
+sudo snap start docker
+
+snap will autostart the app at every reboot 
