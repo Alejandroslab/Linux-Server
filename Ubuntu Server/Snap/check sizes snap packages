@@ -1,0 +1,5 @@
+size of all packages (sum)
+du -hs /var/lib/snapd/snaps
+
+list per snapd/snaps
+du -hcs /var/lib/snapd/snaps/* 

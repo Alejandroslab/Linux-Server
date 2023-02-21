@@ -1,0 +1,13 @@
+No space left on device 
+when you do not have even a small amount of space you will get errors and some commands will not work (like sudo snap list)
+
+
+If is your workstation and you don't need the logs you can delete them. They are located in:
+
+/var/log
+You can check the space in use with:
+
+sudo du -h /var/log/
+In my case I'm using 4.5 GB with 4.1GB in /var/log/journal. So if you want to limit the size of your log journal to 100MB you can do:
+
+sudo journalctl --vacuum-size=100M

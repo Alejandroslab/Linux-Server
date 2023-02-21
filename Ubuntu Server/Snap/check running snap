@@ -1,0 +1,9 @@
+you may want to check the snap package status as in systemctl 
+
+you cannot check running snap packages with systemtl you must use
+
+sudo snap info mypackage
+
+like
+
+sudo snap info docker
