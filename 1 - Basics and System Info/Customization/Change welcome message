@@ -9,14 +9,18 @@ you must inspect the files:
 
 
 
-motd can also be dynamic that means that is a result of another script
+motd can also be dynamic that means that is a result of another script (that is stored here:/etc/update-motd.d/ and is composed by 
+several files that you can change as you wish)
+
 If you change one of those files you will have your welcome message changed!
 
 If for any reason MOTD does not show up check this:
 
 The file in /etc/ssh/sshd_config needed to be set this line UsePAM yes. 
 
-That allowed the interactive login to trigger the file /etc/pam.d/sshd that contained 
+That allowed the interactive login to trigger the file 
+
+/etc/pam.d/sshd that may contain this line:
 
 session    optional     pam_motd.so  motd=/run/motd.dynamic 
 
