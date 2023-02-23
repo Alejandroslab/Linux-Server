@@ -1,6 +1,36 @@
-you must inspect the 
-
-/etc/motd 
+The welcome message is the message that appears when you login (MOTD : (Message of the Day))
 
 
-(Message of the Day)
+you must inspect the files: 
+
+  /etc/motd
+  /run/motd.dynamic
+  /etc/init.d/motd
+
+
+
+motd can also be dynamic that means that is a result of another script
+If you change one of those files you will have your welcome message changed!
+
+If for any reason MOTD does not show up check this:
+
+The file in /etc/ssh/sshd_config needed to be set this line UsePAM yes. 
+
+That allowed the interactive login to trigger the file /etc/pam.d/sshd that contained 
+
+session    optional     pam_motd.so  motd=/run/motd.dynamic 
+
+to run, which in turn ran the files in /etc/update-motd.d/ to trigger the MOTD
+
+If the line is not in the file: /etc/ssh/sshd_config
+
+then just append it at the end of the file :
+
+session    optional     pam_motd.so  motd=/run/motd.dynamic
+
+you can change the path of the MOTD with any of the 3 common paths:
+  /etc/motd
+  /run/motd.dynamic
+  /etc/init.d/motd
+  
+  save and exit done!
