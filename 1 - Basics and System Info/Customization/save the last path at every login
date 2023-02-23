@@ -1,0 +1,11 @@
+append this statement to ~/.bash_logout
+
+echo `pwd` >~/.lastdir
+
+
+
+Then add the following to ~/.bash_profile
+
+cd $(<~/.lastdir)
+
+done!
