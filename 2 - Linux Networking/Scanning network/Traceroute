@@ -1,0 +1,6 @@
+To check the hops of packets just use the the command
+
+traceroute www.google.com
+
+
+this is the same command as the windows 'tracert'
