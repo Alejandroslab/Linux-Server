@@ -1,0 +1,5 @@
+just use netstat command
+
+netstat
+
+netstat | grep "22"
