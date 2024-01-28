@@ -1,0 +1,37 @@
+In this case we are on a ubuntu pc with username 'myubuntuuser' and we need to mount at boot a folder that is placed insside a NAS
+First check that you have installed the cifs-utils:
+
+sudo apt-get install cifs-utils
+
+Then have to edit
+
+sudo /etc/fstab
+that is the file that is inspected whenever we boot up the pc to mount folders.
+
+Add a new line like this:
+
+//192.168.1.1/Shared\040Downloads /home/myubuntuuser/Downloads/MyMountedFolder cifs username=SharedDownloadsOnly,uid=myubuntuuser,file_mode=0777,dir_mode=0777,iocharset=utf>
+
+This allows to mount at boot the folder 'Shared Downloads' that is placed on a server/NAS
+(See that you need to place '\040' when you have a space in the folder name. In this file you cannot use the " ")
+
+The folder will be mounted inside 'Downloads/MyMountedFolder' using the cifs utils (that you may need to install before doing this)
+
+Finally the username of the remote shared folder is placed,
+You need the uid to assign permission to myubuntuuser otherwise you will not be able to assing the next permissions that are write and read permissions (file_mode and dir_mode options)
+
+
+Remmeber you can also save the password (to be placed after the username) to access the network folder but this is not recommended as the password will be stored in clear.
+#se si mette password=password dopo lo username si omette la richiesta di password ma è meno sicuro ovviamente
+
+
+finally to mount all the folders inside the fstab folder just run:
+
+sudo mount -a
+
+if you did not leave the password option inside the fstab line you will be asked for the netwokr folder password to access the network folder.
+
+DONE!
+to unmount
+
+sudo umount -a
